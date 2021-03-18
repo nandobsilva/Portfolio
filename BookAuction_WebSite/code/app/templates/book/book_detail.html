@@ -1,0 +1,213 @@
+{% extends 'base.html' %}
+
+<!-- Head -->
+{% block head %}
+<title>Book detail</title>
+{% endblock %}
+
+<!-- Body -->
+{% block body %}
+<main id="main" class="mt-3">
+<!-- Card component -->
+<div class="card mb-3 mt-3 bgWhite" style="max-width: 1200px">
+  <div class="row no-gutters">
+    <div class="col-md-3">
+      <img src="{{book.image_url}}" class="itemImgSize" alt="Book image" />
+    </div>
+    <div class="col-md-8">
+      <div class="card-body">
+        <h5 class="card-title">
+          <strong>{{book.title}}</strong>
+        </h5>
+        <p class="card-text">
+            <p class="itemCardText"><strong>Description: </strong>
+              {{book.description}}
+            </p>
+            <br>
+            <p class="itemCardText"><strong>Author: </strong>{{book.author}}</p>
+            <p class="itemCardText"><strong>Category: </strong>{{book.category}}</p>
+            <p class="itemCardText"><strong>ISBN: </strong> {{book.isbn}}</p>
+            <p class="itemCardText"><strong>Bid status: </strong> {{book.bid_status}} </p>
+            <p class="itemCardText"><strong>Date added: </strong> {{book.date_formatted}}</p>
+            <p class="itemCardText"><strong>Number of bids: </strong> {{num_bids}}</p>
+            <p class="itemCardText"><strong>Start bid amount: </strong> AU$ {{book.start_bid_amount_formatted}}</p>
+            <p class="itemCardText"><strong>Highest bid: </strong> AU$ {{highest_bid}}</p>
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Bid-->
+{% if show_bid_list == True %}
+<div class="accordion">
+  <div class="card">
+    <div class="card-header" id="headingOne">
+      <h2 class="mb-0">
+        <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#bid_table" aria-expanded="true" aria-controls="collapseOne">
+          See all bids placed
+        </button>
+      </h2>
+    </div>
+    <div id="bid_table" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+      <div class="card-body">
+        <!-- Bid table-->
+        <table class="table table-sm table-striped">
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">Date</th>
+            <th scope="col">Amount</th>
+          </tr>
+        </thead>
+        <tbody>
+          {% for bid in bids %}
+            <tr>
+              <th scope="row">{{bid.count}}</th>
+              <td>{{bid.date_formatted}}</td>
+              {% if bid.has_won == True  %}
+              <td>AU$ {{bid.amount_formatted}} - Won</td>
+              {% endif %}
+              {% if bid.has_won == False  %}
+              <td>AU$ {{bid.amount_formatted}}</td>
+              {% endif %}
+            </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+      </div>
+    </div>
+  </div>
+</div>
+{% endif %}
+<!-- Place a bid-->
+<div class="card mt-3 itembc pl-4">
+  <div class="row mr-0 ml-0 mt-3 ">
+    <form action="/bid/add/{{book.id}}/">
+      <div class="input-group mb-3 ml-1">
+        <div class="input-group-prepend">
+          <span class="input-group-text">AU$</span>
+        </div>
+        <input name="bid_amount" type="number" class="form-control" aria-label="Amount (to the nearest dollar)">
+        <div class="input-group-append">
+          <span class="input-group-text">.00</span>
+        </div>
+        {% if book.bid_status == "Open" %}
+          <button class="btn btn-outline-secondary ml-2" type="submit">Place bid</button>
+          <a href="/watchlist/add/{{book.user_id}}/{{book.id}}/{{next}}" class="btn btn-outline-primary ml-2 mr-1"
+            >Add to watchlist</a>
+        {% endif %}
+        {% if book.bid_status == "Closed" %}
+          <button class="btn btn-outline-secondary ml-2" type="submit" disabled>Place bid</button>
+          <button class="btn btn-outline-primary ml-2 mr-1" type="submit" disabled>Add to watchlist</button>
+        {% endif %}
+        </div>
+    </form>
+  </div>
+</div>
+<!-- REVIEWS-->
+<div class="accordion mt-3">
+  <div class="card">
+    <div class="card-header">
+      <h2 class="mb-0">
+        <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#reviews" aria-expanded="true" aria-controls="collapseOne">
+          See reviews
+        </button>
+      </h2>
+    </div>
+    <div id="reviews" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+      {% if reviews == [] %}
+      <p class="itemCardText  ml-4 mt-1 pt-1 mb-1 "> There is no reviews for this book </p>
+      {% endif %}
+      <div class="card-body">
+        <!-- REVIEW CARDS-->
+        {% for review in reviews %}
+        <div class="card mb-2 pl-1">
+          <div class="row no-gutters">
+            <div class="col-2  ml-0 pt-2 ">
+              <img src="/static/app_images/userIcon.png" class="userIcon mt-2" alt="user image" />
+              <p class="center">{{review.user.name}}</p>
+            </div>
+            <div class="col itembc">
+              <div class="card-body">
+                <p class="card-text">
+                  <h6 class="text-justify">{{review.review}}</h6>
+                <p class="mt-3">Date: {{review.date_formatted}}</p>
+                </p>
+
+              </div>
+            </div>
+          </div>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Add Review -->
+<div class="card mt-3 itembc">
+  <dir class="col mb-2 ml-3">
+      <form action="/review/add/{{book_id}}">
+          <label for="TextareaReview" class="mt-1"><h5>Add a review</h5></label>
+        <div class="form-group pr-4 ">
+          <textarea class="form-control" name="review" maxlength="400" id="TextareaReview" rows="5"></textarea>
+        </div>
+        <button class="btn btn-warning" type="submit">Post review</button>
+      </form>
+  </dir>
+</div>
+</main>
+<!-- Carousel Top 5 Books -->
+<div class="row mr-0 mt-3 cac ml-0 mb-0 t5bg">
+<h4 class="row t5">Top five books</h4>
+   {% if top5 != [] %}
+    </div>
+        <div class="row mr-0 cac ml-0 mt-0 t5bg">
+        <div id="bookImages" class="carousel slide" data-ride="carousel">
+          <ol class="carousel-indicators">
+            <li data-target="#bookImages" data-slide-to="0" class="active"></li>
+            <li data-target="#bookImages" data-slide-to="1"></li>
+            <li data-target="#bookImages" data-slide-to="2"></li>
+            <li data-target="#bookImages" data-slide-to="3"></li>
+            <li data-target="#bookImages" data-slide-to="4"></li>
+          </ol>
+          <div class="carousel-inner mb-3">
+
+            <div class="carousel-item active">
+                <a href="/book/book_detail?book_id={{top5[0].id}}">
+                  <img class="d-block imgSize" src="{{top5[0].image_url}}" alt=""/>
+                </a>
+            </div>
+            {% if top5|length > 1 %}
+            {% for book in top5 %}
+                {% if book != top5[0] %}
+                    <div class="carousel-item ">
+                        <a href="/book/book_detail?book_id={{book.id}}">
+                            <img class="d-block imgSize" src="{{book.image_url}}" alt="Book image"/>
+                        </a>
+                    </div>
+                {% endif %}
+            {% endfor %}
+           {% endif %}
+          </div>
+          <a
+            class="carousel-control-prev"
+            href="#bookImages"
+            role="button"
+            data-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a
+        class="carousel-control-next"
+            href="#bookImages"
+            role="button"
+            data-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+    </div>
+   {% endif %}
+</div>
+{% endblock %}

@@ -1,0 +1,2141 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+
+		<script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={xpid:"XQcAUFNADAYCUVhTDw=="};window.NREUM||(NREUM={}),__nr_require=function(t,n,e){function r(e){if(!n[e]){var o=n[e]={exports:{}};t[e][0].call(o.exports,function(n){var o=t[e][1][n];return r(o||n)},o,o.exports)}return n[e].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<e.length;o++)r(e[o]);return r}({1:[function(t,n,e){function r(t){try{s.console&&console.log(t)}catch(n){}}var o,i=t("ee"),a=t(18),s={};try{o=localStorage.getItem("__nr_flags").split(","),console&&"function"==typeof console.log&&(s.console=!0,o.indexOf("dev")!==-1&&(s.dev=!0),o.indexOf("nr_dev")!==-1&&(s.nrDev=!0))}catch(c){}s.nrDev&&i.on("internal-error",function(t){r(t.stack)}),s.dev&&i.on("fn-err",function(t,n,e){r(e.stack)}),s.dev&&(r("NR AGENT IN DEVELOPMENT MODE"),r("flags: "+a(s,function(t,n){return t}).join(", ")))},{}],2:[function(t,n,e){function r(t,n,e,r,s){try{p?p-=1:o(s||new UncaughtException(t,n,e),!0)}catch(f){try{i("ierr",[f,c.now(),!0])}catch(d){}}return"function"==typeof u&&u.apply(this,a(arguments))}function UncaughtException(t,n,e){this.message=t||"Uncaught error with no additional information",this.sourceURL=n,this.line=e}function o(t,n){var e=n?null:c.now();i("err",[t,e])}var i=t("handle"),a=t(19),s=t("ee"),c=t("loader"),f=t("gos"),u=window.onerror,d=!1,l="nr@seenError",p=0;c.features.err=!0,t(1),window.onerror=r;try{throw new Error}catch(h){"stack"in h&&(t(8),t(7),"addEventListener"in window&&t(5),c.xhrWrappable&&t(9),d=!0)}s.on("fn-start",function(t,n,e){d&&(p+=1)}),s.on("fn-err",function(t,n,e){d&&!e[l]&&(f(e,l,function(){return!0}),this.thrown=!0,o(e))}),s.on("fn-end",function(){d&&!this.thrown&&p>0&&(p-=1)}),s.on("internal-error",function(t){i("ierr",[t,c.now(),!0])})},{}],3:[function(t,n,e){t("loader").features.ins=!0},{}],4:[function(t,n,e){function r(t){}if(window.performance&&window.performance.timing&&window.performance.getEntriesByType){var o=t("ee"),i=t("handle"),a=t(8),s=t(7),c="learResourceTimings",f="addEventListener",u="resourcetimingbufferfull",d="bstResource",l="resource",p="-start",h="-end",m="fn"+p,w="fn"+h,v="bstTimer",y="pushState",g=t("loader");g.features.stn=!0,t(6);var x=NREUM.o.EV;o.on(m,function(t,n){var e=t[0];e instanceof x&&(this.bstStart=g.now())}),o.on(w,function(t,n){var e=t[0];e instanceof x&&i("bst",[e,n,this.bstStart,g.now()])}),a.on(m,function(t,n,e){this.bstStart=g.now(),this.bstType=e}),a.on(w,function(t,n){i(v,[n,this.bstStart,g.now(),this.bstType])}),s.on(m,function(){this.bstStart=g.now()}),s.on(w,function(t,n){i(v,[n,this.bstStart,g.now(),"requestAnimationFrame"])}),o.on(y+p,function(t){this.time=g.now(),this.startPath=location.pathname+location.hash}),o.on(y+h,function(t){i("bstHist",[location.pathname+location.hash,this.startPath,this.time])}),f in window.performance&&(window.performance["c"+c]?window.performance[f](u,function(t){i(d,[window.performance.getEntriesByType(l)]),window.performance["c"+c]()},!1):window.performance[f]("webkit"+u,function(t){i(d,[window.performance.getEntriesByType(l)]),window.performance["webkitC"+c]()},!1)),document[f]("scroll",r,{passive:!0}),document[f]("keypress",r,!1),document[f]("click",r,!1)}},{}],5:[function(t,n,e){function r(t){for(var n=t;n&&!n.hasOwnProperty(u);)n=Object.getPrototypeOf(n);n&&o(n)}function o(t){s.inPlace(t,[u,d],"-",i)}function i(t,n){return t[1]}var a=t("ee").get("events"),s=t(21)(a,!0),c=t("gos"),f=XMLHttpRequest,u="addEventListener",d="removeEventListener";n.exports=a,"getPrototypeOf"in Object?(r(document),r(window),r(f.prototype)):f.prototype.hasOwnProperty(u)&&(o(window),o(f.prototype)),a.on(u+"-start",function(t,n){var e=t[1],r=c(e,"nr@wrapped",function(){function t(){if("function"==typeof e.handleEvent)return e.handleEvent.apply(e,arguments)}var n={object:t,"function":e}[typeof e];return n?s(n,"fn-",null,n.name||"anonymous"):e});this.wrapped=t[1]=r}),a.on(d+"-start",function(t){t[1]=this.wrapped||t[1]})},{}],6:[function(t,n,e){var r=t("ee").get("history"),o=t(21)(r);n.exports=r,o.inPlace(window.history,["pushState","replaceState"],"-")},{}],7:[function(t,n,e){var r=t("ee").get("raf"),o=t(21)(r),i="equestAnimationFrame";n.exports=r,o.inPlace(window,["r"+i,"mozR"+i,"webkitR"+i,"msR"+i],"raf-"),r.on("raf-start",function(t){t[0]=o(t[0],"fn-")})},{}],8:[function(t,n,e){function r(t,n,e){t[0]=a(t[0],"fn-",null,e)}function o(t,n,e){this.method=e,this.timerDuration=isNaN(t[1])?0:+t[1],t[0]=a(t[0],"fn-",this,e)}var i=t("ee").get("timer"),a=t(21)(i),s="setTimeout",c="setInterval",f="clearTimeout",u="-start",d="-";n.exports=i,a.inPlace(window,[s,"setImmediate"],s+d),a.inPlace(window,[c],c+d),a.inPlace(window,[f,"clearImmediate"],f+d),i.on(c+u,r),i.on(s+u,o)},{}],9:[function(t,n,e){function r(t,n){d.inPlace(n,["onreadystatechange"],"fn-",s)}function o(){var t=this,n=u.context(t);t.readyState>3&&!n.resolved&&(n.resolved=!0,u.emit("xhr-resolved",[],t)),d.inPlace(t,y,"fn-",s)}function i(t){g.push(t),h&&(b?b.then(a):w?w(a):(E=-E,R.data=E))}function a(){for(var t=0;t<g.length;t++)r([],g[t]);g.length&&(g=[])}function s(t,n){return n}function c(t,n){for(var e in t)n[e]=t[e];return n}t(5);var f=t("ee"),u=f.get("xhr"),d=t(21)(u),l=NREUM.o,p=l.XHR,h=l.MO,m=l.PR,w=l.SI,v="readystatechange",y=["onload","onerror","onabort","onloadstart","onloadend","onprogress","ontimeout"],g=[];n.exports=u;var x=window.XMLHttpRequest=function(t){var n=new p(t);try{u.emit("new-xhr",[n],n),n.addEventListener(v,o,!1)}catch(e){try{u.emit("internal-error",[e])}catch(r){}}return n};if(c(p,x),x.prototype=p.prototype,d.inPlace(x.prototype,["open","send"],"-xhr-",s),u.on("send-xhr-start",function(t,n){r(t,n),i(n)}),u.on("open-xhr-start",r),h){var b=m&&m.resolve();if(!w&&!m){var E=1,R=document.createTextNode(E);new h(a).observe(R,{characterData:!0})}}else f.on("fn-end",function(t){t[0]&&t[0].type===v||a()})},{}],10:[function(t,n,e){function r(){var t=window.NREUM,n=t.info.accountID||null,e=t.info.agentID||null,r=t.info.trustKey||null,i="btoa"in window&&"function"==typeof window.btoa;if(!n||!e||!i)return null;var a={v:[0,1],d:{ty:"Browser",ac:n,ap:e,id:o.generateCatId(),tr:o.generateCatId(),ti:Date.now()}};return r&&n!==r&&(a.d.tk=r),btoa(JSON.stringify(a))}var o=t(16);n.exports={generateTraceHeader:r}},{}],11:[function(t,n,e){function r(t){var n=this.params,e=this.metrics;if(!this.ended){this.ended=!0;for(var r=0;r<p;r++)t.removeEventListener(l[r],this.listener,!1);n.aborted||(e.duration=s.now()-this.startTime,this.loadCaptureCalled||4!==t.readyState?null==n.status&&(n.status=0):a(this,t),e.cbTime=this.cbTime,d.emit("xhr-done",[t],t),c("xhr",[n,e,this.startTime]))}}function o(t,n){var e=t.responseType;if("json"===e&&null!==n)return n;var r="arraybuffer"===e||"blob"===e||"json"===e?t.response:t.responseText;return w(r)}function i(t,n){var e=f(n),r=t.params;r.host=e.hostname+":"+e.port,r.pathname=e.pathname,t.sameOrigin=e.sameOrigin}function a(t,n){t.params.status=n.status;var e=o(n,t.lastSize);if(e&&(t.metrics.rxSize=e),t.sameOrigin){var r=n.getResponseHeader("X-NewRelic-App-Data");r&&(t.params.cat=r.split(", ").pop())}t.loadCaptureCalled=!0}var s=t("loader");if(s.xhrWrappable){var c=t("handle"),f=t(12),u=t(10).generateTraceHeader,d=t("ee"),l=["load","error","abort","timeout"],p=l.length,h=t("id"),m=t(15),w=t(14),v=window.XMLHttpRequest;s.features.xhr=!0,t(9),d.on("new-xhr",function(t){var n=this;n.totalCbs=0,n.called=0,n.cbTime=0,n.end=r,n.ended=!1,n.xhrGuids={},n.lastSize=null,n.loadCaptureCalled=!1,t.addEventListener("load",function(e){a(n,t)},!1),m&&(m>34||m<10)||window.opera||t.addEventListener("progress",function(t){n.lastSize=t.loaded},!1)}),d.on("open-xhr-start",function(t){this.params={method:t[0]},i(this,t[1]),this.metrics={}}),d.on("open-xhr-end",function(t,n){"loader_config"in NREUM&&"xpid"in NREUM.loader_config&&this.sameOrigin&&n.setRequestHeader("X-NewRelic-ID",NREUM.loader_config.xpid);var e=!1;if("init"in NREUM&&"distributed_tracing"in NREUM.init&&(e=!!NREUM.init.distributed_tracing.enabled),e&&this.sameOrigin){var r=u();r&&n.setRequestHeader("newrelic",r)}}),d.on("send-xhr-start",function(t,n){var e=this.metrics,r=t[0],o=this;if(e&&r){var i=w(r);i&&(e.txSize=i)}this.startTime=s.now(),this.listener=function(t){try{"abort"!==t.type||o.loadCaptureCalled||(o.params.aborted=!0),("load"!==t.type||o.called===o.totalCbs&&(o.onloadCalled||"function"!=typeof n.onload))&&o.end(n)}catch(e){try{d.emit("internal-error",[e])}catch(r){}}};for(var a=0;a<p;a++)n.addEventListener(l[a],this.listener,!1)}),d.on("xhr-cb-time",function(t,n,e){this.cbTime+=t,n?this.onloadCalled=!0:this.called+=1,this.called!==this.totalCbs||!this.onloadCalled&&"function"==typeof e.onload||this.end(e)}),d.on("xhr-load-added",function(t,n){var e=""+h(t)+!!n;this.xhrGuids&&!this.xhrGuids[e]&&(this.xhrGuids[e]=!0,this.totalCbs+=1)}),d.on("xhr-load-removed",function(t,n){var e=""+h(t)+!!n;this.xhrGuids&&this.xhrGuids[e]&&(delete this.xhrGuids[e],this.totalCbs-=1)}),d.on("addEventListener-end",function(t,n){n instanceof v&&"load"===t[0]&&d.emit("xhr-load-added",[t[1],t[2]],n)}),d.on("removeEventListener-end",function(t,n){n instanceof v&&"load"===t[0]&&d.emit("xhr-load-removed",[t[1],t[2]],n)}),d.on("fn-start",function(t,n,e){n instanceof v&&("onload"===e&&(this.onload=!0),("load"===(t[0]&&t[0].type)||this.onload)&&(this.xhrCbStart=s.now()))}),d.on("fn-end",function(t,n){this.xhrCbStart&&d.emit("xhr-cb-time",[s.now()-this.xhrCbStart,this.onload,n],n)})}},{}],12:[function(t,n,e){n.exports=function(t){var n=document.createElement("a"),e=window.location,r={};n.href=t,r.port=n.port;var o=n.href.split("://");!r.port&&o[1]&&(r.port=o[1].split("/")[0].split("@").pop().split(":")[1]),r.port&&"0"!==r.port||(r.port="https"===o[0]?"443":"80"),r.hostname=n.hostname||e.hostname,r.pathname=n.pathname,r.protocol=o[0],"/"!==r.pathname.charAt(0)&&(r.pathname="/"+r.pathname);var i=!n.protocol||":"===n.protocol||n.protocol===e.protocol,a=n.hostname===document.domain&&n.port===e.port;return r.sameOrigin=i&&(!n.hostname||a),r}},{}],13:[function(t,n,e){function r(){}function o(t,n,e){return function(){return i(t,[f.now()].concat(s(arguments)),n?null:this,e),n?void 0:this}}var i=t("handle"),a=t(18),s=t(19),c=t("ee").get("tracer"),f=t("loader"),u=NREUM;"undefined"==typeof window.newrelic&&(newrelic=u);var d=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],l="api-",p=l+"ixn-";a(d,function(t,n){u[n]=o(l+n,!0,"api")}),u.addPageAction=o(l+"addPageAction",!0),u.setCurrentRouteName=o(l+"routeName",!0),n.exports=newrelic,u.interaction=function(){return(new r).get()};var h=r.prototype={createTracer:function(t,n){var e={},r=this,o="function"==typeof n;return i(p+"tracer",[f.now(),t,e],r),function(){if(c.emit((o?"":"no-")+"fn-start",[f.now(),r,o],e),o)try{return n.apply(this,arguments)}catch(t){throw c.emit("fn-err",[arguments,this,t],e),t}finally{c.emit("fn-end",[f.now()],e)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(t,n){h[n]=o(p+n)}),newrelic.noticeError=function(t,n){"string"==typeof t&&(t=new Error(t)),i("err",[t,f.now(),!1,n])}},{}],14:[function(t,n,e){n.exports=function(t){if("string"==typeof t&&t.length)return t.length;if("object"==typeof t){if("undefined"!=typeof ArrayBuffer&&t instanceof ArrayBuffer&&t.byteLength)return t.byteLength;if("undefined"!=typeof Blob&&t instanceof Blob&&t.size)return t.size;if(!("undefined"!=typeof FormData&&t instanceof FormData))try{return JSON.stringify(t).length}catch(n){return}}}},{}],15:[function(t,n,e){var r=0,o=navigator.userAgent.match(/Firefox[/s](d+.d+)/);o&&(r=+o[1]),n.exports=r},{}],16:[function(t,n,e){function r(){function t(){return n?15&n[e++]:16*Math.random()|0}var n=null,e=0,r=window.crypto||window.msCrypto;r&&r.getRandomValues&&(n=r.getRandomValues(new Uint8Array(31)));for(var o,i="xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx",a="",s=0;s<i.length;s++)o=i[s],"x"===o?a+=t().toString(16):"y"===o?(o=3&t()|8,a+=o.toString(16)):a+=o;return a}function o(){function t(){return n?15&n[e++]:16*Math.random()|0}var n=null,e=0,r=window.crypto||window.msCrypto;r&&r.getRandomValues&&Uint8Array&&(n=r.getRandomValues(new Uint8Array(31)));for(var o=[],i=0;i<16;i++)o.push(t().toString(16));return o.join("")}n.exports={generateUuid:r,generateCatId:o}},{}],17:[function(t,n,e){function r(t,n){if(!o)return!1;if(t!==o)return!1;if(!n)return!0;if(!i)return!1;for(var e=i.split("."),r=n.split("."),a=0;a<r.length;a++)if(r[a]!==e[a])return!1;return!0}var o=null,i=null,a=/Version/(S+)s+Safari/;if(navigator.userAgent){var s=navigator.userAgent,c=s.match(a);c&&s.indexOf("Chrome")===-1&&s.indexOf("Chromium")===-1&&(o="Safari",i=c[1])}n.exports={agent:o,version:i,match:r}},{}],18:[function(t,n,e){function r(t,n){var e=[],r="",i=0;for(r in t)o.call(t,r)&&(e[i]=n(r,t[r]),i+=1);return e}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],19:[function(t,n,e){function r(t,n,e){n||(n=0),"undefined"==typeof e&&(e=t?t.length:0);for(var r=-1,o=e-n||0,i=Array(o<0?0:o);++r<o;)i[r]=t[n+r];return i}n.exports=r},{}],20:[function(t,n,e){n.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],21:[function(t,n,e){function r(t){return!(t&&t instanceof Function&&t.apply&&!t[a])}var o=t("ee"),i=t(19),a="nr@original",s=Object.prototype.hasOwnProperty,c=!1;n.exports=function(t,n){function e(t,n,e,o){function nrWrapper(){var r,a,s,c;try{a=this,r=i(arguments),s="function"==typeof e?e(r,a):e||{}}catch(f){l([f,"",[r,a,o],s])}u(n+"start",[r,a,o],s);try{return c=t.apply(a,r)}catch(d){throw u(n+"err",[r,a,d],s),d}finally{u(n+"end",[r,a,c],s)}}return r(t)?t:(n||(n=""),nrWrapper[a]=t,d(t,nrWrapper),nrWrapper)}function f(t,n,o,i){o||(o="");var a,s,c,f="-"===o.charAt(0);for(c=0;c<n.length;c++)s=n[c],a=t[s],r(a)||(t[s]=e(a,f?s+o:o,i,s))}function u(e,r,o){if(!c||n){var i=c;c=!0;try{t.emit(e,r,o,n)}catch(a){l([a,e,r,o])}c=i}}function d(t,n){if(Object.defineProperty&&Object.keys)try{var e=Object.keys(t);return e.forEach(function(e){Object.defineProperty(n,e,{get:function(){return t[e]},set:function(n){return t[e]=n,n}})}),n}catch(r){l([r])}for(var o in t)s.call(t,o)&&(n[o]=t[o]);return n}function l(n){try{t.emit("internal-error",n)}catch(e){}}return t||(t=o),e.inPlace=f,e.flag=a,e}},{}],ee:[function(t,n,e){function r(){}function o(t){function n(t){return t&&t instanceof r?t:t?c(t,s,i):i()}function e(e,r,o,i){if(!l.aborted||i){t&&t(e,r,o);for(var a=n(o),s=m(e),c=s.length,f=0;f<c;f++)s[f].apply(a,r);var d=u[g[e]];return d&&d.push([x,e,r,a]),a}}function p(t,n){y[t]=m(t).concat(n)}function h(t,n){var e=y[t];if(e)for(var r=0;r<e.length;r++)e[r]===n&&e.splice(r,1)}function m(t){return y[t]||[]}function w(t){return d[t]=d[t]||o(e)}function v(t,n){f(t,function(t,e){n=n||"feature",g[e]=n,n in u||(u[n]=[])})}var y={},g={},x={on:p,addEventListener:p,removeEventListener:h,emit:e,get:w,listeners:m,context:n,buffer:v,abort:a,aborted:!1};return x}function i(){return new r}function a(){(u.api||u.feature)&&(l.aborted=!0,u=l.backlog={})}var s="nr@context",c=t("gos"),f=t(18),u={},d={},l=n.exports=o();l.backlog=u},{}],gos:[function(t,n,e){function r(t,n,e){if(o.call(t,n))return t[n];var r=e();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(t,n,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return t[n]=r,r}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(t,n,e){function r(t,n,e,r){o.buffer([t],r),o.emit(t,n,e)}var o=t("ee").get("handle");n.exports=r,r.ee=o},{}],id:[function(t,n,e){function r(t){var n=typeof t;return!t||"object"!==n&&"function"!==n?-1:t===window?0:a(t,i,function(){return o++})}var o=1,i="nr@id",a=t("gos");n.exports=r},{}],loader:[function(t,n,e){function r(){if(!E++){var t=b.info=NREUM.info,n=p.getElementsByTagName("script")[0];if(setTimeout(u.abort,3e4),!(t&&t.licenseKey&&t.applicationID&&n))return u.abort();f(g,function(n,e){t[n]||(t[n]=e)}),c("mark",["onload",a()+b.offset],null,"api");var e=p.createElement("script");e.src="https://"+t.agent,n.parentNode.insertBefore(e,n)}}function o(){"complete"===p.readyState&&i()}function i(){c("mark",["domContent",a()+b.offset],null,"api")}function a(){return R.exists&&performance.now?Math.round(performance.now()):(s=Math.max((new Date).getTime(),s))-b.offset}var s=(new Date).getTime(),c=t("handle"),f=t(18),u=t("ee"),d=t(17),l=window,p=l.document,h="addEventListener",m="attachEvent",w=l.XMLHttpRequest,v=w&&w.prototype;NREUM.o={ST:setTimeout,SI:l.setImmediate,CT:clearTimeout,XHR:w,REQ:l.Request,EV:l.Event,PR:l.Promise,MO:l.MutationObserver};var y=""+location,g={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1123.min.js"},x=w&&v&&v[h]&&!/CriOS/.test(navigator.userAgent),b=n.exports={offset:s,now:a,origin:y,features:{},xhrWrappable:x,userAgent:d};t(13),p[h]?(p[h]("DOMContentLoaded",i,!1),l[h]("load",r,!1)):(p[m]("onreadystatechange",o),l[m]("onload",r)),c("mark",["firstbyte",s],null,"api");var E=0,R=t(20)},{}]},{},["loader",2,11,4,3]);</script>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+		<meta content="//static-4.tvgcdn.net/www/img/favicon_128.png" itemprop="image" />
+		<meta name="apple-itunes-app" content="app-id=333647776, affiliate-data=at=11l9QE, app-argument=https://www.tvguide.com/tv-premiere-dates/">
+		<meta property="fb:app_id" content="63084645929"/>
+		<meta name="google-site-verification" content="Od29UEFliEmsUY2XH0kfXxkTNucL0cv_rc0J_RPWXU4" />
+
+		<title>TV Shows Premiere Dates (2019-2020) | TV Guide</title> 
+		<link rel="icon" type="image/svg+xml" href="//static-4.tvgcdn.net/www/img/favicon.svg" />
+		<link rel="alternate icon" type="image/png" href="//static-1.tvgcdn.net/www/img/favicon_32.png" />
+		<link rel="apple-touch-icon" href="//static-1.tvgcdn.net/www/img/apple-touch-icon-precomposed.png" />
+		<link rel="canonical" href="https://www.tvguide.com/tv-premiere-dates/" />
+
+		<script type="text/javascript">
+			(function () {
+				if ( typeof window.CustomEvent === "function" ) return false;
+				function CustomEvent ( event, params ) {
+					params = params || { bubbles: false, cancelable: false, detail: undefined };
+					var evt = document.createEvent( 'CustomEvent' );
+					evt.initCustomEvent( event, params.bubbles, params.cancelable, params.detail );
+					return evt;
+				}
+				CustomEvent.prototype = window.Event.prototype;
+				window.CustomEvent = CustomEvent;
+			})();
+
+			window.gdprConsent = false;
+			window.GDPR_CONSENT_EVENT = 'gdprConsent';
+			window.fireGDPRConsentEvent = function(timeout) {
+				timeout = timeout || 0;
+				 window.gdprTimout = window.setTimeout(function() {
+					window.gdprConsentEvent = new CustomEvent(window.GDPR_CONSENT_EVENT, { detail: true });
+					window.gdprConsent = true;
+					window.dispatchEvent(window.gdprConsentEvent);
+				    window.clearTimeout(window.gdprTimout);
+				 }, timeout);
+			};
+						(function(id){function append(scriptid,url,async){var d=document,sn='script',f=d.getElementsByTagName(sn)[0];if(!f)f=d.head;var s=d.createElement(sn);s.async=!0;s.id=scriptid;s.src=url;f.parentNode.insertBefore(s,f)}
+				function getRootDomain(){var parts=window.location.hostname.split('.');if(parts.length===2)rootDomain=parts[0];else if(parts.length>2){var part=parts[parts.length-2];if(part==='com'||part==='co'){rootDomain=parts[parts.length-3]}
+				else{rootDomain=part}} return rootDomain;}
+				window.evidon={};window.evidon.id=id;var cdn='//c.evidon.com/',rootDomain=getRootDomain(),noticecdn=cdn+'sitenotice/';append('evidon-notice',noticecdn+'evidon-sitenotice-tag.js',!1);append('evidon-location',cdn+'geo/country.js',!0);append('evidon-themes',noticecdn+id+'/snthemes.js',!0);if(rootDomain)append('evidon-settings',noticecdn+id+'/'+rootDomain+'/settings.js',!0);
+
+				window.evidon.priorConsentCallback=function() {
+					window.fireGDPRConsentEvent();
+
+					if (typeof om == 'object' && typeof om.fireGdprTags != 'undefined') {
+						om.fireGdprTags();
+					}
+				}
+				window.evidon.closeCallback=function(){}
+				window.evidon.consentWithdrawnCallback=function(){}
+			})(425)
+		</script>
+		    		
+    <meta name="description" content="There are a ton of TV shows to choose from these days. How do you choose what to watch? We'll guide you through it!" />
+
+					<link media="all" type="text/css" rel="stylesheet" href="//static-4.tvgcdn.net/www/css/bs3grid/bs3grid-c2c1f516f66a1ef7c42b5af7dcbdc53a.css">
+
+			<link media="all" type="text/css" rel="stylesheet" href="//static-1.tvgcdn.net/www/css/site-0b55bd5c3b0da47fbbaaab4b041257ea.css">
+
+			<link media="all" type="text/css" rel="stylesheet" href="//static-5.tvgcdn.net/www/css/font-awesome/font-awesome-7ad0a3f9a32724b7bfbc263ed9e6cb20.css">
+
+			<link media="all" type="text/css" rel="stylesheet" href="//static-5.tvgcdn.net/www/css/special-features/product-single-b90495a28577224891e01f28277bf502.css">
+<link media="all" type="text/css" rel="stylesheet" href="//static-5.tvgcdn.net/www/css/special-features/feature-topi-76bbf05a14307341c5ed8d4c78707424.css">
+<link media="all" type="text/css" rel="stylesheet" href="//static-2.tvgcdn.net/www/css/videos-uvpjs/hub-31043ab1d50dbd7ba22c591d0fe75634.css">
+
+		
+						<!--[if lt IE 9]>
+			<script src="//oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+			<script src="//oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+		<![endif]-->
+
+		<!--[if lte IE 9]>
+			<script src="//static-1.tvgcdn.net/www/js/ieshim-2428c7f7a33718da67a799b1d026f668.js"></script>
+
+		<![endif]-->
+
+        		<script type="text/javascript">
+			window.$tvg = window.$tvg || { };
+			window.$tvg.environment = {
+				"mapiHost": "mapi.tvguide.com",
+				"listingsHost": "mobilelistings.tvguide.com",
+				"staticHost": "static.tvgcdn.net",
+			};
+
+                        window.utag_data = {"pageViewGuid":"acbc8183-5c84-4da7-83be-48024e6b6ed1","siteType":"responsive web","siteId":432,"ci":"us-203529h","siteSection":"best-lists","bkPath":"aw-tvguide/special","pageType":"best-lists","siteHierarchy":"tv-premiere-dates","userState":"not authenticated","userType":"anon","env":"prod","topicSlug":"coming-soon","cid":"coming-soon"};
+            window.$tvg.tealium = 'tags.tiqcdn.com/utag/cbsi/tvguidesite/prod/utag.js';
+
+						window.$tvg.loggedIn = false;
+			window.$tvg.user = null;
+			window.$tvg.watchlistItems = { };
+			window.$tvg.checkinItems = [];
+			
+
+			window.$tvg.asyncScriptLoaded = { };
+			window.$tvg.asyncScriptLoadError = { };
+			window.$tvg.asyncScriptDidLoad = function(name) {
+				cbs = window.$tvg.asyncScriptLoaded[name] || null
+				window.$tvg.asyncScriptLoaded[name] = { "push": function(cb) { cb(); } };
+				if(cbs) cbs.forEach(function(cb) { try { cb(); } catch(e) { } });
+			};
+
+			window.$tvg.asyncScriptNotify = function(name, cb) {
+				(window.$tvg.asyncScriptLoaded[name] = window.$tvg.asyncScriptLoaded[name] || [ ]).push(cb);
+			};
+
+			window.$tvg.asyncScriptDidNotLoad = function(name) {
+				cbs = window.$tvg.asyncScriptLoadError[name] || null
+				window.$tvg.asyncScriptLoadError[name] = { "push": function(cb) { cb(); } };
+				if(cbs) cbs.forEach(function(cb) { try { cb(); } catch(e) { } });
+			};
+
+			window.$tvg.asyncScriptNotifyLoadError = function(name, cb) {
+				(window.$tvg.asyncScriptLoadError[name] = window.$tvg.asyncScriptLoadError[name] || [ ]).push(cb);
+			};
+
+			window.$tvg.asyncScript = function(src, forceSSL, name) {
+				var script = document.createElement("script");
+				script.async = true;
+				script.type = 'text/javascript';
+
+				var useSSL = forceSSL || 'https:' == document.location.protocol;
+				script.src = (useSSL ? 'https' : 'http') + '://' + src;
+
+				if(name) {
+					if(script.readyState) {
+						script.onreadystatechange = function () {
+							if(script.readyState == "loaded" || script.readyState == "complete") {
+								script.onreadystatechange = null;
+								$tvg.asyncScriptDidLoad(name);
+							}
+						};
+					} else {
+						script.onload = function () { $tvg.asyncScriptDidLoad(name); };
+						script.onerror = function () { $tvg.asyncScriptDidNotLoad(name); };
+					}
+				}
+
+				var node = document.getElementsByTagName('script')[0];
+				node.parentNode.insertBefore(script, node);
+			};
+
+			window.$tvg.addScript = function(src, attrs) {
+				var script = document.createElement("script");
+				script.type = 'text/javascript';
+				script.async = true;
+				if(!!attrs) {
+					for (var k in attrs) {
+						if (attrs.hasOwnProperty(k)) {
+							script.setAttribute(k, attrs[k]);
+						}
+					}
+				}
+				script.src = src;
+				document.body.appendChild(script);
+			}
+
+			var googletag = googletag || {};
+			googletag.cmd = googletag.cmd || [];
+
+			googletag.CBSigetCookieValue = function(ckNm) {
+				var value = null;
+				var allCookies = document.cookie;
+				var pos = allCookies.indexOf(ckNm);
+				if (pos != -1) {
+					var start = pos + ckNm.length + 1;
+					var end = allCookies.indexOf(";", start);
+					if (end == -1) end = allCookies.length;
+					value = allCookies.substring(start, end);
+				}
+				return value;
+			};
+
+			// determine if it's DST in the Eastern Timezone on the given date
+			googletag.CBSiisEDT = function(dt) {
+				// EDT starts second Sunday of March
+				var edtStart = new Date(dt.getFullYear(), 2, 1);
+				edtStart = Date.UTC(edtStart.getUTCFullYear(), 2, 14-(edtStart.getUTCDay()+13)%7, 5);
+				// EDT ends first Sunday of November
+				var edtEnd = new Date(dt.getFullYear(), 10, 1);
+				edtEnd = Date.UTC(edtEnd.getUTCFullYear(), 10, 7-(edtEnd.getUTCDay()+6)%7, 4);
+				// see if current date is within the EDT range
+				return dt.getTime() >= edtStart && dt.getTime() < edtEnd;
+			};
+
+			googletag.CBSiaddPageView = function () {
+				var pv=1;
+				var cookiename="pv";
+				//If there's a cookie, get the current value and add one to it.
+				if (document.cookie.indexOf(cookiename)!=-1) {
+					pv=parseInt(googletag.CBSigetCookieValue(cookiename));
+					if(isNaN(pv))
+					{  pv=1;
+					} else {
+						pv+=1;
+					}
+				}
+				// set expiration to midnight using EDT or EST offset (4|5)
+				var dt = new Date();
+				var exp = Date.UTC(dt.getUTCFullYear(), dt.getUTCMonth(), dt.getUTCDate(), googletag.CBSiisEDT(dt) ? 4 : 5);
+				// adjust 1 day if set to midnight of previous day
+				exp += exp > dt.getTime() ? 0 : 24*60*60*1000;
+				exp = new Date(exp).toUTCString();
+				// get L2 domain
+				var domainArr = document.domain.split('.').reverse();
+				var l2domain=document.domain;
+				if(domainArr[1]!=null)
+				{   l2domain = domainArr[1] + "." + domainArr[0];
+				}
+
+				// save the value in the cookie
+				document.cookie = cookiename + "=" + pv + ";path=/;domain=" + l2domain + ";expires=" + exp;
+				//update the value for the next ad call
+				googletag.pubads().setTargeting("pv",""+pv);
+			};
+
+			window.googletag = window.googletag || {};
+			window.googletag.cmd = window.googletag.cmd || [];
+
+			window.indexExchangeEnabled = true;
+
+			window.addEventListener(window.GDPR_CONSENT_EVENT, function (e) {
+				if(e.detail === true) {
+										
+					if(window.indexExchangeEnabled) {
+						window.indexLoaded = function() {
+							window.loadDFP();
+						};
+
+						window.dfpLoaded = false;
+						window.loadDFP = function() {
+							if(!window.dfpLoaded) {
+								window.dfpLoaded = true;
+								window.$tvg.asyncScript('www.googletagservices.com/tag/js/gpt.js');
+							}
+						};
+
+						window.$tvg.asyncScript('js-sec.indexww.com/ht/ls-tvguide.js', false, 'index-exchange-proximic');
+						window.$tvg.asyncScriptNotify('index-exchange-proximic', function() {
+							window.indexLoaded();
+						});
+						window.$tvg.asyncScriptNotifyLoadError('index-exchange-proximic', function() {
+							window.indexLoaded();
+						});
+					} else {
+						window.$tvg.asyncScript('js-sec.indexww.com/ht/ls-tvguide.js', false, 'index-exchange-proximic');
+						window.$tvg.asyncScriptNotify('index-exchange-proximic', function() {
+							window.$tvg.asyncScript('www.googletagservices.com/tag/js/gpt.js');
+						});
+					}
+
+					// Load Moat Yield Intelligence
+					window.$tvg.asyncScript('z.moatads.com/cbsprebidheader506831276743/yi.js');
+
+					protocol = ('https:' == document.location.protocol)?'https:':'http:';
+
+					// bug-snag
+											window.$tvg.addScript(protocol + '//d2wy8f7a9ursnm.cloudfront.net/bugsnag-2.min.js', { 'data-apikey' : 'f9cdc58fb369d58d321e25a62d94e5a9' });
+						window.Bugsnag = window.Bugsnag || {};
+													Bugsnag.releaseStage = "production";
+											
+					// sonobi-lib
+					window.$tvg.addScript(protocol + '//mtrx.go.sonobi.com/morpheus.cbsi.media.1655.js');
+					// google ima
+					window.$tvg.addScript(protocol + '//imasdk.googleapis.com/js/sdkloader/ima3.js');
+
+											// chartbeat
+						window.$tvg.addScript(protocol + '//static.chartbeat.com/js/chartbeat_mab.js');
+										// sharethrough
+					window.$tvg.addScript(protocol + '//native.sharethrough.com/assets/tag.js');
+					// amazon onelink
+					window.$tvg.addScript(protocol + '//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&adInstanceId=23cf2fa7-c9fd-4908-97de-fbc48a779984');
+
+					// amazon native shopping unit
+					/* this script sometimes has a race condition with above amazon onelink script */
+				    window.amzn_assoc_subtag = window.$tvg.guid;
+				    window.amzn_assoc_div_name="amzn-native-ad";
+				    window.amzn_assoc_rows="1";
+				    window.amzn_assoc_design="standard_grid";
+				    window.amzn_assoc_rating="false";
+					window.$tvg.addScript(protocol + '//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&adInstanceId=6915f664-2aa2-493d-b67d-f5cda57263bf');
+
+					// Facebook pixel
+					!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function()
+					{n.callMethod? n.callMethod.apply(n,arguments):n.queue.push(arguments)}
+					;if(!f._fbq)f._fbq=n;
+					n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+					t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+					document,'script','https://connect.facebook.net/en_US/fbevents.js');
+					fbq('init', '302133323585329'); // Insert your pixel ID here.
+					fbq('track', 'PageView');
+				};
+			});
+
+			//Chartbeat code implementation
+			var _sf_async_config = _sf_async_config || {};
+			/** CONFIGURATION START **/
+			_sf_async_config.uid = (window.utag_data['pageType'] == 'article' || window.utag_data['pageType'] == 'feature_article') ? 65713 : 25571; // ACCOUNT NUMBER
+			_sf_async_config.domain = 'tvguide.com'; // DOMAIN
+			_sf_async_config.flickerControl = false;
+			_sf_async_config.useCanonical = true;
+			_sf_async_config.useCanonicalDomain = true;
+			/** CONFIGURATION END **/
+			var _sf_startpt = (new Date()).getTime();
+		</script>
+
+							
+	<script type="text/javascript">
+		window.$tvg.videos = window.$tvg.videos || { };
+								window.$tvg.videos['71d751da-09c6-41e0-b375-184313e8d3af'] = {"id":"71d751da-09c6-41e0-b375-184313e8d3af","title":"Watch This Now &ndash; May 20-26, 2019","slug":"watch-this-now-may-20-26-2019-dcs-legends-of-tomorrow-the-voice-ransom","stripped_title":"Watch This Now &ndash; May 20-26, 2019","files":[],"dek":null,"date":null,"duration":"00:00","image":"https://cimg.tvgcdn.net/i/2019/04/09/2d1164fe-fe74-47e8-9b76-72bcca4c58ea/0a095644d669cf4c74b9265b99bac271/190409-thevoice-news.jpg","url":"https://www.tvguide.com/videos/todays-top-videos/play/watch-this-now-may-20-26-2019-dcs-legends-of-tomorrow-the-voice-ransom/","embed":"https://www.tvguide.com/videos/embed/watch-this-now-may-20-26-2019-dcs-legends-of-tomorrow-the-voice-ransom/"};
+				window.$tvg.uvpConfig = {"modules":[{"name":"AdSettings","category":"model","enabled":true,"params":[{"name":"adCallOverride","value":""}]},{"name":"CNetTracking","category":"tracking","enabled":true,"params":[{"name":"host","value":"https://dw.cbsi.com/levt/video/e.gif?"},{"name":"siteid","value":"432"},{"name":"medastid","value":""}]},{"name":"SiteCatalyst","category":"qos","enabled":true,"params":[{"name":"account","value":"cbsitvguidesite"},{"name":"brand","value":"TV Guide"},{"name":"edition","value":"us"},{"name":"siteType","value":"responsive web"},{"name":"siteCode","value":"tvguide"},{"name":"partnerID","value":"tvguide"},{"name":"charSet","value":"UTF-8"},{"name":"currencyCode","value":"USD"},{"name":"visitorNamespace","value":"cbsinteractive"},{"name":"trackingServer","value":"aa.cbsi.com"},{"name":"heartbeatVisitorMarketingCloudOrgId","value":"10D31225525FF5790A490D4D@AdobeOrg"},{"name":"heartbeatVisitorNamespace","value":"10D31225525FF5790A490D4D@AdobeOrg"},{"name":"heartbeatTrackingServer","value":"cbsinteractive.hb.omtrdc.net"},{"name":"heartbeatAdobePublisherId","value":"10D31225525FF5790A490D4D@AdobeOrg"}]},{"name":"NielsenTracking_SDK","category":"tracking","enabled":true,"params":[{"name":"apid","value":"PF7B87067-BF4D-F80F-E040-070AAD316CE6"},{"name":"clientid","value":"us-200330"},{"name":"sfcode","value":"us"},{"name":"vcid","value":"c01"},{"name":"channelInfo","value":"TV Guide"},{"name":"iag_sid","value":"1000011"},{"name":"iag_tfid","value":"902"}]},{"name":"NielsenTracking","category":"tracking","enabled":true,"params":[{"name":"scCI","value":"us-200330"},{"name":"scC6","value":"vc,c01"}]},{"name":"GlanceGuide","category":"tracking","enabled":true,"params":[{"name":"","value":""}]},{"name":"ComScore_ss","category":"qos","enabled":true,"params":[{"name":"partnerID","value":"tvguide"},{"name":"c2","value":"3005086"},{"name":"publishersSecret","value":"2cb08ca4d095dd734a374dff8422c2e5"},{"name":"c3","value":""},{"name":"c4","value":"tvguide"}]},{"name":"ComScore_ss","category":"qos","enabled":true,"params":[{"name":"partnerID","value":"tvguide"},{"name":"c2","value":"3005086"},{"name":"publishersSecret","value":"2cb08ca4d095dd734a374dff8422c2e5"},{"name":"c3","value":""},{"name":"c4","value":"tvguide"}]},{"name":"ComScoreTracking","category":"tracking","enabled":true,"params":[{"name":"c2","value":"C2=3005567"},{"name":"c3","value":"C3="},{"name":"c4","value":"C4="}]},{"name":"ConvivaQOSPlugin","category":"qos","enabled":true,"params":[{"name":"customerid","value":"c3.CBS-Partners"},{"name":"serviceurl","value":"http://livepass.conviva.com"}]},{"name":"ClosedCaptions","category":"plugin","enabled":true,"params":[{"name":"fontSize","value":"20"},{"name":"fontColor","value":"#CCCCCC"},{"name":"fontFamily","value":"Arial"},{"name":"textDecoration","value":"none"},{"name":"fontWeight","value":"bold"},{"name":"textAlign","value":"center"},{"name":"loadByDefault","value":"false"},{"name":"backgroundColor","value":"#000000"},{"name":"backgroundOpacity","value":"80"},{"name":"backgroundDisplayStyle","value":"auto","alt":"auto or fixed"},{"name":"backgroundDisplayWidth","value":"auto","alt":"auto or fixed"},{"name":"xPosition","value":"center"},{"name":"yPosition","value":"bottom"},{"name":"margin","value":"10"},{"name":"padding","value":"8"},{"name":"allowInlineXMLStyleOverride","value":"false"}]},{"name":"UVPMessenger","category":"internal","enabled":true,"params":[{"name":"ADP_basic","value":"n"},{"name":"ADP_xml_parser","value":"n"},{"name":"ADP_rsrcVO_dump","value":"n"},{"name":"ADP_resources","value":"n"},{"name":"ADP_VO_evnts_trk","value":"n"},{"name":"CBSi_Freewheel_PlugIn","value":"n"},{"name":"CBSI_IMA_PlugIn","value":"y"},{"name":"UVP_tracking","value":"n"},{"name":"UVP - Model","value":"y"},{"name":"CAN - Model","value":"y"},{"name":"Controller","value":"y"},{"name":"UVP - View","value":"y"},{"name":"Main","value":"y"},{"name":"QOS","value":"y"}]}],"classes":[{"name":"VideoSourceManager","className":"com.cbs.can.model.VideoSourceManager","properties":[{"name":"liveStreamToken","value":"masters_"},{"name":"geoDetectionURL","value":"http://videocgi.drt.cbsig.net/video/geo/c2i.pl"},{"name":"videoSourceClassName","value":"com.cbs.can.model.PlatformMPXVideoSource"}],"list":[{"id":"Platform","className":"com.cbs.can.model.PlatformVideoSource","properties":[{"name":"PlayListURL","value":"http://release.theplatform.com/content.select?format=SMIL&amp;Tracking=true&amp;balance=true&amp;MBR=true&amp;pid="},{"name":"MultiBitrateURL","value":"http://release.theplatform.com/content.select?format=SMIL&amp;Tracking=true&amp;balance=true&amp;MBR=true&amp;pid="},{"name":"ThumbnailURL","value":"http://cbs.feeds.theplatform.com/ps/API/PortalService/1.6/getReleaseList?PID=GIIJWbEj_zj6weINzALPyoHte4KLYNmp&amp;field=thumbnailURL&amp;field=title&amp;query=PIDs|"},{"name":"GeoMessage","value":"You are not in a geographic region that has access to this content."},{"name":"XMLHandler","value":"com.cbs.can.model.Platform"}]},{"id":"Platform_MPX","className":"com.cbs.can.model.PlatformMPXVideoSource","properties":[{"name":"PlayListURL","value":"http://link.theplatform.com/s/VcbhCC/$PID$/meta.smil?format=smil&amp;Tracking=true"},{"name":"MultiBitrateURL","value":"http://link.theplatform.com/s/kYEXFC/$PID$?format=SMIL&amp;manifest=m3u&amp;Tracking=true&amp;mbr=true"},{"name":"ThumbnailURL","value":"http://link.theplatform.com/s/kYEXFC/$PID$?format=preview"},{"name":"GeoMessage","value":"This content is not available in your location."},{"name":"XMLHandler","value":"com.cbs.can.model.Platform_MPX"}]}]}],"ad-calls":{"tvg-iva":{"home":{"mobile":"https://pubads.g.doubleclick.net/gampad/ads?sz=640x480&iu=/8264/vaw-tvguide/mobile_web&impl=s&gdfp_req=1&env=vp&output=xml_vmap1&unviewed_position_start=1&url=[referrer_url]&description_url=[description_url]&correlator=[timestamp]&nofb=1&cust_params=ptype%3Dbest-lists%26partner%3Dtvguide%26show%3D%26sitesection%3Dbest-lists%26personid%3D%26movieId%3D[movieid]%26vguid%3Dacbc8183-5c84-4da7-83be-48024e6b6ed1%26pv%3D[pv_count]%26feat%3Diva%2Ctvg_hp%26session%3D[session]%26subses%3D[subses]","desktop":"https://pubads.g.doubleclick.net/gampad/ads?sz=640x480&iu=/8264/vaw-tvguide/desktop&impl=s&gdfp_req=1&env=vp&output=xml_vmap1&unviewed_position_start=1&url=[referrer_url]&description_url=[description_url]&correlator=[timestamp]&nofb=1&cust_params=ptype%3Dbest-lists%26partner%3Dtvguide%26show%3D%26sitesection%3Dbest-lists%26personid%3D%26movieid%3D%26vguid%3Dacbc8183-5c84-4da7-83be-48024e6b6ed1%26pv%3D[pv_count]%26feat%3Diva%2Ctvg_hp%26session%3D[session]%26subses%3D[subses]"},"listings":{"mobile":"https://pubads.g.doubleclick.net/gampad/ads?sz=640x480&iu=/8264/vaw-tvguide/mobile_web&impl=s&gdfp_req=1&env=vp&output=xml_vmap1&unviewed_position_start=1&url=[referrer_url]&description_url=[description_url]&correlator=[timestamp]&nofb=1&cust_params=ptype%3Dbest-lists%26partner%3Dtvguide%26show%3D%26sitesection%3Dbest-lists%26personid%3D%26movieid%3D%26vguid%3Dacbc8183-5c84-4da7-83be-48024e6b6ed1%26pv%3D[pv_count]%26feat%3Diva%2Ctvg_listing%26session%3D[session]%26subses%3D[subses]","desktop":"https://pubads.g.doubleclick.net/gampad/ads?sz=640x480&iu=/8264/vaw-tvguide/desktop&impl=s&gdfp_req=1&env=vp&output=xml_vmap1&unviewed_position_start=1&url=[referrer_url]&description_url=[description_url]&correlator=[timestamp]&nofb=1&cust_params=ptype%3Dbest-lists%26partner%3Dtvguide%26show%3D%26siteSection%3Dbest-lists%26personId%3D%26movieId%3D%26vguid%3Dacbc8183-5c84-4da7-83be-48024e6b6ed1%26pv%3D[pv_count]%26feat%3Diva%2Ctvg_listing%26session%3D[session]%26subses%3D[subses]"},"default":{"mobile":"https://pubads.g.doubleclick.net/gampad/ads?sz=640x480&iu=/8264/vaw-tvguide/mobile_web&impl=s&gdfp_req=1&env=vp&output=xml_vast2&unviewed_position_start=1&url=[referrer_url]&description_url=[description_url]&correlator=[timestamp]&nofb=1&cust_params=ptype%3Dbest-lists%26partner%3Dtvguide%26show%3D%26sitesection%3Dbest-lists%26personid%3D%26movieid%3D%26vguid%3Dacbc8183-5c84-4da7-83be-48024e6b6ed1%26pv%3D[pv_count]%26feat%3Diva%26session%3D[session]%26subses%3D[subses]%26network%3D","desktop":"https://pubads.g.doubleclick.net/gampad/ads?sz=640x480&iu=/8264/vaw-tvguide/desktop&impl=s&gdfp_req=1&env=vp&output=xml_vast2&unviewed_position_start=1&url=[referrer_url]&description_url=[description_url]&correlator=[timestamp]&nofb=1&cust_params=ptype%3Dbest-lists%26partner%3Dtvguide%26show%3D%26sitesection%3Dbest-lists%26personid%3D%26movieid%3D%26vguid%3Dacbc8183-5c84-4da7-83be-48024e6b6ed1%26pv%3D[pv_count]%26feat%3Diva%26session%3D[session]%26subses%3D[subses]%26network%3D"}},"tvc-iva":{"default":{"mobile":"https://pubads.g.doubleclick.net/gampad/ads?sz=640x480&iu=/8264/vaw-tv/mobile_web&impl=s&gdfp_req=1&env=vp&output=xml_vmap1&unviewed_position_start=1&url=[referrer_url]&description_url=[description_url]&correlator=[timestamp]&nofb=1&cust_params=ptype%3Dbest-lists%26partner%3Dtvguide%26show%3D%26sitesection%3Dbest-lists%26personid%3D%26movieid%3D%26vguid%3Dacbc8183-5c84-4da7-83be-48024e6b6ed1%26pv%3D[pv_count]%26feat%3Diva%26nofb%3D1%26session%3D[session]%26subses%3D[subses]","desktop":"https://pubads.g.doubleclick.net/gampad/ads?sz=640x480&iu=/8264/vaw-tv/desktop&impl=s&gdfp_req=1&env=vp&output=xml_vmap1&unviewed_position_start=1&url=[referrer_url]&description_url=[description_url]&correlator=[timestamp]&nofb=1&cust_params=ptype%3Dbest-lists%26partner%3Dtvguide%26show%3D%26sitesection%3Dbest-lists%26personid%3D%26movieid%3D%26vguid%3Dacbc8183-5c84-4da7-83be-48024e6b6ed1%26pv%3D[pv_count]%26feat%3Diva%26session%3D[session]%26subses%3D[subses]"}},"tvg-iba":{"autodetect":{"mobile":"https://pubads.g.doubleclick.net/gampad/ads?sz=640x480&iu=/8264/vaw-tvguide/mobile_web&impl=s&gdfp_req=1&env=vp&output=xml_vmap1&unviewed_position_start=1&url=[referrer_url]&description_url=[description_url]&correlator=[timestamp]&cmsid=2289&vid={mediaReferenceId}&cust_params=ptype%3Dbest-lists%26partner%3Dtvguide%26show%3D%26sitesection%3Dbest-lists%26personid%3D%26movieid%3D%26vguid%3Dacbc8183-5c84-4da7-83be-48024e6b6ed1%26pv%3D[pv_count]%26pname%3D[pname]%26cid%3D[cid]%26session%3D[session]%26subses%3D[subses]%26network%3D","desktop":"https://pubads.g.doubleclick.net/gampad/ads?sz=640x480&iu=/8264/vaw-tvguide/desktop&impl=s&gdfp_req=1&env=vp&output=xml_vmap1&unviewed_position_start=1&url=[referrer_url]&description_url=[description_url]&correlator=[timestamp]&cmsid=2289&vid={mediaReferenceId}&cust_params=ptype%3Dbest-lists%26partner%3Dtvguide%26show%3D%26sitesection%3Dbest-lists%26personid%3D%26movieid%3D%26vguid%3Dacbc8183-5c84-4da7-83be-48024e6b6ed1%26pv%3D[pv_count]%26pname%3D[pname]%26cid%3D[cid]%26session%3D[session]%26subses%3D[subses]%26network%3D"},"default":{"mobile":"https://pubads.g.doubleclick.net/gampad/ads?sz=640x480&iu=/8264/vaw-tvguide/mobile_web&impl=s&gdfp_req=1&env=vp&output=xml_vmap1&unviewed_position_start=1&url=[referrer_url]&description_url=[description_url]&correlator=[timestamp]&cmsid=2289&vid={mediaReferenceId}&cust_params=ptype%3Dbest-lists%26partner%3Dtvguide%26show%3D%26sitesection%3Dbest-lists%26personid%3D%26movieid%3D%26vguid%3Dacbc8183-5c84-4da7-83be-48024e6b6ed1%26pv%3D[pv_count]%26session%3D[session]%26subses%3D[subses]%26feat%3D[feat]%26network%3D","desktop":"https://pubads.g.doubleclick.net/gampad/ads?sz=640x480&iu=/8264/vaw-tvguide/desktop&impl=s&gdfp_req=1&env=vp&output=xml_vmap1&unviewed_position_start=1&url=[referrer_url]&description_url=[description_url]&correlator=[timestamp]&cmsid=2289&vid={mediaReferenceId}&cust_params=ptype%3Dbest-lists%26partner%3Dtvguide%26show%3D%26sitesection%3Dbest-lists%26personid%3D%26movieid%3D%26vguid%3Dacbc8183-5c84-4da7-83be-48024e6b6ed1%26pv%3D[pv_count]%26session%3D[session]%26subses%3D[subses]%26feat%3D[feat]%26network%3D"}},"tvc-iba":{"default":{"mobile":"https://pubads.g.doubleclick.net/gampad/ads?sz=640x480&iu=/8264/vaw-tv/mobile_web&impl=s&gdfp_req=1&env=vp&output=xml_vmap1&unviewed_position_start=1&url=[referrer_url]&description_url=[description_url]&correlator=[timestamp]&cmsid=2289&vid={mediaReferenceId}&nofb=1&cust_params=ptype%3Dbest-lists%26partner%3Dtvguide%26show%3D%26sitesection%3Dbest-lists%26personid%3D%26movieid%3D%26vguid%3Dacbc8183-5c84-4da7-83be-48024e6b6ed1%26pv%3D[pv_count]%26session%3D[session]%26subses%3D[subses]","desktop":"https://pubads.g.doubleclick.net/gampad/ads?sz=640x480&iu=/8264/vaw-tv/desktop&impl=s&gdfp_req=1&env=vp&output=xml_vmap1&unviewed_position_start=1&url=[referrer_url]&description_url=[description_url]&correlator=[timestamp]&cmsid=2289&vid={mediaReferenceId}&cust_params=ptype%3Dbest-lists%26partner%3Dtvguide%26show%3D%26sitesection%3Dbest-lists%26personid%3D%26movieid%3D%26vguid%3Dacbc8183-5c84-4da7-83be-48024e6b6ed1%26pv%3D[pv_count]%26session%3D[session]%26subses%3D[subses]"}}}};
+	</script>
+		<style>
+			html { display:none; }
+		</style>
+		<script>
+			if (self == top) {
+				document.documentElement.style.display = 'block';
+			} else {
+				top.location = self.location;
+			}
+		</script>
+	</head>
+	<body class="no-skin-takeover no-skin-takeover-narrow streaming-special">
+		<noscript>
+			<style>
+				html { display:block; }
+			</style>
+		</noscript>
+		<div id="wrap">
+            <div  class="nav_ad skybox-closeBtn ad-dfp" data-placement="layout.nav_ad" data-config-id="nav_ad" data-ad-type="dfp"></div>							<div id="header"  data-section-id="header">
+	<div class="header-wrap">
+		<div class="header-brand" data-section-id="logo">
+			<a href="https://www.tvguide.com/" class="header-brand-link"><svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 60 60" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <defs>
+      <polygon id="a" points="0 0 60 0 60 60 0 60"/>
+    </defs>
+    <g fill="none" fill-rule="evenodd">
+      <rect width="55" height="50" x="2" y="4" fill="#FFFFFF"/>
+      <mask id="b" fill="white">
+        <use xlink:href="#a"/>
+      </mask>
+      <path fill="#EC1C24" d="M44.1642083,33.5814583 L35.1162917,33.5814583 L26.9854583,11.478125 L26.9854583,16.0464583 L20.644625,16.0464583 L20.644625,33.5814583 L13.4492083,33.5814583 L13.4492083,16.0464583 L7.07295833,16.0464583 L7.07295833,9.760625 L34.510875,9.760625 L39.6404583,25.795625 L44.7700417,9.760625 L52.927125,9.760625 L44.1642083,33.5814583 Z M52.927125,41.4972917 L47.7287917,41.4972917 L47.7287917,43.7185417 L52.8167083,43.7185417 L52.8167083,45.6872917 L47.7287917,45.6872917 L47.7287917,48.0660417 L52.927125,48.0660417 L52.927125,50.0347917 L45.492125,50.0347917 L45.492125,39.528125 L52.927125,39.528125 L52.927125,41.4972917 Z M38.5017083,50.0347917 L34.3592083,50.0347917 L34.3592083,39.528125 L38.5017083,39.528125 C41.7942083,39.528125 44.0779583,41.623125 44.0779583,44.789375 C44.0779583,47.955625 41.7942083,50.0347917 38.5017083,50.0347917 Z M30.1687917,50.0347917 L32.405875,50.0347917 L32.405875,39.528125 L30.1687917,39.528125 L30.1687917,50.0347917 Z M28.2179583,45.829375 C28.2179583,48.4439583 26.6742083,50.2239583 23.4767083,50.2239583 C20.2787917,50.2239583 18.7354583,48.428125 18.7354583,45.8447917 L18.7354583,39.528125 L21.0037917,39.528125 L21.0037917,45.7660417 C21.0037917,47.2310417 21.8542083,48.239375 23.4767083,48.239375 C25.0992083,48.239375 25.9337917,47.2310417 25.9337917,45.7660417 L25.9337917,39.528125 L28.2179583,39.528125 L28.2179583,45.829375 Z M17.138375,48.2547917 C16.0675417,49.4522917 14.570875,50.2397917 12.6650417,50.2397917 C9.593375,50.2397917 7.07295833,48.0972917 7.07295833,44.789375 C7.07295833,41.4660417 9.593375,39.3552083 12.6650417,39.3552083 C14.854625,39.3552083 16.224625,40.4577083 17.0125417,41.701875 L15.1537917,42.7102083 C14.6812917,41.9697917 13.783375,41.3397917 12.6650417,41.3397917 C10.7592083,41.3397917 9.37254167,42.8047917 9.37254167,44.789375 C9.37254167,46.774375 10.7592083,48.239375 12.6650417,48.239375 C13.5942083,48.239375 14.4762917,47.829375 14.9017083,47.4360417 L14.9017083,46.175625 L12.1292083,46.175625 L12.1292083,44.2227083 L17.138375,44.2227083 L17.138375,48.2547917 Z M54.0000417,-0.000208333333 L6.00004167,-0.000208333333 C2.69170833,-0.000208333333 4.16666667e-05,2.69145833 4.16666667e-05,5.99979167 L4.16666667e-05,53.9997917 C4.16666667e-05,57.3085417 2.69170833,59.9997917 6.00004167,59.9997917 L54.0000417,59.9997917 C57.308375,59.9997917 60.0000417,57.3085417 60.0000417,53.9997917 L60.0000417,5.99979167 C60.0000417,2.69145833 57.308375,-0.000208333333 54.0000417,-0.000208333333 Z" mask="url(#b)"/>
+      <path fill="#EC1C24" d="M38.5017917,41.4972917 L36.5959583,41.4972917 L36.5959583,48.0660417 L38.5017917,48.0660417 C40.5809583,48.0660417 41.793875,46.569375 41.793875,44.789375 C41.793875,42.930625 40.660125,41.4972917 38.5017917,41.4972917"/>
+    </g>
+  </svg></a>
+		</div>
+		<div class="header-search" data-section-id="search">
+			<form action="https://www.tvguide.com/search/" method="GET" target="_blank" class="header-search-form-tab hidden">
+				<input type="submit" value="submit">
+			</form>
+			<form class="header-search-form" action="https://www.tvguide.com/search/" method="get">
+				<input class="header-search-input" placeholder="Search TV Guide here&#33;" autocomplete="off" name="keyword" type="text" value="">
+				<button type="submit" class="tvg-button header-search-icon"><span class="fa fa-search"></span></button>
+			</form>
+			<div class="header-autocomplete" id="header-autocomplete"></div>
+		</div>
+		<ul class="header-items"  data-section-id="navigation">
+			<li class="header-item header-item-auth header-item-first hidden-xs">
+									<a  id="header-item-signin" class="header-item-link header-item-auth-link" href="https://www.tvguide.com/signin/"><span class="hidden-sm">Sign In / Up </span><span class="fa fa-user header-item-auth-icon"></span></a>
+							</li>
+									<li class="header-item header-item-first">
+		<a href="https://www.tvguide.com/listings/" class="header-item-link">What's On</a>
+		<span class="header-item-submenu-separator"></span>
+<span class="header-item-submenu header-item-submenu-rows-7">
+			<span class="header-item-submenu-accessory-background"></span>
+	
+						<ul class="header-item-submenu-col header-item-submenu-items">
+									<li class="header-item-submenu-item">
+						<a  class="header-link" href="https://www.tvguide.com/listings/">TV Listings</a>
+						<span class="header-item-accessory"><span class="fa fa-chevron-right"></span></span>
+					</li>
+									<li class="header-item-submenu-item">
+						<a  class="header-link" href="https://www.tvguide.com/watch-this-now/">Watch This Now!</a>
+						<span class="header-item-accessory"><span class="fa fa-chevron-right"></span></span>
+					</li>
+									<li class="header-item-submenu-item">
+						<a  class="header-link" href="https://www.tvguide.com/tv-premiere-dates/">TV Premiere Dates</a>
+						<span class="header-item-accessory"><span class="fa fa-chevron-right"></span></span>
+					</li>
+									<li class="header-item-submenu-item">
+						<a  class="header-link" href="https://www.tvguide.com/new-tonight/">New Tonight</a>
+						<span class="header-item-accessory"><span class="fa fa-chevron-right"></span></span>
+					</li>
+									<li class="header-item-submenu-item">
+						<a  class="header-link" href="https://www.tvguide.com/streaming/">What to Stream</a>
+						<span class="header-item-accessory"><span class="fa fa-chevron-right"></span></span>
+					</li>
+									<li class="header-item-submenu-item">
+						<a  class="header-link" href="https://www.tvguide.com/news/we-rank-the-100-best-shows-right-now/">100 Best Shows</a>
+						<span class="header-item-accessory"><span class="fa fa-chevron-right"></span></span>
+					</li>
+									<li class="header-item-submenu-item">
+						<a  class="header-link" href="https://www.tvguide.com/sports/live-today/">Today's Live Sports</a>
+						<span class="header-item-accessory"><span class="fa fa-chevron-right"></span></span>
+					</li>
+								</ul>
+					<ul class="header-item-submenu-col header-item-submenu-items">
+									<li class="header-item-submenu-item">
+						<a  class="header-link" href="https://www.tvguide.com/sports/listings/">Sports Listings</a>
+						<span class="header-item-accessory"><span class="fa fa-chevron-right"></span></span>
+					</li>
+									<li class="header-item-submenu-item">
+						<a  class="header-link" href="https://www.tvguide.com/sports/nfl/">NFL Schedule</a>
+						<span class="header-item-accessory"><span class="fa fa-chevron-right"></span></span>
+					</li>
+									<li class="header-item-submenu-item">
+						<a  class="header-link" href="https://www.tvguide.com/sports/nhl/">NHL Schedule</a>
+						<span class="header-item-accessory"><span class="fa fa-chevron-right"></span></span>
+					</li>
+									<li class="header-item-submenu-item">
+						<a  class="header-link" href="https://www.tvguide.com/sports/baseball/">MLB Schedule</a>
+						<span class="header-item-accessory"><span class="fa fa-chevron-right"></span></span>
+					</li>
+									<li class="header-item-submenu-item">
+						<a  class="header-link" href="https://www.tvguide.com/sports/nba/">NBA Schedule</a>
+						<span class="header-item-accessory"><span class="fa fa-chevron-right"></span></span>
+					</li>
+									<li class="header-item-submenu-item">
+						<a  class="header-link" href="https://www.tvguide.com/movies/listings/">Movies Listings</a>
+						<span class="header-item-accessory"><span class="fa fa-chevron-right"></span></span>
+					</li>
+								</ul>
+			
+			<span class="header-item-submenu-col header-item-submenu-accessory">
+							<h2 class="section-header" data-section-id="section-header"><span class="section-header-text"><span class="section-header-accented-text"  data-section-id="section-header">Watch</span> This</span></h2>
+	
+	<a href="https://www.tvguide.com/videos/todays-top-videos/play/watch-this-now-may-20-26-2019-dcs-legends-of-tomorrow-the-voice-ransom/" class="header-item-submenu-accessory-thumbnail">
+					<img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="https://cimg.tvgcdn.net/i/r/2019/04/09/2d1164fe-fe74-47e8-9b76-72bcca4c58ea/resize/200x133/c492d6ce177905fa047d8408b97cd603/190409-thevoice-news.jpg|https://cimg.tvgcdn.net/i/r/2019/04/09/2d1164fe-fe74-47e8-9b76-72bcca4c58ea/resize/400x266/ce25dc4732aea0a6710d68612aca2f51/190409-thevoice-news.jpg|https://cimg.tvgcdn.net/i/r/2019/04/09/2d1164fe-fe74-47e8-9b76-72bcca4c58ea/resize/600x399/87f297c38fa4e6c8c546d8df0b6d5ce7/190409-thevoice-news.jpg" class="header-item-submenu-accessory-thumbnail-img b-lazy" alt="John Legend, &lt;em&gt;The Voice&lt;/em&gt;" width="200" height="133" title="John Legend, The Voice" data-amp-src="https://cimg.tvgcdn.net/i/r/2019/04/09/2d1164fe-fe74-47e8-9b76-72bcca4c58ea/resize/200x133/c492d6ce177905fa047d8408b97cd603/190409-thevoice-news.jpg" />
+		
+		<span class="thumbnail-media-icon thumbnail-media-icon-sm thumbnail-media-icon-video"><span class="fa fa-fw fa-play"></span></span>	</a>
+
+		
+			<h6 class="header-item-submenu-accessory-subtitle">Watch This Now &ndash; May 20-26, 2019</h6>
+	
+			<p class="header-item-submenu-accessory-body">Why you should watch The Voice, Elementary and more!</p>
+						</span>
+	</span>
+
+<span class="header-item-submenu-more">
+	<a href="#" onclick="return window.$tvg.navigation.expand(this)" class="header-item-submenu-more-link">More&nbsp;&nbsp;<span class="header-item-submenu-more-icon fa fa-chevron-down"></span></a>
+</span>	</li>
+		<li class="header-item">
+		<a href="https://www.tvguide.com/watchlist/" class="header-item-link">Watchlist</a>
+		<span class="header-item-submenu-separator"></span>
+<span class="header-item-submenu header-item-submenu-rows-3">
+	
+						<ul class="header-item-submenu-col header-item-submenu-items">
+									<li class="header-item-submenu-item">
+						<a  class="header-link" href="https://www.tvguide.com/watchlist/">My Watchlist</a>
+						<span class="header-item-accessory"><span class="fa fa-chevron-right"></span></span>
+					</li>
+									<li class="header-item-submenu-item">
+						<a  class="header-link" href="https://www.tvguide.com/news/?filter=watchlist">News</a>
+						<span class="header-item-accessory"><span class="fa fa-chevron-right"></span></span>
+					</li>
+									<li class="header-item-submenu-item">
+						<a  class="header-link" href="https://www.tvguide.com/watchlist/about/">What is a Watchlist?</a>
+						<span class="header-item-accessory"><span class="fa fa-chevron-right"></span></span>
+					</li>
+								</ul>
+			
+	</span>
+
+<span class="header-item-submenu-more">
+	<a href="#" onclick="return window.$tvg.navigation.expand(this)" class="header-item-submenu-more-link">More&nbsp;&nbsp;<span class="header-item-submenu-more-icon fa fa-chevron-down"></span></a>
+</span>	</li>
+		<li class="header-item header-item-last">
+		<a href="https://www.tvguide.com/news/" class="header-item-link">News &amp; Features</a>
+		<span class="header-item-submenu-separator"></span>
+<span class="header-item-submenu header-item-submenu-rows-5">
+	
+						<ul class="header-item-submenu-col header-item-submenu-items">
+									<li class="header-item-submenu-item">
+						<a  class="header-link" href="https://www.tvguide.com/news/">News</a>
+						<span class="header-item-accessory"><span class="fa fa-chevron-right"></span></span>
+					</li>
+									<li class="header-item-submenu-item">
+						<a  class="header-link" href="https://www.tvguide.com/news/winter-tv-2019-new-shows/">Winter TV</a>
+						<span class="header-item-accessory"><span class="fa fa-chevron-right"></span></span>
+					</li>
+									<li class="header-item-submenu-item">
+						<a  class="header-link" href="https://www.tvguide.com/watch-this-now/">Watch This Now!</a>
+						<span class="header-item-accessory"><span class="fa fa-chevron-right"></span></span>
+					</li>
+									<li class="header-item-submenu-item">
+						<a  class="header-link" href="https://www.tvguide.com/tv-premiere-dates/">TV Premiere Dates</a>
+						<span class="header-item-accessory"><span class="fa fa-chevron-right"></span></span>
+					</li>
+									<li class="header-item-submenu-item">
+						<a  class="header-link" href="https://www.tvguide.com/special/golden-globes/">2019 Golden Globe Awards</a>
+						<span class="header-item-accessory"><span class="fa fa-chevron-right"></span></span>
+					</li>
+								</ul>
+					<ul class="header-item-submenu-col header-item-submenu-items">
+									<li class="header-item-submenu-item">
+						<a  class="header-link" href="https://www.tvguide.com/special/oscars/">2019 Academy Awards </a>
+						<span class="header-item-accessory"><span class="fa fa-chevron-right"></span></span>
+					</li>
+									<li class="header-item-submenu-item">
+						<a  class="header-link" href="https://www.tvguide.com/special/emmys/">2018 Emmy Awards </a>
+						<span class="header-item-accessory"><span class="fa fa-chevron-right"></span></span>
+					</li>
+									<li class="header-item-submenu-item">
+						<a  class="header-link" href="https://www.tvguide.com/videos/">TV Guide Original Videos</a>
+						<span class="header-item-accessory"><span class="fa fa-chevron-right"></span></span>
+					</li>
+									<li class="header-item-submenu-item">
+						<a  class="header-link" href="https://www.tvguide.com/galleries/">Photo Galleries</a>
+						<span class="header-item-accessory"><span class="fa fa-chevron-right"></span></span>
+					</li>
+									<li class="header-item-submenu-item">
+						<a  class="header-link" href="https://www.tvguide.com/product-guides/">TV Product Guides</a>
+						<span class="header-item-accessory"><span class="fa fa-chevron-right"></span></span>
+					</li>
+								</ul>
+			
+	</span>
+
+<span class="header-item-submenu-more">
+	<a href="#" onclick="return window.$tvg.navigation.expand(this)" class="header-item-submenu-more-link">More&nbsp;&nbsp;<span class="header-item-submenu-more-icon fa fa-chevron-down"></span></a>
+</span>	</li>
+						</ul>
+
+		<ul class="header-items-xs" data-section-id="navigation">
+			<li class="header-item-xs header-item-xs-first header-item-auth">
+									<a  class="header-item-xs-link header-item-auth-link header-item-auth-xs-link" href="https://www.tvguide.com/signin/"><span class="fa fa-user header-item-auth-icon-xs"></span></a>
+							</li>
+			<li class="header-item-xs header-item-xs-last header-item-xs-menu">
+				<a href="#" onclick="return window.$tvg.navigation.toggle()" class="header-item-xs-link header-item-xs-menu">
+					<span class="header-item-xs-menu-bars">
+						<span class="header-item-xs-menu-bar header-item-xs-menu-bar-top">
+							<span class="header-item-xs-menu-bar-inner header-item-xs-menu-bar-inner-top"></span>
+						</span>
+						<span class="header-item-xs-menu-bar header-item-xs-menu-bar-bottom">
+							<span class="header-item-xs-menu-bar-inner header-item-xs-menu-bar-inner-bottom"></span>
+						</span>
+					</span>
+				</a>
+			</li>
+		</ul>
+
+		<div class="header-social hide">
+			<ul>
+				<li class="header-item header-social-item header-social-item-facebook header-social-item-submenu-disabled">
+					<a href="https://facebook.com/TVGuide" class="header-social-icon">
+						<span class="fa fa-facebook-official"></span>
+					</a>
+
+					<span class="header-item-submenu-separator header-social-item-submenu-separator"></span>
+					<span class="header-item-submenu header-social-item-submenu">
+						<span class="header-item-social-container">
+							<div class="fb-like" data-href="https://facebook.com/TVGuide" data-layout="button_count" data-action="like" data-show-faces="false" data-share="false"></div>
+						</span>
+					</span>
+				</li>
+				<li class="header-item header-social-item header-social-item-twitter header-social-item-submenu-disabled">
+					<a href="https://twitter.com/TVGuide" class="header-social-icon">
+						<span class="fa fa-twitter-square"></span>
+					</a>
+
+					<span class="header-item-submenu-separator header-social-item-submenu-separator"></span>
+					<span class="header-item-submenu header-social-item-submenu">
+						<span class="header-item-social-container">
+						<a href="https://twitter.com/TVGuide" class="twitter-follow-button" data-show-count="true">Follow @TVGuide</a>
+						</span>
+					</span>
+				</li>
+			</ul>
+		</div>
+
+		<div  class="header-sponsored ad-dfp" data-placement="layout.navigation" data-config-id="navbar_top" data-ad-type="dfp"></div>	</div>
+</div>						<div id="content-wrap">
+								<div id="mantle_skin">
+					<div class="content-before">
+												
+																			
+													<div class="content-before-blank"></div>
+						
+						
+																	</div>
+
+					<div class="content-wrapper">
+						<div class="container" id="content">
+										<div class="content-main content-main-full" data-section-id="main-content">
+	
+			
+	    
+        <div class="streaming-special__hero">
+        <div class="wallpaper">
+                            <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="https://cimg.tvgcdn.net/i/2018/12/05/f3ed4aab-b149-4155-98bb-1910f051a6e1/hero-imagecoming-soon.png"  class="wallpaper__img b-lazy" alt="300" />
+                        <div class="streaming-special__hero__content">
+                <h1 class="streaming-special__heading"><a class="__link" href="https://www.tvguide.com/tv-premiere-dates/">TV Premiere Dates</a></h1>
+                <ul class="feature-menu">
+        <li class="__item">
+        <a class="__link" href="https://www.tvguide.com/watch-this-now/">Watch This Now</a>
+    </li>
+    <li class="__item">
+        <a class="__link active" href="https://www.tvguide.com/tv-premiere-dates/">TV Premiere Dates</a>
+    </li>
+</ul>                <p class="streaming-special__description">There are a ton of TV shows to choose from these days. How do you choose what to watch? We'll guide you through it!</p>
+            </div>
+        </div>
+            </div>
+        <div class="__controls container">
+                                <div class="control left dropdown" data-current-index="2019-05">
+            <span class="__label"><span class="text">May 2019</span> <i class="fa fa-angle-down"></i></span>
+             
+                <select name="date-index-select" class="__select">
+                    <option value="0">Select Date</option>
+                                                                    <option value="2019-05" data-date-index="2019-05">May 2019</option>
+                                                                    <option value="2019-06" data-date-index="2019-06">June 2019</option>
+                                                                    <option value="2019-07" data-date-index="2019-07">July 2019</option>
+                                                                    <option value="2019-08" data-date-index="2019-08">August 2019</option>
+                                                                    <option value="2030-12" data-date-index="2030-12">TBD</option>
+                                    </select>
+                    </div>
+        <div class="control right slider">
+                            <span class="__label">Display new shows only</span>
+                        <span class="__bar"><span class="__knob"></span></span>
+        </div>
+    </div>
+    
+        <div class="special-feature__ad">
+        <div  data-config-id="feature_leader_top" data-ad-type="dfp" class="ad-dfp"></div>    </div>
+
+        <ul class="feature-single-list item-list" data-new="0" data-route="https://www.tvguide.com/tv-premiere-dates/">
+        
+                                        <li class='__item' 
+                    data-new="0" 
+                    data-date-index="2019-05"
+                    data-date="2019-05-23"
+                    >
+                    
+            <div class="__date-time">
+                            <span class="wrapper">
+                                            <span class="label">May</span>
+                        <span class="date">23</span>
+                        <span class="label">Thu</span>
+                                    </span>
+                    </div>
+         
+        <div class="__show-card">
+                <a class="show-card" href="https://www.tvguide.com/tvshows/elementary/375404/" data-section-id="showcard">
+            <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="https://static.tvgcdn.net/feed/1/710/thumbs/118980710_140x187.jpg|https://static.tvgcdn.net/feed/1/710/thumbs/118980710_280x373.jpg|https://static.tvgcdn.net/feed/1/710/thumbs/118980710_420x560.jpg" class="show-card-image b-lazy" width="140" height="187" data-amp-src="https://static.tvgcdn.net/feed/1/710/thumbs/118980710_140x187.jpg" />
+        </a>
+    </div>
+    <div class="__details">
+            <h3 class="title">
+            <a class="link" href="https://www.tvguide.com/tvshows/elementary/375404/">Elementary
+                            </a>
+                            <a class="watchlist-button" 
+    data-button="watchlist" 
+    data-id="375404" 
+    data-type="tvshow" 
+    data-name="Elementary" 
+    data-location="body"
+    href="https://www.tvguide.com/watchlist/">
+        <span class="off"><i class="fa fa-plus item-icon item-action-icon"></i> Add to Watchlist</span>
+        <span class="on"><i class="fa fa-check item-icon item-action-icon"></i> Added to Watchlist</span>
+    </a>
+                    </h3>
+        <h4 class="airing">
+                        10:00pm (CBS)
+            </h4>        <div class="description"><i>Elementary</i>'s seventh season will also be its last.</div>
+        
+                    
+            <div class="__news">
+                                        <h5 class="__sub-title">Latest Updates</h5>
+                <ul class="__list">
+                                        <li class="__article"><a class="link" href="https://www.tvguide.com/news/elementary-canceled-after-season-7/"><em>Elementary</em> To End After Season 7</a></li>
+                                    </li>
+                    </div>
+    
+    </div>                </li>
+                                                        <li class='__item' 
+                    data-new="0" 
+                    data-date-index="2019-05"
+                    data-date="2019-05-24"
+                    >
+                    
+            <div class="__date-time">
+                            <span class="wrapper">
+                                            <span class="label">May</span>
+                        <span class="date">24</span>
+                        <span class="label">Fri</span>
+                                    </span>
+                    </div>
+         
+        <div class="__show-card">
+                <a class="show-card" href="https://www.tvguide.com/tvshows/shes-gotta-have-it/979653/" data-section-id="showcard">
+            <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="https://static.tvgcdn.net/feed/1/461/thumbs/118011461_140x187.jpg|https://static.tvgcdn.net/feed/1/461/thumbs/118011461_280x373.jpg|https://static.tvgcdn.net/feed/1/461/thumbs/118011461_420x560.jpg" class="show-card-image b-lazy" width="140" height="187" data-amp-src="https://static.tvgcdn.net/feed/1/461/thumbs/118011461_140x187.jpg" />
+        </a>
+    </div>
+    <div class="__details">
+            <h3 class="title">
+            <a class="link" href="https://www.tvguide.com/tvshows/shes-gotta-have-it/979653/">She's Gotta Have It
+                            </a>
+                            <a class="watchlist-button" 
+    data-button="watchlist" 
+    data-id="979653" 
+    data-type="tvshow" 
+    data-name="She's Gotta Have It" 
+    data-location="body"
+    href="https://www.tvguide.com/watchlist/">
+        <span class="off"><i class="fa fa-plus item-icon item-action-icon"></i> Add to Watchlist</span>
+        <span class="on"><i class="fa fa-check item-icon item-action-icon"></i> Added to Watchlist</span>
+    </a>
+                    </h3>
+        <h4 class="airing">
+                        Netflix
+            </h4>        <div class="description">A new take on Spike Lee's 1986 film, about a twentysomething artist trying to figure out herself through friends, her job and a few boyfriends.</div>
+        
+                    
+            <div class="__news">
+                                        <h5 class="__sub-title">Latest Updates</h5>
+                <ul class="__list">
+                                        <li class="__article"><a class="link" href="https://www.tvguide.com/news/new-on-netflix-may-2019/">Here's What's New on Netflix in May</a></li>
+                                        <li class="__article"><a class="link" href="https://www.tvguide.com/news/best-romance-shows-movies-stream-netflix/">The Best Romance Shows and Movies to Stream on Netflix Right Now</a></li>
+                                    </li>
+                    </div>
+    
+    </div>                </li>
+                                                        <li class='__item __new' 
+                    data-new="1" 
+                    data-date-index="2019-05"
+                    data-date="2019-05-27"
+                    >
+                    
+            <div class="__date-time">
+                            <span class="wrapper">
+                                            <span class="label">May</span>
+                        <span class="date">27</span>
+                        <span class="label">Mon</span>
+                                    </span>
+                    </div>
+         
+        <div class="__show-card">
+                <a class="show-card" href="https://www.tvguide.com/tvshows/the-hot-zone/1220011/" data-section-id="showcard">
+            <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="https://static.tvgcdn.net/mediabin/showcards/tvshows/900000-1000000/thumbs/1220011-the-hot-zone_140x187.png|https://static.tvgcdn.net/mediabin/showcards/tvshows/900000-1000000/thumbs/1220011-the-hot-zone_280x373.png|https://static.tvgcdn.net/mediabin/showcards/tvshows/900000-1000000/thumbs/1220011-the-hot-zone_420x560.png" class="show-card-image b-lazy" width="140" height="187" data-amp-src="https://static.tvgcdn.net/mediabin/showcards/tvshows/900000-1000000/thumbs/1220011-the-hot-zone_140x187.png" />
+        </a>
+    </div>
+    <div class="__details">
+            <h3 class="title">
+            <a class="link" href="https://www.tvguide.com/tvshows/the-hot-zone/1220011/">The Hot Zone
+                                    <span class="new-item">NEW</span>
+                            </a>
+                            <a class="watchlist-button" 
+    data-button="watchlist" 
+    data-id="1220011" 
+    data-type="tvshow" 
+    data-name="The Hot Zone" 
+    data-location="body"
+    href="https://www.tvguide.com/watchlist/">
+        <span class="off"><i class="fa fa-plus item-icon item-action-icon"></i> Add to Watchlist</span>
+        <span class="on"><i class="fa fa-check item-icon item-action-icon"></i> Added to Watchlist</span>
+    </a>
+                    </h3>
+        <h4 class="airing">
+                        9:00pm (Nat Geo)
+            </h4>        <div class="description">Recounts the terrifying true story of the origins of the Ebola virus, a highly infectious deadly virus from the central African rain forest, and its first arrival on U.S. soil.</div>
+        
+                    
+            <div class="__news">
+                                        <h5 class="__sub-title">Latest Updates</h5>
+                <ul class="__list">
+                                        <li class="__article"><a class="link" href="https://www.tvguide.com/news/emmys-2019-complete-coverage/">TV Guide's Complete Emmys Coverage</a></li>
+                                    </li>
+                    </div>
+    
+    </div>                </li>
+                                                        <li class='__item' 
+                    data-new="0" 
+                    data-date-index="2019-05"
+                    data-date="2019-05-28"
+                    >
+                    
+            <div class="__date-time">
+                            <span class="wrapper">
+                                            <span class="label">May</span>
+                        <span class="date">28</span>
+                        <span class="label">Tue</span>
+                                    </span>
+                    </div>
+         
+        <div class="__show-card">
+                <a class="show-card" href="https://www.tvguide.com/tvshows/americas-got-talent/280608/" data-section-id="showcard">
+            <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="https://static.tvgcdn.net/feed/1/320/thumbs/119005320_140x187.jpg|https://static.tvgcdn.net/feed/1/320/thumbs/119005320_280x373.jpg|https://static.tvgcdn.net/feed/1/320/thumbs/119005320_420x560.jpg" class="show-card-image b-lazy" width="140" height="187" data-amp-src="https://static.tvgcdn.net/feed/1/320/thumbs/119005320_140x187.jpg" />
+        </a>
+    </div>
+    <div class="__details">
+            <h3 class="title">
+            <a class="link" href="https://www.tvguide.com/tvshows/americas-got-talent/280608/">America's Got Talent
+                            </a>
+                            <a class="watchlist-button" 
+    data-button="watchlist" 
+    data-id="280608" 
+    data-type="tvshow" 
+    data-name="America's Got Talent" 
+    data-location="body"
+    href="https://www.tvguide.com/watchlist/">
+        <span class="off"><i class="fa fa-plus item-icon item-action-icon"></i> Add to Watchlist</span>
+        <span class="on"><i class="fa fa-check item-icon item-action-icon"></i> Added to Watchlist</span>
+    </a>
+                    </h3>
+        <h4 class="airing">
+                        8:00pm (NBC)
+            </h4>        <div class="description">A talent search from the producers of `American Idol' features a variety of acts (singers, dancers, comedians, acrobats, jugglers and more) competing for fame and a million-dollar prize.</div>
+        
+                    
+            <div class="__news">
+                                        <h5 class="__sub-title">Latest Updates</h5>
+                <ul class="__list">
+                                        <li class="__article"><a class="link" href="https://www.tvguide.com/news/americas-got-talent-season-14-premiere-date/">Here's When <em>America's Got Talent</em> Season 14 Premieres</a></li>
+                                        <li class="__article"><a class="link" href="https://www.tvguide.com/news/americas-got-talent-the-champions-winner-poll/">Who Will Win <em>America's Got Talent: The Champions</em>?</a></li>
+                                    </li>
+                    </div>
+    
+    </div>                </li>
+                                                        <li class='__item' 
+                    data-new="0" 
+                    data-date-index="2019-05"
+                    data-date="2019-05-28"
+                    >
+                    
+            <div class="__date-time">
+                    </div>
+         
+        <div class="__show-card">
+                <a class="show-card" href="https://www.tvguide.com/tvshows/animal-kingdom/807682/" data-section-id="showcard">
+            <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="https://static.tvgcdn.net/feed/1/261/thumbs/118992261_140x187.jpg|https://static.tvgcdn.net/feed/1/261/thumbs/118992261_280x373.jpg|https://static.tvgcdn.net/feed/1/261/thumbs/118992261_420x560.jpg" class="show-card-image b-lazy" width="140" height="187" data-amp-src="https://static.tvgcdn.net/feed/1/261/thumbs/118992261_140x187.jpg" />
+        </a>
+    </div>
+    <div class="__details">
+            <h3 class="title">
+            <a class="link" href="https://www.tvguide.com/tvshows/animal-kingdom/807682/">Animal Kingdom
+                            </a>
+                            <a class="watchlist-button" 
+    data-button="watchlist" 
+    data-id="807682" 
+    data-type="tvshow" 
+    data-name="Animal Kingdom" 
+    data-location="body"
+    href="https://www.tvguide.com/watchlist/">
+        <span class="off"><i class="fa fa-plus item-icon item-action-icon"></i> Add to Watchlist</span>
+        <span class="on"><i class="fa fa-check item-icon item-action-icon"></i> Added to Watchlist</span>
+    </a>
+                    </h3>
+        <h4 class="airing">
+                        9:00pm (TNT)
+            </h4>        <div class="description">A teen plunges into danger when he moves in with his wild relatives in this crime drama set in a surf community.</div>
+        
+                    
+            <div class="__news">
+                                        <h5 class="__sub-title">Latest Updates</h5>
+                <ul class="__list">
+                                        <li class="__article"><a class="link" href="https://www.tvguide.com/news/emily-deschanel-animal-kingdom/">Emily Deschanel Is Playing Against Type in Her First Major Role Since <em>Bones</em></a></li>
+                                    </li>
+                    </div>
+    
+    </div>                </li>
+                                                        <li class='__item' 
+                    data-new="0" 
+                    data-date-index="2019-05"
+                    data-date="2019-05-29"
+                    >
+                    
+            <div class="__date-time">
+                            <span class="wrapper">
+                                            <span class="label">May</span>
+                        <span class="date">29</span>
+                        <span class="label">Wed</span>
+                                    </span>
+                    </div>
+         
+        <div class="__show-card">
+                <a class="show-card" href="https://www.tvguide.com/tvshows/american-ninja-warrior/327397/" data-section-id="showcard">
+            <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="https://static.tvgcdn.net/feed/1/923/thumbs/119005923_140x187.jpg|https://static.tvgcdn.net/feed/1/923/thumbs/119005923_280x373.jpg|https://static.tvgcdn.net/feed/1/923/thumbs/119005923_420x560.jpg" class="show-card-image b-lazy" width="140" height="187" data-amp-src="https://static.tvgcdn.net/feed/1/923/thumbs/119005923_140x187.jpg" />
+        </a>
+    </div>
+    <div class="__details">
+            <h3 class="title">
+            <a class="link" href="https://www.tvguide.com/tvshows/american-ninja-warrior/327397/">American Ninja Warrior
+                            </a>
+                            <a class="watchlist-button" 
+    data-button="watchlist" 
+    data-id="327397" 
+    data-type="tvshow" 
+    data-name="American Ninja Warrior" 
+    data-location="body"
+    href="https://www.tvguide.com/watchlist/">
+        <span class="off"><i class="fa fa-plus item-icon item-action-icon"></i> Add to Watchlist</span>
+        <span class="on"><i class="fa fa-check item-icon item-action-icon"></i> Added to Watchlist</span>
+    </a>
+                    </h3>
+        <h4 class="airing">
+                        8:00pm (NBC)
+            </h4>        <div class="description">A "Ninja Warrior" spin-off in which athletes tackle an array of challenging obstacle courses in hopes of advancing to the national finals in Las Vegas, where the winner walks away with a $1 million.</div>
+        
+                    
+            <div class="__news">
+                                </div>
+    
+    </div>                </li>
+                                                        <li class='__item __new' 
+                    data-new="1" 
+                    data-date-index="2019-05"
+                    data-date="2019-05-29"
+                    >
+                    
+            <div class="__date-time">
+                    </div>
+         
+        <div class="__show-card">
+                <a class="show-card" href="https://www.tvguide.com/tvshows/the-inbetween/1197252/" data-section-id="showcard">
+            <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="https://static.tvgcdn.net/feed/1/726/thumbs/118986726_140x187.jpg|https://static.tvgcdn.net/feed/1/726/thumbs/118986726_280x373.jpg|https://static.tvgcdn.net/feed/1/726/thumbs/118986726_420x560.jpg" class="show-card-image b-lazy" width="140" height="187" data-amp-src="https://static.tvgcdn.net/feed/1/726/thumbs/118986726_140x187.jpg" />
+        </a>
+    </div>
+    <div class="__details">
+            <h3 class="title">
+            <a class="link" href="https://www.tvguide.com/tvshows/the-inbetween/1197252/">The InBetween
+                                    <span class="new-item">NEW</span>
+                            </a>
+                            <a class="watchlist-button" 
+    data-button="watchlist" 
+    data-id="1197252" 
+    data-type="tvshow" 
+    data-name="The InBetween" 
+    data-location="body"
+    href="https://www.tvguide.com/watchlist/">
+        <span class="off"><i class="fa fa-plus item-icon item-action-icon"></i> Add to Watchlist</span>
+        <span class="on"><i class="fa fa-check item-icon item-action-icon"></i> Added to Watchlist</span>
+    </a>
+                    </h3>
+        <h4 class="airing">
+                        10:00pm (NBC)
+            </h4>        <div class="description"><i>The InBetween</i> follows a woman -- let's call her a ghost whisperer -- who can see and communicate with the dead. She helps them with their unresolved problems whether she wants to or not. She is recruited by a longtime detective friend and a former FBI agent, with whom she helps to solve some of the city's most challenging cases.</div>
+        
+                    
+            <div class="__news">
+                                </div>
+    
+    </div>                </li>
+                                                        <li class='__item __new __picked' 
+                    data-new="1" 
+                    data-date-index="2019-05"
+                    data-date="2019-05-31"
+                    >
+                    
+            <div class="__date-time">
+                    </div>
+         
+        <div class="__video">
+                                            <a href="https://www.tvguide.com/tvshows/good-omens/1029021/" data-section-id="show-card">
+                <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="https://static.tvgcdn.net/feed/1/701/thumbs/118490701_c1328x750+86+0_570x322.jpg|https://static.tvgcdn.net/feed/1/701/thumbs/118490701_c1328x750+86+0_1140x644.jpg|https://static.tvgcdn.net/feed/1/701/thumbs/118490701_c1328x750+86+0_1328x750.jpg" class="__thumbnail b-lazy" width="570" height="322" data-amp-src="https://static.tvgcdn.net/feed/1/701/thumbs/118490701_c1328x750+86+0_570x322.jpg" />
+                </a>
+                    </div>
+    <div class="__details">
+            <h3 class="title">
+            <a class="link" href="https://www.tvguide.com/tvshows/good-omens/1029021/">Good Omens
+                                    <span class="new-item">NEW</span>
+                            </a>
+                    </h3>
+        <h4 class="airing">
+                                                            
+                    Friday May 31st (Amazon)
+            </h4>        <div class="description">In this comedy, the year is 2018 and the Apocalypse is set to descend upon humanity. An angel and demon mourn their luxurious earthly lifestyles, a child Antichrist goes missing and the Four Horsepeople prepare as the End of Times nears.</div>
+        
+                    
+            <div class="__news">
+                                        <h5 class="__sub-title">Latest Updates</h5>
+                <ul class="__list">
+                                        <li class="__article"><a class="link" href="https://www.tvguide.com/news/good-omens-review-david-tennant-amazon-neil-gaiman/"><em>Good Omens</em> Review: Demonic David Tennant Saves the World (and the Show) From Disaster</a></li>
+                                        <li class="__article"><a class="link" href="https://www.tvguide.com/news/new-on-amazon-prime-may-2019/">What's Coming to Amazon Prime Video in May</a></li>
+                                    </li>
+                    </div>
+    
+            <a class="watchlist-button large" 
+    data-button="watchlist" 
+    data-id="1029021" 
+    data-type="tvshow" 
+    data-name="Good Omens" 
+    data-location="body"
+    href="https://www.tvguide.com/watchlist/">
+        <span class="off"><i class="fa fa-plus item-icon item-action-icon"></i> Add to Watchlist</span>
+        <span class="on"><i class="fa fa-check item-icon item-action-icon"></i> Added to Watchlist</span>
+    </a>
+    </div>                </li>
+                                                        <li class='__item __new' 
+                    data-new="1" 
+                    data-date-index="2019-05"
+                    data-date="2019-05-31"
+                    >
+                    
+            <div class="__date-time">
+                    </div>
+         
+        <div class="__show-card">
+                <a class="show-card" href="https://www.tvguide.com/tvshows/when-they-see-us/1293889/" data-section-id="showcard">
+            <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="https://static.tvgcdn.net/mediabin/showcards/tvshows/900000-1000000/thumbs/1293889-when-they-see-us_140x187.png|https://static.tvgcdn.net/mediabin/showcards/tvshows/900000-1000000/thumbs/1293889-when-they-see-us_280x373.png|https://static.tvgcdn.net/mediabin/showcards/tvshows/900000-1000000/thumbs/1293889-when-they-see-us_420x560.png" class="show-card-image b-lazy" width="140" height="187" data-amp-src="https://static.tvgcdn.net/mediabin/showcards/tvshows/900000-1000000/thumbs/1293889-when-they-see-us_140x187.png" />
+        </a>
+    </div>
+    <div class="__details">
+            <h3 class="title">
+            <a class="link" href="https://www.tvguide.com/tvshows/when-they-see-us/1293889/">When They See Us
+                                    <span class="new-item">NEW</span>
+                            </a>
+                            <a class="watchlist-button" 
+    data-button="watchlist" 
+    data-id="1293889" 
+    data-type="tvshow" 
+    data-name="When They See Us" 
+    data-location="body"
+    href="https://www.tvguide.com/watchlist/">
+        <span class="off"><i class="fa fa-plus item-icon item-action-icon"></i> Add to Watchlist</span>
+        <span class="on"><i class="fa fa-check item-icon item-action-icon"></i> Added to Watchlist</span>
+    </a>
+                    </h3>
+        <h4 class="airing">
+                        Netflix
+            </h4>        <div class="description">Learn about the inadequacies of the crimianl justice system through the struggles of five African American teens who are accused and convicted for rapes they did not commit.</div>
+        
+                    
+            <div class="__news">
+                                        <h5 class="__sub-title">Latest Updates</h5>
+                <ul class="__list">
+                                        <li class="__article"><a class="link" href="https://www.tvguide.com/news/new-on-netflix-may-2019/">Here's What's New on Netflix in May</a></li>
+                                        <li class="__article"><a class="link" href="https://www.tvguide.com/news/netflix-when-they-see-us-official-trailer-ava-duvernay/">The Trailer for Ava DuVernay's Central Park Five Series <em>When They See Us</em> Is Deeply Unsettling</a></li>
+                                    </li>
+                    </div>
+    
+    </div>                </li>
+                                                        <li class='__item __picked' 
+                    data-new="0" 
+                    data-date-index="2019-05"
+                    data-date="2019-05-31"
+                    >
+                    
+            <div class="__date-time">
+                    </div>
+         
+        <div class="__video">
+                                            <a href="https://www.tvguide.com/tvshows/deadwood-the-movie/100115/" data-section-id="show-card">
+                <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="https://static.tvgcdn.net/feed/1/757/thumbs/11732757_c1697x959+111+0_570x322.jpg|https://static.tvgcdn.net/feed/1/757/thumbs/11732757_c1697x959+111+0_1140x644.jpg|https://static.tvgcdn.net/feed/1/757/thumbs/11732757_c1697x959+111+0_1697x959.jpg" class="__thumbnail b-lazy" width="570" height="322" data-amp-src="https://static.tvgcdn.net/feed/1/757/thumbs/11732757_c1697x959+111+0_570x322.jpg" />
+                </a>
+                    </div>
+    <div class="__details">
+            <h3 class="title">
+            <a class="link" href="https://www.tvguide.com/tvshows/deadwood-the-movie/100115/">Deadwood: The Movie
+                            </a>
+                    </h3>
+        <h4 class="airing">
+                                                            
+                    Friday May 31st, 8:00pm (HBO)
+            </h4>        <div class="description">The long-rumored follow-up movie to David Milch's Emmy-winning series of the same name is finally here. The film finds everyone's favorite characters reunited after a decade to celebrate South Dakota's statehood. Former rivalries are reignited, alliances are tested, and old wounds reopened as all are left to navigate the inevitable changes that modernity and time have wrought. Returning cast members include Ian McShane, Timothy Olyphant, Molly Parker, Paula Malcomson, John Hawkes, Anna Gunn, Dayton Callie, Brad Dourif, Robin Weigert, William Sanderson, Kim Dickens, Gerald McRaney, Sean Bridgers, W. Earl Brown, and Keone Young, among others.</div>
+        
+                    
+            <div class="__news">
+                                        <h5 class="__sub-title">Latest Updates</h5>
+                <ul class="__list">
+                                        <li class="__article"><a class="link" href="https://www.tvguide.com/news/deadwood-movie-trailer/">The <em>Deadwood</em> Movie Trailer Is Just as Effing Explicit as the Effing Series</a></li>
+                                        <li class="__article"><a class="link" href="https://www.tvguide.com/news/deadwood-movie-premiere-date-teaser-hbo/">The <em>Deadwood</em> Movie Finally Gets a Teaser and Premiere Date</a></li>
+                                    </li>
+                    </div>
+    
+            <a class="watchlist-button large" 
+    data-button="watchlist" 
+    data-id="100115" 
+    data-type="tvshow" 
+    data-name="Deadwood: The Movie" 
+    data-location="body"
+    href="https://www.tvguide.com/watchlist/">
+        <span class="off"><i class="fa fa-plus item-icon item-action-icon"></i> Add to Watchlist</span>
+        <span class="on"><i class="fa fa-check item-icon item-action-icon"></i> Added to Watchlist</span>
+    </a>
+    </div>                </li>
+                                                        <li class='__item __new' 
+                    data-new="1" 
+                    data-date-index="2019-06"
+                    data-date="2019-06-02"
+                    >
+                    
+            <div class="__date-time">
+                            <span class="wrapper">
+                                            <span class="label">Jun</span>
+                        <span class="date">2</span>
+                        <span class="label">Sun</span>
+                                    </span>
+                    </div>
+         
+        <div class="__show-card">
+                <a class="show-card" href="https://www.tvguide.com/tvshows/perpetual-grace-ltd/1297864/" data-section-id="showcard">
+            <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="https://static.tvgcdn.net/mediabin/showcards/tvshows/900000-1000000/thumbs/1297864-perpetual-grace-ltd_140x187.png|https://static.tvgcdn.net/mediabin/showcards/tvshows/900000-1000000/thumbs/1297864-perpetual-grace-ltd_280x373.png|https://static.tvgcdn.net/mediabin/showcards/tvshows/900000-1000000/thumbs/1297864-perpetual-grace-ltd_420x560.png" class="show-card-image b-lazy" width="140" height="187" data-amp-src="https://static.tvgcdn.net/mediabin/showcards/tvshows/900000-1000000/thumbs/1297864-perpetual-grace-ltd_140x187.png" />
+        </a>
+    </div>
+    <div class="__details">
+            <h3 class="title">
+            <a class="link" href="https://www.tvguide.com/tvshows/perpetual-grace-ltd/1297864/">Perpetual Grace, LTD
+                                    <span class="new-item">NEW</span>
+                            </a>
+                            <a class="watchlist-button" 
+    data-button="watchlist" 
+    data-id="1297864" 
+    data-type="tvshow" 
+    data-name="Perpetual Grace, LTD" 
+    data-location="body"
+    href="https://www.tvguide.com/watchlist/">
+        <span class="off"><i class="fa fa-plus item-icon item-action-icon"></i> Add to Watchlist</span>
+        <span class="on"><i class="fa fa-check item-icon item-action-icon"></i> Added to Watchlist</span>
+    </a>
+                    </h3>
+        <h4 class="airing">
+                        Epix
+            </h4>        <div class="description">Perpetual Grace LTD is a modern noir drama which follows James, a mysterious young grifter, who sets his eyes on Pastor Byron Brown as his next prey.</div>
+        
+                    
+            <div class="__news">
+                                </div>
+    
+    </div>                </li>
+                                                        <li class='__item __picked' 
+                    data-new="0" 
+                    data-date-index="2019-06"
+                    data-date="2019-06-02"
+                    >
+                    
+            <div class="__date-time">
+                    </div>
+         
+        <div class="__video">
+                                            <a href="https://www.tvguide.com/tvshows/luther/305053/" data-section-id="show-card">
+                <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="https://static.tvgcdn.net/feed/1/987/thumbs/119005987_c2039x1152+5+0_570x322.jpg|https://static.tvgcdn.net/feed/1/987/thumbs/119005987_c2039x1152+5+0_1140x644.jpg|https://static.tvgcdn.net/feed/1/987/thumbs/119005987_c2039x1152+5+0_1710x966.jpg" class="__thumbnail b-lazy" width="570" height="322" data-amp-src="https://static.tvgcdn.net/feed/1/987/thumbs/119005987_c2039x1152+5+0_570x322.jpg" />
+                </a>
+                    </div>
+    <div class="__details">
+            <h3 class="title">
+            <a class="link" href="https://www.tvguide.com/tvshows/luther/305053/">Luther
+                            </a>
+                    </h3>
+        <h4 class="airing">
+                                                            
+                    Sunday Jun 2nd, 8:00pm (BBC America)
+            </h4>        <div class="description">Psychological crime drama centered on a brilliant but self-destructive detective, who has more in common with the criminals he hunts than he would like to think.</div>
+        
+                    
+            <div class="__news">
+                                        <h5 class="__sub-title">Latest Updates</h5>
+                <ul class="__list">
+                                        <li class="__article"><a class="link" href="https://www.tvguide.com/news/luther-season-5-premiere-date/"><em>Luther</em> Season 5 Has Its Premiere Date</a></li>
+                                    </li>
+                    </div>
+    
+            <a class="watchlist-button large" 
+    data-button="watchlist" 
+    data-id="305053" 
+    data-type="tvshow" 
+    data-name="Luther" 
+    data-location="body"
+    href="https://www.tvguide.com/watchlist/">
+        <span class="off"><i class="fa fa-plus item-icon item-action-icon"></i> Add to Watchlist</span>
+        <span class="on"><i class="fa fa-check item-icon item-action-icon"></i> Added to Watchlist</span>
+    </a>
+    </div>                </li>
+                                                        <li class='__item __new' 
+                    data-new="1" 
+                    data-date-index="2019-06"
+                    data-date="2019-06-02"
+                    >
+                    
+            <div class="__date-time">
+                    </div>
+         
+        <div class="__show-card">
+                <a class="show-card" href="https://www.tvguide.com/tvshows/american-princess/290116/" data-section-id="showcard">
+            <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="https://static.tvgcdn.net/mediabin/showcards/tvshows/200000-299999/thumbs/290116-american-princess_140x187.png|https://static.tvgcdn.net/mediabin/showcards/tvshows/200000-299999/thumbs/290116-american-princess_280x373.png|https://static.tvgcdn.net/mediabin/showcards/tvshows/200000-299999/thumbs/290116-american-princess_420x560.png" class="show-card-image b-lazy" width="140" height="187" data-amp-src="https://static.tvgcdn.net/mediabin/showcards/tvshows/200000-299999/thumbs/290116-american-princess_140x187.png" />
+        </a>
+    </div>
+    <div class="__details">
+            <h3 class="title">
+            <a class="link" href="https://www.tvguide.com/tvshows/american-princess/290116/">American Princess
+                                    <span class="new-item">NEW</span>
+                            </a>
+                            <a class="watchlist-button" 
+    data-button="watchlist" 
+    data-id="290116" 
+    data-type="tvshow" 
+    data-name="American Princess" 
+    data-location="body"
+    href="https://www.tvguide.com/watchlist/">
+        <span class="off"><i class="fa fa-plus item-icon item-action-icon"></i> Add to Watchlist</span>
+        <span class="on"><i class="fa fa-check item-icon item-action-icon"></i> Added to Watchlist</span>
+    </a>
+                    </h3>
+        <h4 class="airing">
+                        9:00pm (Lifetime)
+            </h4>        <div class="description">When she discovers her fiance is cheating on her hours before their wedding, Manhattan socialite Amanda runs off to join a Renaissance fair as the latest wench-in-training.</div>
+        
+                    
+            <div class="__news">
+                                </div>
+    
+    </div>                </li>
+                                                        <li class='__item __picked' 
+                    data-new="0" 
+                    data-date-index="2019-06"
+                    data-date="2019-06-02"
+                    >
+                    
+            <div class="__date-time">
+                    </div>
+         
+        <div class="__video">
+                                            <a href="https://www.tvguide.com/tvshows/fear-the-walking-dead/784566/" data-section-id="show-card">
+                <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="https://static.tvgcdn.net/feed/1/901/thumbs/118480901_c2655x1500+173+0_570x322.jpg|https://static.tvgcdn.net/feed/1/901/thumbs/118480901_c2655x1500+173+0_1140x644.jpg|https://static.tvgcdn.net/feed/1/901/thumbs/118480901_c2655x1500+173+0_1710x966.jpg" class="__thumbnail b-lazy" width="570" height="322" data-amp-src="https://static.tvgcdn.net/feed/1/901/thumbs/118480901_c2655x1500+173+0_570x322.jpg" />
+                </a>
+                    </div>
+    <div class="__details">
+            <h3 class="title">
+            <a class="link" href="https://www.tvguide.com/tvshows/fear-the-walking-dead/784566/">Fear the Walking Dead
+                            </a>
+                    </h3>
+        <h4 class="airing">
+                                                            
+                    Sunday Jun 2nd, 9:00pm (AMC)
+            </h4>        <div class="description">Chronicling the beginning of the zombie apocalypse, a time when the world was changing rapidly for reasons unknown and before anyone understood exactly what was happening, in this spin-off of "The Walking Dead."</div>
+        
+                    
+            <div class="__news">
+                                        <h5 class="__sub-title">Latest Updates</h5>
+                <ul class="__list">
+                                        <li class="__article"><a class="link" href="https://www.tvguide.com/news/fear-the-walking-dead-season-5-first-look-photos/"><em>Fear the Walking Dead</em> Season 5 First Look Photos Introduce Some Enigmatic New Characters</a></li>
+                                        <li class="__article"><a class="link" href="https://www.tvguide.com/news/fear-the-walking-dead-season-5-trailer-premiere-date-nos4a2/"><em>Fear the Walking Dead</em> Season 5 Trailer, Premiere Date Revealed</a></li>
+                                    </li>
+                    </div>
+    
+            <a class="watchlist-button large" 
+    data-button="watchlist" 
+    data-id="784566" 
+    data-type="tvshow" 
+    data-name="Fear the Walking Dead" 
+    data-location="body"
+    href="https://www.tvguide.com/watchlist/">
+        <span class="off"><i class="fa fa-plus item-icon item-action-icon"></i> Add to Watchlist</span>
+        <span class="on"><i class="fa fa-check item-icon item-action-icon"></i> Added to Watchlist</span>
+    </a>
+    </div>                </li>
+                                                        <li class='__item __new' 
+                    data-new="1" 
+                    data-date-index="2019-06"
+                    data-date="2019-06-02"
+                    >
+                    
+            <div class="__date-time">
+                    </div>
+         
+        <div class="__show-card">
+                <a class="show-card" href="https://www.tvguide.com/tvshows/nos4a2/1294683/" data-section-id="showcard">
+            <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="https://static.tvgcdn.net/mediabin/showcards/tvshows/900000-1000000/thumbs/1294683-nos4a2_140x187.png|https://static.tvgcdn.net/mediabin/showcards/tvshows/900000-1000000/thumbs/1294683-nos4a2_280x373.png|https://static.tvgcdn.net/mediabin/showcards/tvshows/900000-1000000/thumbs/1294683-nos4a2_420x560.png" class="show-card-image b-lazy" width="140" height="187" data-amp-src="https://static.tvgcdn.net/mediabin/showcards/tvshows/900000-1000000/thumbs/1294683-nos4a2_140x187.png" />
+        </a>
+    </div>
+    <div class="__details">
+            <h3 class="title">
+            <a class="link" href="https://www.tvguide.com/tvshows/nos4a2/1294683/">NOS4A2
+                                    <span class="new-item">NEW</span>
+                            </a>
+                            <a class="watchlist-button" 
+    data-button="watchlist" 
+    data-id="1294683" 
+    data-type="tvshow" 
+    data-name="NOS4A2" 
+    data-location="body"
+    href="https://www.tvguide.com/watchlist/">
+        <span class="off"><i class="fa fa-plus item-icon item-action-icon"></i> Add to Watchlist</span>
+        <span class="on"><i class="fa fa-check item-icon item-action-icon"></i> Added to Watchlist</span>
+    </a>
+                    </h3>
+        <h4 class="airing">
+                        10:00pm (AMC)
+            </h4>        <div class="description">Vic McQueen, a young working-class artist who discovers that she has a supernatural ability to track the seemingly immortal Charlie Manx. Manx feeds off the souls of children, then deposits what remains of them into Christmasland — a twisted Christmas Village of Manx's imagination where every day is Christmas Day and unhappiness is against the law.</div>
+        
+                    
+            <div class="__news">
+                                        <h5 class="__sub-title">Latest Updates</h5>
+                <ul class="__list">
+                                        <li class="__article"><a class="link" href="https://www.tvguide.com/news/fear-the-walking-dead-season-5-trailer-premiere-date-nos4a2/"><em>Fear the Walking Dead</em> Season 5 Trailer, Premiere Date Revealed</a></li>
+                                    </li>
+                    </div>
+    
+    </div>                </li>
+                                                        <li class='__item __new' 
+                    data-new="1" 
+                    data-date-index="2019-06"
+                    data-date="2019-06-02"
+                    >
+                    
+            <div class="__date-time">
+                    </div>
+         
+        <div class="__show-card">
+                <a class="show-card" href="https://www.tvguide.com/tvshows/the-weekly/1196058/" data-section-id="showcard">
+            <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="https://static.tvgcdn.net/feed/1/197/thumbs/119018197_140x187.jpg|https://static.tvgcdn.net/feed/1/197/thumbs/119018197_280x373.jpg|https://static.tvgcdn.net/feed/1/197/thumbs/119018197_420x560.jpg" class="show-card-image b-lazy" width="140" height="187" data-amp-src="https://static.tvgcdn.net/feed/1/197/thumbs/119018197_140x187.jpg" />
+        </a>
+    </div>
+    <div class="__details">
+            <h3 class="title">
+            <a class="link" href="https://www.tvguide.com/tvshows/the-weekly/1196058/">The Weekly
+                                    <span class="new-item">NEW</span>
+                            </a>
+                            <a class="watchlist-button" 
+    data-button="watchlist" 
+    data-id="1196058" 
+    data-type="tvshow" 
+    data-name="The Weekly" 
+    data-location="body"
+    href="https://www.tvguide.com/watchlist/">
+        <span class="off"><i class="fa fa-plus item-icon item-action-icon"></i> Add to Watchlist</span>
+        <span class="on"><i class="fa fa-check item-icon item-action-icon"></i> Added to Watchlist</span>
+    </a>
+                    </h3>
+        <h4 class="airing">
+                        10:00pm (FX)
+            </h4>        <div class="description">Each half-hour episode features a Times journalist investigating one of the most pressing issues of the day. With more than 1,550 journalists reporting from 160 countries each year, the Times publishes 250 stories a day – investigative reports, political scoops, cultural dispatches. And each week, The Weekly chooses to tell one of these stories in a visual and unforgettable way.</div>
+        
+                    
+            <div class="__news">
+                                </div>
+    
+    </div>                </li>
+                                                        <li class='__item __picked' 
+                    data-new="0" 
+                    data-date-index="2019-06"
+                    data-date="2019-06-05"
+                    >
+                    
+            <div class="__date-time">
+                    </div>
+         
+        <div class="__video">
+                                            <a href="https://www.tvguide.com/tvshows/the-handmaids-tale/927704/" data-section-id="show-card">
+                <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="https://static.tvgcdn.net/feed/1/819/thumbs/118276819_c1768x999+115+0_570x322.jpg|https://static.tvgcdn.net/feed/1/819/thumbs/118276819_c1768x999+115+0_1140x644.jpg|https://static.tvgcdn.net/feed/1/819/thumbs/118276819_c1768x999+115+0_1710x966.jpg" class="__thumbnail b-lazy" width="570" height="322" data-amp-src="https://static.tvgcdn.net/feed/1/819/thumbs/118276819_c1768x999+115+0_570x322.jpg" />
+                </a>
+                    </div>
+    <div class="__details">
+            <h3 class="title">
+            <a class="link" href="https://www.tvguide.com/tvshows/the-handmaids-tale/927704/">The Handmaid's Tale
+                            </a>
+                    </h3>
+        <h4 class="airing">
+                                                            
+                    Wednesday Jun 5th (Hulu)
+            </h4>        <div class="description">A fertile woman is forced into sexual servitude in a dystopian society with a plunging birthrate. Based on a novel by Margaret Atwood.</div>
+        
+                    
+            <div class="__news">
+                                        <h5 class="__sub-title">Latest Updates</h5>
+                <ul class="__list">
+                                        <li class="__article"><a class="link" href="https://www.tvguide.com/news/whats-coming-to-hulu-june-2019/">What's Coming to Hulu in June 2019</a></li>
+                                        <li class="__article"><a class="link" href="https://www.tvguide.com/news/the-handmaids-tale-season-3-everything-we-know-spoilers/">Everything We Know About <em>The Handmaid's Tale</em> Season 3 So Far</a></li>
+                                    </li>
+                    </div>
+    
+            <a class="watchlist-button large" 
+    data-button="watchlist" 
+    data-id="927704" 
+    data-type="tvshow" 
+    data-name="The Handmaid's Tale" 
+    data-location="body"
+    href="https://www.tvguide.com/watchlist/">
+        <span class="off"><i class="fa fa-plus item-icon item-action-icon"></i> Add to Watchlist</span>
+        <span class="on"><i class="fa fa-check item-icon item-action-icon"></i> Added to Watchlist</span>
+    </a>
+    </div>                </li>
+                                                        <li class='__item' 
+                    data-new="0" 
+                    data-date-index="2019-06"
+                    data-date="2019-06-05"
+                    >
+                    
+            <div class="__date-time">
+                    </div>
+         
+        <div class="__show-card">
+                <a class="show-card" href="https://www.tvguide.com/tvshows/grown-ish/1062922/" data-section-id="showcard">
+            <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="https://static.tvgcdn.net/feed/1/5/thumbs/118778005_140x187.jpg|https://static.tvgcdn.net/feed/1/5/thumbs/118778005_280x373.jpg|https://static.tvgcdn.net/feed/1/5/thumbs/118778005_420x560.jpg" class="show-card-image b-lazy" width="140" height="187" data-amp-src="https://static.tvgcdn.net/feed/1/5/thumbs/118778005_140x187.jpg" />
+        </a>
+    </div>
+    <div class="__details">
+            <h3 class="title">
+            <a class="link" href="https://www.tvguide.com/tvshows/grown-ish/1062922/">grown-ish
+                            </a>
+                            <a class="watchlist-button" 
+    data-button="watchlist" 
+    data-id="1062922" 
+    data-type="tvshow" 
+    data-name="grown-ish" 
+    data-location="body"
+    href="https://www.tvguide.com/watchlist/">
+        <span class="off"><i class="fa fa-plus item-icon item-action-icon"></i> Add to Watchlist</span>
+        <span class="on"><i class="fa fa-check item-icon item-action-icon"></i> Added to Watchlist</span>
+    </a>
+                    </h3>
+        <h4 class="airing">
+                        8:00pm (Freeform)
+            </h4>        <div class="description">Zoey Johnson heads off to college, where she quickly discovers that not everything goes her way once she leaves the nest in this spin-off of "Black-ish."</div>
+        
+                    
+            <div class="__news">
+                                        <h5 class="__sub-title">Latest Updates</h5>
+                <ul class="__list">
+                                        <li class="__article"><a class="link" href="https://www.tvguide.com/news/freeform-good-trouble-grown-ish-siren-summer-premiere-dates/">Freeform's <em>Good Trouble</em>, <em>grown-ish</em>, and <em>Siren</em> Get Summer Premiere Dates</a></li>
+                                        <li class="__article"><a class="link" href="https://www.tvguide.com/news/grown-sh-good-trouble-renewed-bold-type-cloak-and-dagger-premiere-dates/">Freeform Renews <em>Grown-ish</em> and <em>Good Trouble</em></a></li>
+                                    </li>
+                    </div>
+    
+    </div>                </li>
+                                                        <li class='__item' 
+                    data-new="0" 
+                    data-date-index="2019-06"
+                    data-date="2019-06-10"
+                    >
+                    
+            <div class="__date-time">
+                            <span class="wrapper">
+                                            <span class="label">Jun</span>
+                        <span class="date">10</span>
+                        <span class="label">Mon</span>
+                                    </span>
+                    </div>
+         
+        <div class="__show-card">
+                <a class="show-card" href="https://www.tvguide.com/tvshows/so-you-think-you-can-dance/191775/" data-section-id="showcard">
+            <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="https://static.tvgcdn.net/feed/1/81/thumbs/118367081_140x187.jpg|https://static.tvgcdn.net/feed/1/81/thumbs/118367081_280x373.jpg|https://static.tvgcdn.net/feed/1/81/thumbs/118367081_420x560.jpg" class="show-card-image b-lazy" width="140" height="187" data-amp-src="https://static.tvgcdn.net/feed/1/81/thumbs/118367081_140x187.jpg" />
+        </a>
+    </div>
+    <div class="__details">
+            <h3 class="title">
+            <a class="link" href="https://www.tvguide.com/tvshows/so-you-think-you-can-dance/191775/">So You Think You Can Dance
+                            </a>
+                            <a class="watchlist-button" 
+    data-button="watchlist" 
+    data-id="191775" 
+    data-type="tvshow" 
+    data-name="So You Think You Can Dance" 
+    data-location="body"
+    href="https://www.tvguide.com/watchlist/">
+        <span class="off"><i class="fa fa-plus item-icon item-action-icon"></i> Add to Watchlist</span>
+        <span class="on"><i class="fa fa-check item-icon item-action-icon"></i> Added to Watchlist</span>
+    </a>
+                    </h3>
+        <h4 class="airing">
+                        9:00pm (Fox)
+            </h4>        <div class="description">A national dance competition from the producers of `American Idol.'</div>
+        
+                    
+            <div class="__news">
+                                        <h5 class="__sub-title">Latest Updates</h5>
+                <ul class="__list">
+                                        <li class="__article"><a class="link" href="https://www.tvguide.com/news/whats-coming-to-hulu-june-2019/">What's Coming to Hulu in June 2019</a></li>
+                                        <li class="__article"><a class="link" href="https://www.tvguide.com/news/fox-summer-premiere-dates/"><em>MasterChef</em>, <em>So You Think You Can Dance</em>, and More Fox Shows Get Summer Premiere Dates</a></li>
+                                    </li>
+                    </div>
+    
+    </div>                </li>
+                                                        <li class='__item' 
+                    data-new="0" 
+                    data-date-index="2019-06"
+                    data-date="2019-06-12"
+                    >
+                    
+            <div class="__date-time">
+                            <span class="wrapper">
+                                            <span class="label">Jun</span>
+                        <span class="date">12</span>
+                        <span class="label">Wed</span>
+                                    </span>
+                    </div>
+         
+        <div class="__show-card">
+                <a class="show-card" href="https://www.tvguide.com/tvshows/queen-sugar/895828/" data-section-id="showcard">
+            <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="https://static.tvgcdn.net/feed/1/883/thumbs/118294883_140x187.jpg|https://static.tvgcdn.net/feed/1/883/thumbs/118294883_280x373.jpg|https://static.tvgcdn.net/feed/1/883/thumbs/118294883_420x560.jpg" class="show-card-image b-lazy" width="140" height="187" data-amp-src="https://static.tvgcdn.net/feed/1/883/thumbs/118294883_140x187.jpg" />
+        </a>
+    </div>
+    <div class="__details">
+            <h3 class="title">
+            <a class="link" href="https://www.tvguide.com/tvshows/queen-sugar/895828/">Queen Sugar
+                            </a>
+                            <a class="watchlist-button" 
+    data-button="watchlist" 
+    data-id="895828" 
+    data-type="tvshow" 
+    data-name="Queen Sugar" 
+    data-location="body"
+    href="https://www.tvguide.com/watchlist/">
+        <span class="off"><i class="fa fa-plus item-icon item-action-icon"></i> Add to Watchlist</span>
+        <span class="on"><i class="fa fa-check item-icon item-action-icon"></i> Added to Watchlist</span>
+    </a>
+                    </h3>
+        <h4 class="airing">
+                        9:00pm (OWN)
+            </h4>        <div class="description">The lives of a New Orleans-based journalist and her family are upended by her sister, who's returned home to help run the family sugarcane farm.</div>
+        
+                    
+            <div class="__news">
+                                        <h5 class="__sub-title">Latest Updates</h5>
+                <ul class="__list">
+                                        <li class="__article"><a class="link" href="https://www.tvguide.com/news/naacp-image-award-nominations-2019/">NAACP Image Award Nominations Spotlight <em>Power</em>, <em>black-ish</em> and <em>Queen Sugar</em></a></li>
+                                    </li>
+                    </div>
+    
+    </div>                </li>
+                                                        <li class='__item __picked' 
+                    data-new="0" 
+                    data-date-index="2019-06"
+                    data-date="2019-06-12"
+                    >
+                    
+            <div class="__date-time">
+                    </div>
+         
+        <div class="__video">
+                                            <a href="https://www.tvguide.com/tvshows/younger/700857/" data-section-id="show-card">
+                <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="https://static.tvgcdn.net/feed/1/280/thumbs/118344280_c1812x1024+118+0_570x322.jpg|https://static.tvgcdn.net/feed/1/280/thumbs/118344280_c1812x1024+118+0_1140x644.jpg|https://static.tvgcdn.net/feed/1/280/thumbs/118344280_c1812x1024+118+0_1710x966.jpg" class="__thumbnail b-lazy" width="570" height="322" data-amp-src="https://static.tvgcdn.net/feed/1/280/thumbs/118344280_c1812x1024+118+0_570x322.jpg" />
+                </a>
+                    </div>
+    <div class="__details">
+            <h3 class="title">
+            <a class="link" href="https://www.tvguide.com/tvshows/younger/700857/">Younger
+                            </a>
+                    </h3>
+        <h4 class="airing">
+                                                            
+                    Wednesday Jun 12th, 10:00pm (TV Land)
+            </h4>        <div class="description">Now that they're not working directly together anymore, Liza and Charles must figure out the new dynamic of their relationship. Meanwhile, Josh has to reel from the realization he's really going to be a father -- just not with the woman he expected.</div>
+        
+                    
+            <div class="__news">
+                                        <h5 class="__sub-title">Latest Updates</h5>
+                <ul class="__list">
+                                        <li class="__article"><a class="link" href="https://www.tvguide.com/news/younger-season-6-official-trailer/">Liza and Charles' Romance Is Tested in New <em>Younger</em> Season 6 Trailer</a></li>
+                                        <li class="__article"><a class="link" href="https://www.tvguide.com/news/tribeca-film-festival-tv-events/">An <em>In Living Color</em> Reunion, Seth Rogen's <em>The Boys</em>, And Other Reasons TV Fans Should Pay Attention to Tribeca</a></li>
+                                    </li>
+                    </div>
+    
+            <a class="watchlist-button large" 
+    data-button="watchlist" 
+    data-id="700857" 
+    data-type="tvshow" 
+    data-name="Younger" 
+    data-location="body"
+    href="https://www.tvguide.com/watchlist/">
+        <span class="off"><i class="fa fa-plus item-icon item-action-icon"></i> Add to Watchlist</span>
+        <span class="on"><i class="fa fa-check item-icon item-action-icon"></i> Added to Watchlist</span>
+    </a>
+    </div>                </li>
+                                                        <li class='__item __new __picked' 
+                    data-new="1" 
+                    data-date-index="2019-06"
+                    data-date="2019-06-16"
+                    >
+                    
+            <div class="__date-time">
+                    </div>
+         
+        <div class="__video">
+                                            <a href="https://www.tvguide.com/tvshows/city-on-a-hill/1095969/" data-section-id="show-card">
+                <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="https://static.tvgcdn.net/mediabin/background/tvshows/thumbs/city-on-a-hill-1095969_c2487x1405+7+0_570x322.png|https://static.tvgcdn.net/mediabin/background/tvshows/thumbs/city-on-a-hill-1095969_c2487x1405+7+0_1140x644.png|https://static.tvgcdn.net/mediabin/background/tvshows/thumbs/city-on-a-hill-1095969_c2487x1405+7+0_1710x966.png" class="__thumbnail b-lazy" width="570" height="322" data-amp-src="https://static.tvgcdn.net/mediabin/background/tvshows/thumbs/city-on-a-hill-1095969_c2487x1405+7+0_570x322.png" />
+                </a>
+                    </div>
+    <div class="__details">
+            <h3 class="title">
+            <a class="link" href="https://www.tvguide.com/tvshows/city-on-a-hill/1095969/">City on a Hill
+                                    <span class="new-item">NEW</span>
+                            </a>
+                    </h3>
+        <h4 class="airing">
+                                                            
+                    Sunday Jun 16th, 9:00pm (Showtime)
+            </h4>        <div class="description">A district attorney advocating for change forms an unlikely alliance with a corrupt yet venerated FBI veteran who is deeply invested in maintaining the status quo.</div>
+        
+                    
+            <div class="__news">
+                                </div>
+    
+            <a class="watchlist-button large" 
+    data-button="watchlist" 
+    data-id="1095969" 
+    data-type="tvshow" 
+    data-name="City on a Hill" 
+    data-location="body"
+    href="https://www.tvguide.com/watchlist/">
+        <span class="off"><i class="fa fa-plus item-icon item-action-icon"></i> Add to Watchlist</span>
+        <span class="on"><i class="fa fa-check item-icon item-action-icon"></i> Added to Watchlist</span>
+    </a>
+    </div>                </li>
+                                                        <li class='__item __new' 
+                    data-new="1" 
+                    data-date-index="2019-06"
+                    data-date="2019-06-17"
+                    >
+                    
+            <div class="__date-time">
+                            <span class="wrapper">
+                                            <span class="label">Jun</span>
+                        <span class="date">17</span>
+                        <span class="label">Mon</span>
+                                    </span>
+                    </div>
+         
+        <div class="__show-card">
+                <a class="show-card" href="https://www.tvguide.com/tvshows/grand-hotel/668946/" data-section-id="showcard">
+            <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="https://static.tvgcdn.net/feed/1/657/thumbs/117417657_140x187.jpg|https://static.tvgcdn.net/feed/1/657/thumbs/117417657_280x373.jpg|https://static.tvgcdn.net/feed/1/657/thumbs/117417657_420x560.jpg" class="show-card-image b-lazy" width="140" height="187" data-amp-src="https://static.tvgcdn.net/feed/1/657/thumbs/117417657_140x187.jpg" />
+        </a>
+    </div>
+    <div class="__details">
+            <h3 class="title">
+            <a class="link" href="https://www.tvguide.com/tvshows/grand-hotel/668946/">Grand Hotel
+                                    <span class="new-item">NEW</span>
+                            </a>
+                            <a class="watchlist-button" 
+    data-button="watchlist" 
+    data-id="668946" 
+    data-type="tvshow" 
+    data-name="Grand Hotel" 
+    data-location="body"
+    href="https://www.tvguide.com/watchlist/">
+        <span class="off"><i class="fa fa-plus item-icon item-action-icon"></i> Add to Watchlist</span>
+        <span class="on"><i class="fa fa-check item-icon item-action-icon"></i> Added to Watchlist</span>
+    </a>
+                    </h3>
+        <h4 class="airing">
+                        10:00pm (ABC)
+            </h4>        <div class="description">Based on the Spanish series and executive-produced by Eva Longoria, <i>Grand Hotel</i> is a bold and provocative new drama set at the last family-owned hotel in Miami Beach. The antics of the charismatic owner's glamorous second wife and adult children butt against those of the hotel staff, creating a contemporary take on the upstairs/downstairs story. Of course, things aren't as wonderful as they appear: scandals, debt and explosive secrets hide beneath a picture-perfect exterior.</div>
+        
+                        <span class="__button __play __video __video-button" data-video="668946" data-tvobject="668946">
+        <span class="__icon"><i class="fa fa-play"></i></span>
+        <span class="__label __default">watch trailer</span>
+        <span class="__label __playing">now playing</span>
+    </span>
+                
+            <div class="__news">
+                                        <h5 class="__sub-title">Latest Updates</h5>
+                <ul class="__list">
+                                        <li class="__article"><a class="link" href="https://www.tvguide.com/news/abc-summer-premiere-dates-bachelor-in-paradise-reef-break/">ABC Sets Premiere Dates for <em>Bachelor in Paradise</em> and a Whole Bunch of Game Shows</a></li>
+                                        <li class="__article"><a class="link" href="https://www.tvguide.com/news/abc-midseason-schedule/"><em>A Million Little Things</em> Bumps a Shondaland Show in New ABC Lineup</a></li>
+                                    </li>
+                    </div>
+    
+    </div>                </li>
+                                                        <li class='__item' 
+                    data-new="0" 
+                    data-date-index="2019-06"
+                    data-date="2019-06-18"
+                    >
+                    
+            <div class="__date-time">
+                            <span class="wrapper">
+                                            <span class="label">Jun</span>
+                        <span class="date">18</span>
+                        <span class="label">Tue</span>
+                                    </span>
+                    </div>
+         
+        <div class="__show-card">
+                <a class="show-card" href="https://www.tvguide.com/tvshows/good-trouble/1200082/" data-section-id="showcard">
+            <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="https://static.tvgcdn.net/feed/1/988/thumbs/118750988_140x187.jpg|https://static.tvgcdn.net/feed/1/988/thumbs/118750988_280x373.jpg|https://static.tvgcdn.net/feed/1/988/thumbs/118750988_420x560.jpg" class="show-card-image b-lazy" width="140" height="187" data-amp-src="https://static.tvgcdn.net/feed/1/988/thumbs/118750988_140x187.jpg" />
+        </a>
+    </div>
+    <div class="__details">
+            <h3 class="title">
+            <a class="link" href="https://www.tvguide.com/tvshows/good-trouble/1200082/">Good Trouble
+                            </a>
+                            <a class="watchlist-button" 
+    data-button="watchlist" 
+    data-id="1200082" 
+    data-type="tvshow" 
+    data-name="Good Trouble" 
+    data-location="body"
+    href="https://www.tvguide.com/watchlist/">
+        <span class="off"><i class="fa fa-plus item-icon item-action-icon"></i> Add to Watchlist</span>
+        <span class="on"><i class="fa fa-check item-icon item-action-icon"></i> Added to Watchlist</span>
+    </a>
+                    </h3>
+        <h4 class="airing">
+                        8:00pm (Freeform)
+            </h4>        <div class="description">The Fosters spin-off focuses on Callie and Mariana's new lives post-college in Los Angeles. It's sexier and grittier than the former Freeform family show, but there also lots of nods to the parents series and the show's social conscious angle.</div>
+        
+                    
+            <div class="__news">
+                                        <h5 class="__sub-title">Latest Updates</h5>
+                <ul class="__list">
+                                        <li class="__article"><a class="link" href="https://www.tvguide.com/news/good-trouble-season-1-finale-joanna-johnson-interview/"><em>Good Trouble</em> Boss Teases an Even More Complicated Season 2 for the Coterie</a></li>
+                                        <li class="__article"><a class="link" href="https://www.tvguide.com/news/freeform-good-trouble-grown-ish-siren-summer-premiere-dates/">Freeform's <em>Good Trouble</em>, <em>grown-ish</em>, and <em>Siren</em> Get Summer Premiere Dates</a></li>
+                                    </li>
+                    </div>
+    
+    </div>                </li>
+                                                        <li class='__item' 
+                    data-new="0" 
+                    data-date-index="2019-06"
+                    data-date="2019-06-19"
+                    >
+                    
+            <div class="__date-time">
+                            <span class="wrapper">
+                                            <span class="label">Jun</span>
+                        <span class="date">19</span>
+                        <span class="label">Wed</span>
+                                    </span>
+                    </div>
+         
+        <div class="__show-card">
+                <a class="show-card" href="https://www.tvguide.com/tvshows/yellowstone/1063588/" data-section-id="showcard">
+            <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="https://static.tvgcdn.net/feed/1/922/thumbs/118327922_140x187.jpg|https://static.tvgcdn.net/feed/1/922/thumbs/118327922_280x373.jpg|https://static.tvgcdn.net/feed/1/922/thumbs/118327922_420x560.jpg" class="show-card-image b-lazy" width="140" height="187" data-amp-src="https://static.tvgcdn.net/feed/1/922/thumbs/118327922_140x187.jpg" />
+        </a>
+    </div>
+    <div class="__details">
+            <h3 class="title">
+            <a class="link" href="https://www.tvguide.com/tvshows/yellowstone/1063588/">Yellowstone
+                            </a>
+                            <a class="watchlist-button" 
+    data-button="watchlist" 
+    data-id="1063588" 
+    data-type="tvshow" 
+    data-name="Yellowstone" 
+    data-location="body"
+    href="https://www.tvguide.com/watchlist/">
+        <span class="off"><i class="fa fa-plus item-icon item-action-icon"></i> Add to Watchlist</span>
+        <span class="on"><i class="fa fa-check item-icon item-action-icon"></i> Added to Watchlist</span>
+    </a>
+                    </h3>
+        <h4 class="airing">
+                        10:00pm (Paramount)
+            </h4>        <div class="description">Written and directed by Taylor Sheridan (<i>Hell or High Water</i>), <i>Yellowstone</i> stars Kevin Costner and follows the Dutton family, which controls the largest contiguous cattle ranch in America. The ranch is constantly in conflict with its neighbors, which include America's first national park, an expanding town, and a Native American reservation. A study of the modern West, the series details a violent world that is far from the prying eyes of the media.</div>
+        
+                    
+            <div class="__news">
+                                        <h5 class="__sub-title">Latest Updates</h5>
+                <ul class="__list">
+                                        <li class="__article"><a class="link" href="https://www.tvguide.com/news/yellowstone-season-2-trailer/"><em>Yellowstone</em> Season 2 Trailer Doubles Down on Being a Western Westeros</a></li>
+                                    </li>
+                    </div>
+    
+    </div>                </li>
+                                                        <li class='__item __picked' 
+                    data-new="0" 
+                    data-date-index="2019-07"
+                    data-date="2019-07-04"
+                    >
+                    
+            <div class="__date-time">
+                    </div>
+         
+        <div class="__video">
+                                            <a href="https://www.tvguide.com/tvshows/stranger-things/794696/" data-section-id="show-card">
+                <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="https://static.tvgcdn.net/feed/1/238/thumbs/117915238_c1328x750+86+0_570x322.jpg|https://static.tvgcdn.net/feed/1/238/thumbs/117915238_c1328x750+86+0_1140x644.jpg|https://static.tvgcdn.net/feed/1/238/thumbs/117915238_c1328x750+86+0_1328x750.jpg" class="__thumbnail b-lazy" width="570" height="322" data-amp-src="https://static.tvgcdn.net/feed/1/238/thumbs/117915238_c1328x750+86+0_570x322.jpg" />
+                </a>
+                    </div>
+    <div class="__details">
+            <h3 class="title">
+            <a class="link" href="https://www.tvguide.com/tvshows/stranger-things/794696/">Stranger Things
+                            </a>
+                    </h3>
+        <h4 class="airing">
+                                                            
+                    Thursday Jul 4th (Netflix)
+            </h4>        <div class="description">Spend your Fourth of July heading to the Upside Down with the town of Hawkins, Indianna as Season 3 of Netflix's paranormal thriller kicks off its highly anticipated third season. Will the demogorgon finally devour the town? Will we see the other children experimented on like Eleven? Your burning questions will be answered as the hot dogs are roasting and the fireworks are popping.</div>
+        
+                    
+            <div class="__news">
+                                        <h5 class="__sub-title">Latest Updates</h5>
+                <ul class="__list">
+                                        <li class="__article"><a class="link" href="https://www.tvguide.com/news/stranger-things-season-3-netflix-new-coke/"><em>Stranger Things</em>' New Coke Teaser Wants You To Believe New Coke Was Good</a></li>
+                                        <li class="__article"><a class="link" href="https://www.tvguide.com/news/netflix-originals-complete-guide-2019-titles/">A Comprehensive Guide to Netflix's 2019 Originals</a></li>
+                                    </li>
+                    </div>
+    
+            <a class="watchlist-button large" 
+    data-button="watchlist" 
+    data-id="794696" 
+    data-type="tvshow" 
+    data-name="Stranger Things" 
+    data-location="body"
+    href="https://www.tvguide.com/watchlist/">
+        <span class="off"><i class="fa fa-plus item-icon item-action-icon"></i> Add to Watchlist</span>
+        <span class="on"><i class="fa fa-check item-icon item-action-icon"></i> Added to Watchlist</span>
+    </a>
+    </div>                </li>
+                                                        <li class='__item' 
+                    data-new="0" 
+                    data-date-index="2019-08"
+                    data-date="2019-08-04"
+                    >
+                    
+            <div class="__date-time">
+                            <span class="wrapper">
+                                            <span class="label">Aug</span>
+                        <span class="date">4</span>
+                        <span class="label">Sun</span>
+                                    </span>
+                    </div>
+         
+        <div class="__show-card">
+                <a class="show-card" href="https://www.tvguide.com/tvshows/preacher/736150/" data-section-id="showcard">
+            <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="https://static.tvgcdn.net/feed/1/356/thumbs/118412356_140x187.jpg|https://static.tvgcdn.net/feed/1/356/thumbs/118412356_280x373.jpg|https://static.tvgcdn.net/feed/1/356/thumbs/118412356_420x560.jpg" class="show-card-image b-lazy" width="140" height="187" data-amp-src="https://static.tvgcdn.net/feed/1/356/thumbs/118412356_140x187.jpg" />
+        </a>
+    </div>
+    <div class="__details">
+            <h3 class="title">
+            <a class="link" href="https://www.tvguide.com/tvshows/preacher/736150/">Preacher
+                            </a>
+                            <a class="watchlist-button" 
+    data-button="watchlist" 
+    data-id="736150" 
+    data-type="tvshow" 
+    data-name="Preacher" 
+    data-location="body"
+    href="https://www.tvguide.com/watchlist/">
+        <span class="off"><i class="fa fa-plus item-icon item-action-icon"></i> Add to Watchlist</span>
+        <span class="on"><i class="fa fa-check item-icon item-action-icon"></i> Added to Watchlist</span>
+    </a>
+                    </h3>
+        <h4 class="airing">
+                        AMC
+            </h4>        <div class="description">The final season of AMC's comic-book based epic from Seth Rogen and Evan Goldberg will see Herr Starr face off against Jesse as the latter's search for God continues.</div>
+        
+                    
+            <div class="__news">
+                                        <h5 class="__sub-title">Latest Updates</h5>
+                <ul class="__list">
+                                        <li class="__article"><a class="link" href="https://www.tvguide.com/news/preacher-renewed-season-4-amc/"><em>Preacher</em> Renewed for Season 4 at AMC</a></li>
+                                    </li>
+                    </div>
+    
+    </div>                </li>
+                                                        <li class='__item' 
+                    data-new="0" 
+                    data-date-index="2019-08"
+                    data-date="2019-08-12"
+                    >
+                    
+            <div class="__date-time">
+                            <span class="wrapper">
+                                            <span class="label">Aug</span>
+                        <span class="date">12</span>
+                        <span class="label">Mon</span>
+                                    </span>
+                    </div>
+         
+        <div class="__show-card">
+                <a class="show-card" href="https://www.tvguide.com/tvshows/lodge-49/987048/" data-section-id="showcard">
+            <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="https://static.tvgcdn.net/feed/1/79/thumbs/118429079_140x187.jpg|https://static.tvgcdn.net/feed/1/79/thumbs/118429079_280x373.jpg|https://static.tvgcdn.net/feed/1/79/thumbs/118429079_420x560.jpg" class="show-card-image b-lazy" width="140" height="187" data-amp-src="https://static.tvgcdn.net/feed/1/79/thumbs/118429079_140x187.jpg" />
+        </a>
+    </div>
+    <div class="__details">
+            <h3 class="title">
+            <a class="link" href="https://www.tvguide.com/tvshows/lodge-49/987048/">Lodge 49
+                            </a>
+                            <a class="watchlist-button" 
+    data-button="watchlist" 
+    data-id="987048" 
+    data-type="tvshow" 
+    data-name="Lodge 49" 
+    data-location="body"
+    href="https://www.tvguide.com/watchlist/">
+        <span class="off"><i class="fa fa-plus item-icon item-action-icon"></i> Add to Watchlist</span>
+        <span class="on"><i class="fa fa-check item-icon item-action-icon"></i> Added to Watchlist</span>
+    </a>
+                    </h3>
+        <h4 class="airing">
+                        10:00pm (AMC)
+            </h4>        <div class="description">An ex-surfer joins a fraternal order in Long Beach in hopes of returning to a simpler lifestyle he hasn't known since his father's death.</div>
+        
+                    
+            <div class="__news">
+                                        <h5 class="__sub-title">Latest Updates</h5>
+                <ul class="__list">
+                                        <li class="__article"><a class="link" href="https://www.tvguide.com/news/amc-summer-2019-premiere-dates-the-terror-lodge-49/">AMC Sets Summer Premiere Dates for <em>Lodge 49</em> Season 2 and <em>The Terror: Infamy</em></a></li>
+                                        <li class="__article"><a class="link" href="https://www.tvguide.com/news/best-worst-tv-moments-2018/">Revisit the Best, Worst and Most Unforgettable TV Moments of 2018</a></li>
+                                    </li>
+                    </div>
+    
+    </div>                </li>
+                                                        <li class='__item __new' 
+                    data-new="1" 
+                    data-date-index="2030-12"
+                    data-date="2030-12-21"
+                    >
+                    
+            <div class="__date-time">
+                            <span class="wrapper">
+                                            <span class="date">TBD</span>
+                                    </span>
+                    </div>
+         
+        <div class="__show-card">
+                <a class="show-card" href="https://www.tvguide.com/tvshows/the-gilded-age/1163551/" data-section-id="showcard">
+            <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="https://static.tvgcdn.net/mediabin/showcards/tvshows/900000-1000000/thumbs/1163551-the-gilded-age_140x187.png|https://static.tvgcdn.net/mediabin/showcards/tvshows/900000-1000000/thumbs/1163551-the-gilded-age_280x373.png|https://static.tvgcdn.net/mediabin/showcards/tvshows/900000-1000000/thumbs/1163551-the-gilded-age_420x560.png" class="show-card-image b-lazy" width="140" height="187" data-amp-src="https://static.tvgcdn.net/mediabin/showcards/tvshows/900000-1000000/thumbs/1163551-the-gilded-age_140x187.png" />
+        </a>
+    </div>
+    <div class="__details">
+            <h3 class="title">
+            <a class="link" href="https://www.tvguide.com/tvshows/the-gilded-age/1163551/">The Gilded Age
+                                    <span class="new-item">NEW</span>
+                            </a>
+                            <a class="watchlist-button" 
+    data-button="watchlist" 
+    data-id="1163551" 
+    data-type="tvshow" 
+    data-name="The Gilded Age" 
+    data-location="body"
+    href="https://www.tvguide.com/watchlist/">
+        <span class="off"><i class="fa fa-plus item-icon item-action-icon"></i> Add to Watchlist</span>
+        <span class="on"><i class="fa fa-check item-icon item-action-icon"></i> Added to Watchlist</span>
+    </a>
+                    </h3>
+        <h4 class="airing">
+                        NBC
+            </h4>        <div class="description">From the creator of <i>Downton Abbey</i> comes this 10-episodes series set in 1880s New York City, a period of immense social upheaval in which huge fortunes were made and lost and palaces spanned the length of Fifth Avenue. The series follows the wide-eyed young scion of a conservative family who embarks on a quest to infiltrate a wealthy neighboring family led by a ruthless railroad tycoon and his ambitious wife, whose "new money" is a barrier to acceptance by the Astor and Vanderbilt set. Oh, and there's also a rakish and single son, in case you were wondering about that sort of thing.</div>
+        
+                    
+            <div class="__news">
+                                </div>
+    
+    </div>                </li>
+                            </ul>
+
+        <div class="special-feature__ad">
+        <div  data-config-id="feature_leader_bottom" data-ad-type="dfp" class="ad-dfp"></div>    </div>
+
+        <div id="video-trailer-container" class="video-trailer-container">
+        <div class="header"><h4 class="title"></h4> <i class="fa fa-times"></i></div>
+        
+
+
+<div class="hub-video-player-container">
+	<div id="videoplayer" class="hub-video-player hub-video"
+         data-id="71d751da-09c6-41e0-b375-184313e8d3af"
+         data-placement="autodetect"
+         data-ad-type="iba"
+         data-overautoplay=""
+		 data-autoplay=""
+		 data-kw-ad=""
+         data-meta="">
+		<div class="hub-video-container">
+			<div id="videoContainer"></div>
+		</div>
+	</div>
+</div>
+
+	
+	<script type="text/javascript">
+		window.$tvg.videos = window.$tvg.videos || { };
+								window.$tvg.videos['71d751da-09c6-41e0-b375-184313e8d3af'] = {"id":"71d751da-09c6-41e0-b375-184313e8d3af","title":"Watch This Now &ndash; May 20-26, 2019","slug":"watch-this-now-may-20-26-2019-dcs-legends-of-tomorrow-the-voice-ransom","stripped_title":"Watch This Now &ndash; May 20-26, 2019","files":[],"dek":null,"date":null,"duration":"00:00","image":"https://cimg.tvgcdn.net/i/2019/04/09/2d1164fe-fe74-47e8-9b76-72bcca4c58ea/0a095644d669cf4c74b9265b99bac271/190409-thevoice-news.jpg","url":"https://www.tvguide.com/videos/todays-top-videos/play/watch-this-now-may-20-26-2019-dcs-legends-of-tomorrow-the-voice-ransom/","embed":"https://www.tvguide.com/videos/embed/watch-this-now-may-20-26-2019-dcs-legends-of-tomorrow-the-voice-ransom/"};
+				window.$tvg.uvpConfig = {"modules":[{"name":"AdSettings","category":"model","enabled":true,"params":[{"name":"adCallOverride","value":""}]},{"name":"CNetTracking","category":"tracking","enabled":true,"params":[{"name":"host","value":"https://dw.cbsi.com/levt/video/e.gif?"},{"name":"siteid","value":"432"},{"name":"medastid","value":""}]},{"name":"SiteCatalyst","category":"qos","enabled":true,"params":[{"name":"account","value":"cbsitvguidesite"},{"name":"brand","value":"TV Guide"},{"name":"edition","value":"us"},{"name":"siteType","value":"responsive web"},{"name":"siteCode","value":"tvguide"},{"name":"partnerID","value":"tvguide"},{"name":"charSet","value":"UTF-8"},{"name":"currencyCode","value":"USD"},{"name":"visitorNamespace","value":"cbsinteractive"},{"name":"trackingServer","value":"aa.cbsi.com"},{"name":"heartbeatVisitorMarketingCloudOrgId","value":"10D31225525FF5790A490D4D@AdobeOrg"},{"name":"heartbeatVisitorNamespace","value":"10D31225525FF5790A490D4D@AdobeOrg"},{"name":"heartbeatTrackingServer","value":"cbsinteractive.hb.omtrdc.net"},{"name":"heartbeatAdobePublisherId","value":"10D31225525FF5790A490D4D@AdobeOrg"}]},{"name":"NielsenTracking_SDK","category":"tracking","enabled":true,"params":[{"name":"apid","value":"PF7B87067-BF4D-F80F-E040-070AAD316CE6"},{"name":"clientid","value":"us-200330"},{"name":"sfcode","value":"us"},{"name":"vcid","value":"c01"},{"name":"channelInfo","value":"TV Guide"},{"name":"iag_sid","value":"1000011"},{"name":"iag_tfid","value":"902"}]},{"name":"NielsenTracking","category":"tracking","enabled":true,"params":[{"name":"scCI","value":"us-200330"},{"name":"scC6","value":"vc,c01"}]},{"name":"GlanceGuide","category":"tracking","enabled":true,"params":[{"name":"","value":""}]},{"name":"ComScore_ss","category":"qos","enabled":true,"params":[{"name":"partnerID","value":"tvguide"},{"name":"c2","value":"3005086"},{"name":"publishersSecret","value":"2cb08ca4d095dd734a374dff8422c2e5"},{"name":"c3","value":""},{"name":"c4","value":"tvguide"}]},{"name":"ComScore_ss","category":"qos","enabled":true,"params":[{"name":"partnerID","value":"tvguide"},{"name":"c2","value":"3005086"},{"name":"publishersSecret","value":"2cb08ca4d095dd734a374dff8422c2e5"},{"name":"c3","value":""},{"name":"c4","value":"tvguide"}]},{"name":"ComScoreTracking","category":"tracking","enabled":true,"params":[{"name":"c2","value":"C2=3005567"},{"name":"c3","value":"C3="},{"name":"c4","value":"C4="}]},{"name":"ConvivaQOSPlugin","category":"qos","enabled":true,"params":[{"name":"customerid","value":"c3.CBS-Partners"},{"name":"serviceurl","value":"http://livepass.conviva.com"}]},{"name":"ClosedCaptions","category":"plugin","enabled":true,"params":[{"name":"fontSize","value":"20"},{"name":"fontColor","value":"#CCCCCC"},{"name":"fontFamily","value":"Arial"},{"name":"textDecoration","value":"none"},{"name":"fontWeight","value":"bold"},{"name":"textAlign","value":"center"},{"name":"loadByDefault","value":"false"},{"name":"backgroundColor","value":"#000000"},{"name":"backgroundOpacity","value":"80"},{"name":"backgroundDisplayStyle","value":"auto","alt":"auto or fixed"},{"name":"backgroundDisplayWidth","value":"auto","alt":"auto or fixed"},{"name":"xPosition","value":"center"},{"name":"yPosition","value":"bottom"},{"name":"margin","value":"10"},{"name":"padding","value":"8"},{"name":"allowInlineXMLStyleOverride","value":"false"}]},{"name":"UVPMessenger","category":"internal","enabled":true,"params":[{"name":"ADP_basic","value":"n"},{"name":"ADP_xml_parser","value":"n"},{"name":"ADP_rsrcVO_dump","value":"n"},{"name":"ADP_resources","value":"n"},{"name":"ADP_VO_evnts_trk","value":"n"},{"name":"CBSi_Freewheel_PlugIn","value":"n"},{"name":"CBSI_IMA_PlugIn","value":"y"},{"name":"UVP_tracking","value":"n"},{"name":"UVP - Model","value":"y"},{"name":"CAN - Model","value":"y"},{"name":"Controller","value":"y"},{"name":"UVP - View","value":"y"},{"name":"Main","value":"y"},{"name":"QOS","value":"y"}]}],"classes":[{"name":"VideoSourceManager","className":"com.cbs.can.model.VideoSourceManager","properties":[{"name":"liveStreamToken","value":"masters_"},{"name":"geoDetectionURL","value":"http://videocgi.drt.cbsig.net/video/geo/c2i.pl"},{"name":"videoSourceClassName","value":"com.cbs.can.model.PlatformMPXVideoSource"}],"list":[{"id":"Platform","className":"com.cbs.can.model.PlatformVideoSource","properties":[{"name":"PlayListURL","value":"http://release.theplatform.com/content.select?format=SMIL&amp;Tracking=true&amp;balance=true&amp;MBR=true&amp;pid="},{"name":"MultiBitrateURL","value":"http://release.theplatform.com/content.select?format=SMIL&amp;Tracking=true&amp;balance=true&amp;MBR=true&amp;pid="},{"name":"ThumbnailURL","value":"http://cbs.feeds.theplatform.com/ps/API/PortalService/1.6/getReleaseList?PID=GIIJWbEj_zj6weINzALPyoHte4KLYNmp&amp;field=thumbnailURL&amp;field=title&amp;query=PIDs|"},{"name":"GeoMessage","value":"You are not in a geographic region that has access to this content."},{"name":"XMLHandler","value":"com.cbs.can.model.Platform"}]},{"id":"Platform_MPX","className":"com.cbs.can.model.PlatformMPXVideoSource","properties":[{"name":"PlayListURL","value":"http://link.theplatform.com/s/VcbhCC/$PID$/meta.smil?format=smil&amp;Tracking=true"},{"name":"MultiBitrateURL","value":"http://link.theplatform.com/s/kYEXFC/$PID$?format=SMIL&amp;manifest=m3u&amp;Tracking=true&amp;mbr=true"},{"name":"ThumbnailURL","value":"http://link.theplatform.com/s/kYEXFC/$PID$?format=preview"},{"name":"GeoMessage","value":"This content is not available in your location."},{"name":"XMLHandler","value":"com.cbs.can.model.Platform_MPX"}]}]}],"ad-calls":{"tvg-iva":{"home":{"mobile":"https://pubads.g.doubleclick.net/gampad/ads?sz=640x480&iu=/8264/vaw-tvguide/mobile_web&impl=s&gdfp_req=1&env=vp&output=xml_vmap1&unviewed_position_start=1&url=[referrer_url]&description_url=[description_url]&correlator=[timestamp]&nofb=1&cust_params=ptype%3Dbest-lists%26partner%3Dtvguide%26show%3D%26sitesection%3Dbest-lists%26personid%3D%26movieId%3D[movieid]%26vguid%3Dacbc8183-5c84-4da7-83be-48024e6b6ed1%26pv%3D[pv_count]%26feat%3Diva%2Ctvg_hp%26session%3D[session]%26subses%3D[subses]","desktop":"https://pubads.g.doubleclick.net/gampad/ads?sz=640x480&iu=/8264/vaw-tvguide/desktop&impl=s&gdfp_req=1&env=vp&output=xml_vmap1&unviewed_position_start=1&url=[referrer_url]&description_url=[description_url]&correlator=[timestamp]&nofb=1&cust_params=ptype%3Dbest-lists%26partner%3Dtvguide%26show%3D%26sitesection%3Dbest-lists%26personid%3D%26movieid%3D%26vguid%3Dacbc8183-5c84-4da7-83be-48024e6b6ed1%26pv%3D[pv_count]%26feat%3Diva%2Ctvg_hp%26session%3D[session]%26subses%3D[subses]"},"listings":{"mobile":"https://pubads.g.doubleclick.net/gampad/ads?sz=640x480&iu=/8264/vaw-tvguide/mobile_web&impl=s&gdfp_req=1&env=vp&output=xml_vmap1&unviewed_position_start=1&url=[referrer_url]&description_url=[description_url]&correlator=[timestamp]&nofb=1&cust_params=ptype%3Dbest-lists%26partner%3Dtvguide%26show%3D%26sitesection%3Dbest-lists%26personid%3D%26movieid%3D%26vguid%3Dacbc8183-5c84-4da7-83be-48024e6b6ed1%26pv%3D[pv_count]%26feat%3Diva%2Ctvg_listing%26session%3D[session]%26subses%3D[subses]","desktop":"https://pubads.g.doubleclick.net/gampad/ads?sz=640x480&iu=/8264/vaw-tvguide/desktop&impl=s&gdfp_req=1&env=vp&output=xml_vmap1&unviewed_position_start=1&url=[referrer_url]&description_url=[description_url]&correlator=[timestamp]&nofb=1&cust_params=ptype%3Dbest-lists%26partner%3Dtvguide%26show%3D%26siteSection%3Dbest-lists%26personId%3D%26movieId%3D%26vguid%3Dacbc8183-5c84-4da7-83be-48024e6b6ed1%26pv%3D[pv_count]%26feat%3Diva%2Ctvg_listing%26session%3D[session]%26subses%3D[subses]"},"default":{"mobile":"https://pubads.g.doubleclick.net/gampad/ads?sz=640x480&iu=/8264/vaw-tvguide/mobile_web&impl=s&gdfp_req=1&env=vp&output=xml_vast2&unviewed_position_start=1&url=[referrer_url]&description_url=[description_url]&correlator=[timestamp]&nofb=1&cust_params=ptype%3Dbest-lists%26partner%3Dtvguide%26show%3D%26sitesection%3Dbest-lists%26personid%3D%26movieid%3D%26vguid%3Dacbc8183-5c84-4da7-83be-48024e6b6ed1%26pv%3D[pv_count]%26feat%3Diva%26session%3D[session]%26subses%3D[subses]%26network%3D","desktop":"https://pubads.g.doubleclick.net/gampad/ads?sz=640x480&iu=/8264/vaw-tvguide/desktop&impl=s&gdfp_req=1&env=vp&output=xml_vast2&unviewed_position_start=1&url=[referrer_url]&description_url=[description_url]&correlator=[timestamp]&nofb=1&cust_params=ptype%3Dbest-lists%26partner%3Dtvguide%26show%3D%26sitesection%3Dbest-lists%26personid%3D%26movieid%3D%26vguid%3Dacbc8183-5c84-4da7-83be-48024e6b6ed1%26pv%3D[pv_count]%26feat%3Diva%26session%3D[session]%26subses%3D[subses]%26network%3D"}},"tvc-iva":{"default":{"mobile":"https://pubads.g.doubleclick.net/gampad/ads?sz=640x480&iu=/8264/vaw-tv/mobile_web&impl=s&gdfp_req=1&env=vp&output=xml_vmap1&unviewed_position_start=1&url=[referrer_url]&description_url=[description_url]&correlator=[timestamp]&nofb=1&cust_params=ptype%3Dbest-lists%26partner%3Dtvguide%26show%3D%26sitesection%3Dbest-lists%26personid%3D%26movieid%3D%26vguid%3Dacbc8183-5c84-4da7-83be-48024e6b6ed1%26pv%3D[pv_count]%26feat%3Diva%26nofb%3D1%26session%3D[session]%26subses%3D[subses]","desktop":"https://pubads.g.doubleclick.net/gampad/ads?sz=640x480&iu=/8264/vaw-tv/desktop&impl=s&gdfp_req=1&env=vp&output=xml_vmap1&unviewed_position_start=1&url=[referrer_url]&description_url=[description_url]&correlator=[timestamp]&nofb=1&cust_params=ptype%3Dbest-lists%26partner%3Dtvguide%26show%3D%26sitesection%3Dbest-lists%26personid%3D%26movieid%3D%26vguid%3Dacbc8183-5c84-4da7-83be-48024e6b6ed1%26pv%3D[pv_count]%26feat%3Diva%26session%3D[session]%26subses%3D[subses]"}},"tvg-iba":{"autodetect":{"mobile":"https://pubads.g.doubleclick.net/gampad/ads?sz=640x480&iu=/8264/vaw-tvguide/mobile_web&impl=s&gdfp_req=1&env=vp&output=xml_vmap1&unviewed_position_start=1&url=[referrer_url]&description_url=[description_url]&correlator=[timestamp]&cmsid=2289&vid={mediaReferenceId}&cust_params=ptype%3Dbest-lists%26partner%3Dtvguide%26show%3D%26sitesection%3Dbest-lists%26personid%3D%26movieid%3D%26vguid%3Dacbc8183-5c84-4da7-83be-48024e6b6ed1%26pv%3D[pv_count]%26pname%3D[pname]%26cid%3D[cid]%26session%3D[session]%26subses%3D[subses]%26network%3D","desktop":"https://pubads.g.doubleclick.net/gampad/ads?sz=640x480&iu=/8264/vaw-tvguide/desktop&impl=s&gdfp_req=1&env=vp&output=xml_vmap1&unviewed_position_start=1&url=[referrer_url]&description_url=[description_url]&correlator=[timestamp]&cmsid=2289&vid={mediaReferenceId}&cust_params=ptype%3Dbest-lists%26partner%3Dtvguide%26show%3D%26sitesection%3Dbest-lists%26personid%3D%26movieid%3D%26vguid%3Dacbc8183-5c84-4da7-83be-48024e6b6ed1%26pv%3D[pv_count]%26pname%3D[pname]%26cid%3D[cid]%26session%3D[session]%26subses%3D[subses]%26network%3D"},"default":{"mobile":"https://pubads.g.doubleclick.net/gampad/ads?sz=640x480&iu=/8264/vaw-tvguide/mobile_web&impl=s&gdfp_req=1&env=vp&output=xml_vmap1&unviewed_position_start=1&url=[referrer_url]&description_url=[description_url]&correlator=[timestamp]&cmsid=2289&vid={mediaReferenceId}&cust_params=ptype%3Dbest-lists%26partner%3Dtvguide%26show%3D%26sitesection%3Dbest-lists%26personid%3D%26movieid%3D%26vguid%3Dacbc8183-5c84-4da7-83be-48024e6b6ed1%26pv%3D[pv_count]%26session%3D[session]%26subses%3D[subses]%26feat%3D[feat]%26network%3D","desktop":"https://pubads.g.doubleclick.net/gampad/ads?sz=640x480&iu=/8264/vaw-tvguide/desktop&impl=s&gdfp_req=1&env=vp&output=xml_vmap1&unviewed_position_start=1&url=[referrer_url]&description_url=[description_url]&correlator=[timestamp]&cmsid=2289&vid={mediaReferenceId}&cust_params=ptype%3Dbest-lists%26partner%3Dtvguide%26show%3D%26sitesection%3Dbest-lists%26personid%3D%26movieid%3D%26vguid%3Dacbc8183-5c84-4da7-83be-48024e6b6ed1%26pv%3D[pv_count]%26session%3D[session]%26subses%3D[subses]%26feat%3D[feat]%26network%3D"}},"tvc-iba":{"default":{"mobile":"https://pubads.g.doubleclick.net/gampad/ads?sz=640x480&iu=/8264/vaw-tv/mobile_web&impl=s&gdfp_req=1&env=vp&output=xml_vmap1&unviewed_position_start=1&url=[referrer_url]&description_url=[description_url]&correlator=[timestamp]&cmsid=2289&vid={mediaReferenceId}&nofb=1&cust_params=ptype%3Dbest-lists%26partner%3Dtvguide%26show%3D%26sitesection%3Dbest-lists%26personid%3D%26movieid%3D%26vguid%3Dacbc8183-5c84-4da7-83be-48024e6b6ed1%26pv%3D[pv_count]%26session%3D[session]%26subses%3D[subses]","desktop":"https://pubads.g.doubleclick.net/gampad/ads?sz=640x480&iu=/8264/vaw-tv/desktop&impl=s&gdfp_req=1&env=vp&output=xml_vmap1&unviewed_position_start=1&url=[referrer_url]&description_url=[description_url]&correlator=[timestamp]&cmsid=2289&vid={mediaReferenceId}&cust_params=ptype%3Dbest-lists%26partner%3Dtvguide%26show%3D%26sitesection%3Dbest-lists%26personid%3D%26movieid%3D%26vguid%3Dacbc8183-5c84-4da7-83be-48024e6b6ed1%26pv%3D[pv_count]%26session%3D[session]%26subses%3D[subses]"}}}};
+	</script>
+    </div>
+
+    
+			</div>
+	
+							
+													</div>
+
+						<div class="content-after">
+															<div class="content-after-blank"></div>
+							
+																												</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		
+		<div id="footer" data-section-id="footer">
+	<div class="footer-container container">
+		<div class="footer-row row">
+				
+			<div class="footer-primary col-md-7">
+				<a href="https://www.tvguide.com/" class="footer-brand"><svg xmlns="http://www.w3.org/2000/svg" width="81" height="60" viewBox="0 0 81 60" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <defs>
+      <polygon id="a" points="0 0 60 0 60 60 0 60"/>
+      <polygon id="c" points="0 60 60 60 60 0 0 0"/>
+    </defs>
+    <g fill="none" fill-rule="evenodd">
+      <rect width="81" height="60" fill="#383D43"/>
+      <g transform="translate(11)">
+        <mask id="b" fill="white">
+          <use xlink:href="#a"/>
+        </mask>
+        <path fill="#A3A3A3" d="M54.0000417,-4.16666667e-05 L6.00004167,-4.16666667e-05 C2.69170833,-4.16666667e-05 4.16666667e-05,2.69120833 4.16666667e-05,5.99995833 L4.16666667e-05,53.9999583 C4.16666667e-05,57.3082917 2.69170833,59.9999583 6.00004167,59.9999583 L54.0000417,59.9999583 C57.308375,59.9999583 60.0000417,57.3082917 60.0000417,53.9999583 L60.0000417,5.99995833 C60.0000417,2.69120833 57.308375,-4.16666667e-05 54.0000417,-4.16666667e-05" mask="url(#b)"/>
+        <polygon fill="#383D43" points="34.511 9.76 7.073 9.76 7.073 16.046 13.449 16.046 13.449 33.582 20.645 33.582 20.645 16.046 26.985 16.046 26.985 11.478 35.117 33.582 44.164 33.582 52.927 9.76 44.77 9.76 39.64 25.796"/>
+        <path fill="#383D43" d="M7.07295833 44.789625C7.07295833 41.465875 9.593375 39.3550417 12.6650417 39.3550417 14.854625 39.3550417 16.224625 40.4579583 17.0125417 41.702125L15.1537917 42.7104583C14.6812917 41.969625 13.783375 41.3400417 12.6650417 41.3400417 10.7592083 41.3400417 9.37295833 42.804625 9.37295833 44.789625 9.37295833 46.7742083 10.7592083 48.2392083 12.6650417 48.2392083 13.5942083 48.2392083 14.4762917 47.829625 14.9017083 47.4362917L14.9017083 46.1754583 12.1292083 46.1754583 12.1292083 44.2225417 17.138375 44.2225417 17.138375 48.254625C16.0675417 49.452125 14.570875 50.239625 12.6650417 50.239625 9.593375 50.239625 7.07295833 48.097125 7.07295833 44.789625M18.7353333 45.8447083L18.7353333 39.5284583 21.0036667 39.5284583 21.0036667 45.766375C21.0036667 47.2309583 21.8540833 48.2392917 23.4765833 48.2392917 25.0990833 48.2392917 25.9336667 47.2309583 25.9336667 45.766375L25.9336667 39.5284583 28.2178333 39.5284583 28.2178333 45.8292917C28.2178333 48.443875 26.6740833 50.223875 23.4765833 50.223875 20.2790833 50.223875 18.7353333 48.4280417 18.7353333 45.8447083"/>
+        <mask id="d" fill="white">
+          <use xlink:href="#c"/>
+        </mask>
+        <polygon fill="#383D43" points="30.169 50.035 32.406 50.035 32.406 39.528 30.169 39.528" mask="url(#d)"/>
+        <path fill="#383D43" d="M41.7940417,44.789625 C41.7940417,42.930875 40.659875,41.4975417 38.5019583,41.4975417 L36.5957083,41.4975417 L36.5957083,48.065875 L38.5019583,48.065875 C40.581125,48.065875 41.7940417,46.5692083 41.7940417,44.789625 Z M34.3590417,50.0350417 L34.3590417,39.528375 L38.5019583,39.528375 C41.7940417,39.528375 44.0777917,41.6229583 44.0777917,44.789625 C44.0777917,47.955875 41.7940417,50.0350417 38.5019583,50.0350417 L34.3590417,50.0350417 Z" mask="url(#d)"/>
+        <polygon fill="#383D43" points="45.492 50.035 45.492 39.528 52.927 39.528 52.927 41.497 47.729 41.497 47.729 43.718 52.817 43.718 52.817 45.687 47.729 45.687 47.729 48.066 52.927 48.066 52.927 50.035" mask="url(#d)"/>
+      </g>
+    </g>
+  </svg>
+  </a>
+				<span class="footer-copyright footer-copyright-small">
+					<span class="footer-copyright-text">
+						&copy; 2019 CBS Interactive Inc. All rights reserved.
+					</span>
+				</span>
+				
+				<ul class="footer-social-links">
+			<li class="footer-social-links-item"><a class="footer-link" href="https://www.facebook.com/TVGuide" target="_blank"><i class="footer-social-links-icon fa fa-facebook"></i></a></li>
+			<li class="footer-social-links-item"><a class="footer-link" href="https://www.twitter.com/TVGuide" target="_blank"><i class="footer-social-links-icon fa fa-twitter"></i></a></li>
+			<li class="footer-social-links-item"><a class="footer-link" href="https://instagram.com/tvguide" target="_blank"><i class="footer-social-links-icon fa fa-instagram"></i></a></li>
+			<li class="footer-social-links-item"><a class="footer-link" href="https://www.pinterest.com/tvguide/" target="_blank"><i class="footer-social-links-icon fa fa-pinterest-p"></i></a></li>
+			<li class="footer-social-links-item"><a class="footer-link" href="https://tvguide.tumblr.com" target="_blank"><i class="footer-social-links-icon fa fa-tumblr"></i></a></li>
+	</ul>
+				<ul class="footer-links">
+					<li class="footer-links-item footer-links-item-even"><a href="https://www.tvguide.com/help/" class="footer-link">Help</a></li>
+					<li class="footer-links-item"><a href="https://www.cbsinteractive.com/advertise/" class="footer-link" target="_blank" rel="nofollow">Media Kit</a></li>
+					<li class="footer-links-item"><a href="https://cbsi.secure.force.com/CBSi/articles/FAQ/CBS-Interactive-Copyright-Complaints?retURL=%2FCBSi%2Fapex%2Fknowledgehome%3Freferer%3Dmobiletou.com%26data%3D&popup=false&categories=CBS_Interactive%3AmTOU&template=template_mobiletou&referer=mobiletou.com&data=&cfs=SFS_TOU_PP" class="footer-link" target="_blank" rel="nofollow">Copyright Policy</a></li>
+					<li class="footer-links-item"><a href="https://www.tvguide.com/pages/staff/" class="footer-link">About Us</a></li>
+					<li class="footer-links-item"><a href="https://www.tvguide.com/pages/sitemap/" class="footer-link">Sitemap</a></li>
+					<li class="footer-links-item"><a href="https://www.tvguide.com/rss/" class="footer-link">RSS</a></li>
+					<li class="footer-links-item footer-links-item-even footer-links-item-mobile"><a href="https://www.tvguide.com/mobile/" class="footer-link">Mobile</a></li>
+					<li class="footer-copyright-item footer-links-item footer-copyright footer-copyright-large hidden-xs hidden-sm">
+						<span class="footer-copyright-text">
+							&copy; 2019 CBS Interactive Inc. All rights reserved.
+						</span>
+					</li>
+					<li class="footer-links-item"><a href="https://legalterms.cbsinteractive.com/privacy" class="footer-link" target="_blank" rel="nofollow">Privacy Policy</a></li>
+					<li class="footer-links-item footer-links-item-even"><a href="https://legalterms.cbsinteractive.com/adchoice" class="footer-link" target="_blank" rel="nofollow">Ad Choice</a></li>
+					<li class="footer-links-item"><a href="https://legalterms.cbsinteractive.com/terms-of-use" class="footer-link" target="_blank" rel="nofollow">Terms of Use</a></li>
+					<li class="footer-links-item footer-links-item-even"><a href="https://legalterms.cbsinteractive.com/eula" class="footer-link" target="_blank" rel="nofollow">Mobile User Agreement</a></li>
+					<li class="footer-links-item footer-links-item-even"><a href="https://www.cbsinteractive.com/careers" class="footer-link" target="_blank" rel="nofollow">Careers</a></li>
+				</ul>
+
+											</div>
+
+											<div class="footer-mobile col-md-4">
+					<a href="https://www.tvguide.com/mobile/"><h5 class="footer-mobile-header">Never Miss Your Show</h5></a>
+					<p id="footer-tma-status" class="footer-mobile-copy">Download the TV Guide app for iPhone, iPad and Android!</p>
+					<div class="text-me-app">
+    <script src="//static-5.tvgcdn.net/www/js/branchio-333cd1927d86d028a65501737ff84c71.js"></script>
+
+    <form onsubmit="sendSMSFooter(this); return false;">
+        <select>
+            <option value="1">+1</option>
+        </select><input id="phone" name="phone" type="tel" placeholder="Enter phone number" /><button id="text-me-app-btn" class="tvg-button send"  type="submit">SEND</button>
+            </form>
+</div>					<p class="footer-mobile-copy-sm">Standard message and data rates may apply</p>
+					<a class="footer-mobile-app-store" target="_blank" href="https://itunes.apple.com/us/app/id333647776?mt=8&at=11l9QE"></a>
+					<a class="footer-mobile-google-play" target="_blank" href="https://play.google.com/store/apps/details?id=com.tvguidemobile&PAffiliateID=1101lS7t"></a>
+				</div>
+					</div>
+	</div>
+</div>
+<div id="footer-overscroll"></div>
+		<div  data-placement="layout.interstitial" data-config-id="intromercial" data-ad-type="dfp" class="ad-dfp"></div>
+											<script type="text/javascript">
+				window.$tvg.guid = 'acbc8183-5c84-4da7-83be-48024e6b6ed1';
+				window.$tvg.adConfig = {"dfp":{"base":{"desktop":"/8264/aw-tvguide/whats-on/coming-soon","mobile":"/8264/maw-tvguide/whats-on/coming-soon"},"units":{"feature_leader_middle_1":{"autodisplay":false,"desktop":{"position":"middle","weight":500,"slot":"Banner","sizes":[[970,66],[728,93],[728,90],[7,7]]},"mobile":{"position":"middle","weight":500,"slot":"Banner","sizes":[[320,50],[300,250],[7,7]]}},"feature_leader_middle_2":{"autodisplay":false,"desktop":{"position":"middle2","weight":500,"slot":"Banner","sizes":[[970,66],[728,93],[728,90],[7,7]]},"mobile":{"position":"middle2","weight":500,"slot":"Banner","sizes":[[320,50],[300,250],[7,7]]}},"feature_leader_middle_3":{"autodisplay":false,"desktop":{"position":"middle3","weight":500,"slot":"Banner","sizes":[[970,66],[728,93],[728,90],[7,7]]},"mobile":{"position":"middle3","weight":500,"slot":"Banner","sizes":[[320,50],[300,250],[7,7]]}},"feature_leader_middle_4":{"autodisplay":false,"desktop":{"position":"middle4","weight":500,"slot":"Banner","sizes":[[970,66],[728,93],[728,90],[7,7]]},"mobile":{"position":"middle4","weight":500,"slot":"Banner","sizes":[[320,50],[300,250],[7,7]]}},"feature_leader_middle_5":{"autodisplay":false,"desktop":{"position":"middle5","weight":500,"slot":"Banner","sizes":[[970,66],[728,93],[728,90],[7,7]]},"mobile":{"position":"middle5","weight":500,"slot":"Banner","sizes":[[320,50],[300,250],[7,7]]}},"feature_leader_middle_6":{"autodisplay":false,"desktop":{"position":"middle6","weight":500,"slot":"Banner","sizes":[[970,66],[728,93],[728,90],[7,7]]},"mobile":{"position":"middle6","weight":500,"slot":"Banner","sizes":[[320,50],[300,250],[7,7]]}},"feature_leader_middle_7":{"autodisplay":false,"desktop":{"position":"middle7","weight":500,"slot":"Banner","sizes":[[970,66],[728,93],[728,90],[7,7]]},"mobile":{"position":"middle7","weight":500,"slot":"Banner","sizes":[[320,50],[300,250],[7,7]]}},"feature_leader_middle_8":{"autodisplay":false,"desktop":{"position":"middle8","weight":500,"slot":"Banner","sizes":[[970,66],[728,93],[728,90],[7,7]]},"mobile":{"position":"middle8","weight":500,"slot":"Banner","sizes":[[320,50],[300,250],[7,7]]}},"feature_leader_middle_9":{"autodisplay":false,"desktop":{"position":"middle8","weight":500,"slot":"Banner","sizes":[[970,66],[728,93],[728,90],[7,7]]},"mobile":{"position":"middle8","weight":500,"slot":"Banner","sizes":[[320,50],[300,250],[7,7]]}},"feature_leader_top":{"desktop":{"position":"top","weight":1000,"slot":"Banner","sizes":[[970,66],[728,91],[728,90],[970,250],[7,7],[321,31]]},"mobile":{"position":"top","weight":1000,"slot":"Banner","sizes":[[320,50],[300,250],[7,7],[321,31]]}},"feature_leader_bottom":{"desktop":{"position":"bottom","weight":100,"slot":"Banner","sizes":[[970,66],[728,92],[728,90],[7,7]]},"mobile":{"position":"bottom","weight":100,"slot":"Banner","sizes":[[320,50],[300,250],[7,7]]}},"nav_ad":{"desktop":{"sizes":[[7,7]],"position":"nav","slot":"nav_ad","weight":801},"mobile":{"sizes":[[7,7]],"position":"nav","slot":"nav_ad","weight":801}},"navbar_top":{"desktop":{"sizes":[[300,60]],"position":"top","slot":"300x60","minimumWidth":728,"weight":50}},"intromercial":{"desktop":{"sizes":null,"slot":"intromercial","weight":1},"mobile":{"sizes":null,"slot":"intromercial","weight":1}}},"targeting":{"ptype":"best-lists","cid":"coming-soon","siteSection":"best-lists","env":"production","pname":"whats-on/coming-soon","vguid":"acbc8183-5c84-4da7-83be-48024e6b6ed1","session":"c","subses":3}},"adsense":{"units":[],"term":null},"taboola":{"type":null,"units":[]},"netseer":[],"native":null};
+
+				//Chartbeat code implementation
+				var _sf_async_config = _sf_async_config || {},
+						siteSection,
+						author;
+
+				siteSection = window.utag_data['siteSection'] ? window.utag_data['siteSection'] : '';
+				author = (window.utag_data['pageType'] == 'article' || window.utag_data['pageType'] == 'feature_article') ? window.utag_data['articleAuthorName'] : '';
+
+				/** CONFIGURATION START **/
+				window.$tvg = window.$tvg || { };
+				_sf_async_config.sections = siteSection,
+				_sf_async_config.authors = author;
+
+				/** CONFIGURATION END **/
+
+				window.addEventListener(window.GDPR_CONSENT_EVENT, function (e) {
+
+					// chartbeat config
+					var n = document.getElementsByTagName('script')[0];
+
+					// load chartbeat video
+					if(window.utag_data.pageType !== 'listings') {
+						window._sf_endpt = (new Date()).getTime();
+						var e = document.createElement('script');
+						e.setAttribute('language', 'javascript');
+						e.setAttribute('type', 'text/javascript');
+						e.setAttribute('src', '//static.chartbeat.com/js/chartbeat_video.js');
+						n.parentNode.insertBefore(e, n);
+					}
+
+					// load charbeat article
+					if(window.utag_data['pageType'] == 'article' || window.utag_data['pageType'] == 'feature_article') {
+						var e = document.createElement('script');
+						e.type = 'text/javascript';
+						e.async = true;
+						e.src = '//static.chartbeat.com/js/chartbeat.js';
+						n.parentNode.insertBefore(e, n);
+					}
+				});
+			</script>
+			<script src="//static-5.tvgcdn.net/www/js/jquery-1.10.2-5ec6bb8c1c977bddb0c922659d3c192b.js"></script>
+
+			<script src="//static-1.tvgcdn.net/www/js/blazy-5e62bf9287d7f0ff45fadbbd4789bcbf.js"></script>
+
+
+						
+			
+			<!--[if lte IE 9]>
+				<script src="//static-2.tvgcdn.net/www/js/jquery.xdomainrequest-fe59549399abbf26db1c9018ec40ca91.js"></script>
+
+			<![endif]-->
+			<script src="//static-3.tvgcdn.net/www/js/srcset-cfa36228dba75b67e114cd54372ebe35.js"></script>
+
+			<script src="//static-5.tvgcdn.net/www/js/logger-4968e002c938f339adaec6b5143cffba.js"></script>
+
+			<script src="//static-5.tvgcdn.net/www/js/tvguid-d296e1dff9695278d83a534c24f94e59.js"></script>
+
+
+			<script src="//static-1.tvgcdn.net/www/js/special-features/feature-topi-6aefa1c4979ba20a94650be4669db3af.js"></script>
+<script src="//static-3.tvgcdn.net/www/js/videos-uvpjs/hub-15b7901e73d85399e3c0ef0e9c3466d5.js"></script>
+<script src="https://vidtech.cbsinteractive.com/uvpjs/0.43.298/CBSI-PLAYER.js"></script>
+
+		
+		<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"3f9fb3df7c","applicationID":"4525918","transactionName":"ZVdSMkFQCkUCVEwLDVwdcQVHWAtYTEJWCQxdRV4=","queueTime":0,"applicationTime":150,"atts":"SRBRRAlKGUs=","errorBeacon":"bam.nr-data.net","agent":""}</script>
+		<script type="application/ld+json">
+	{
+	    "@context" : "https://schema.org",
+	    "@type" : "Organization",
+	    "name" : "TVGuide.com",
+	    "url" : "https://www.tvguide.com",
+	    "sameAs" : [ ["https://www.facebook.com/TVGuide","https://www.twitter.com/TVGuide","https://instagram.com/tvguide","https://www.pinterest.com/tvguide/","https://tvguide.tumblr.com"] ]
+	}
+	</script>	</body>
+</html>

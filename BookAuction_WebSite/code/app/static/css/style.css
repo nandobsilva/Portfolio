@@ -1,0 +1,281 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  width: 95%;
+  max-width: 1200px;
+  margin: auto;
+  background: #f4f6f6
+;
+  height: 100%;
+}
+input{
+    width: 100%
+}
+.inputSize{
+  max-width: 200px;
+  min-width: 200px;
+}
+.mSearch{
+    margin-left: 20px;
+}
+.addBook{
+    width: 100%;
+}
+
+.selectSize{
+  max-width: 200px;
+  min-width: 200px;
+}
+
+p {
+  margin: 0;
+  font-size: 12px;
+}
+
+h7 {
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+}
+
+.imgSize {
+  display: block;
+  margin-top: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 160px;
+  height: 266px;
+}
+.itemImgSize {
+  display: block;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 160px;
+  height: 266px;
+}
+.itemImgSize02 {
+  display: block;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 96px;
+  height: 160px;
+}
+
+.userIconSize {
+  max-width: 70px;
+  height: 70px;
+}
+.userIconLogin {
+  display: block;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 120px;
+  height: 120px;
+}
+
+.centerUserIcon {
+  display: block;
+  margin-top: 12px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.reviewFontSize {
+  font-size: 12px;
+  text-align: justify;
+}
+
+.itemCardText {
+  text-align: justify;
+  font-size: 16px;
+}
+.watchlistCardText {
+  font-size: 12px;
+}
+.watchlistCardBody {
+  margin: auto;
+  width: 70%;
+  padding: 0;
+  padding-top: 25px;
+  background: white;
+  min-width: 230px;
+  max-width: 230px;
+}
+
+.watchlistB {
+  margin-top: 5px;
+  margin-bottom: 15px;
+}
+.itembc {
+  background: rgb(247, 246, 246);
+}
+
+.mt10 {
+  margin-bottom: 10px;
+}
+
+.ml20 {
+  margin-left: 10px;
+}
+
+.center {
+  text-align: center;
+}
+
+.cm {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.abbg {
+  background: white;
+}
+
+.t5bg {
+  background: rgb(48, 69, 99);
+}
+
+
+.pl {
+  padding-left: 15px;
+}
+
+.pb {
+  padding-bottom: 15px;
+}
+
+.t5 {
+  color: rgb(255, 255, 255);
+}
+
+.cac {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  padding-top: 10px;
+}
+
+.bw {
+  justify-content: center;
+  width: 150px;
+  margin: auto;
+}
+
+.bw02 {
+  justify-content: center;
+  width: 90px;
+  margin: auto;
+  font-size: 12px;
+  margin-top: 20px;
+}
+
+.bw03 {
+  justify-content: center;
+  margin: auto;
+  font-size: 12px;
+  margin-top: 20px;
+}
+
+.bc {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.fh {
+  height: 30px;
+  padding: 0;
+  margin: 0;
+}
+.t5cmw {
+  width: 185px;
+  max-height:330px;
+}
+
+.cmwh{
+  width: 185px;
+  min-height:480px;
+}
+
+
+.al {
+  height: 120px;
+  padding-left: 10px;
+}
+.top5CardHeight {
+  height: 70px;
+  padding-left: 10px;
+}
+
+.sellInputWidth01 {
+  width: 150px;
+}
+.sellWidth {
+  max-width: 600px;
+}
+.minHeight {
+  min-height: 100%;
+}
+main {
+  min-height: 85vh;
+}
+
+#main {
+  min-height: 60vh;
+}
+.userIcon{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40px;
+  height: 40px;
+}
+
+.justify{
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+.test{
+     background: rgb(247, 246, 246);
+}
+
+input[type="submit"]{
+  justify-content: center;
+  width: 100%;
+  margin: auto;
+  background-color: #274472; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+.inputSignIn {
+  width: 100%;
+}
+
+.loginbg {
+    background: white;
+}
+
+.white{
+    color: white;
+}
+.bgWhite{
+    background: white;
+}
+
+

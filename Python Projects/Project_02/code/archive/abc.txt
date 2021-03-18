@@ -1,0 +1,2033 @@
+<!DOCTYPE HTML>
+  <!--[if lt IE 7]> <html lang="en" class="lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+  <!--[if IE 7]> <html lang="en" class="lt-ie9 lt-ie8"> <![endif]-->
+  <!--[if IE 8]> <html lang="en" class="lt-ie9"> <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <html lang="en"> <!--<![endif]-->
+  <head>
+    <title>The Minefield - ABC Radio National (Australian Broadcasting Corporation)</title>
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+<link rel="schema.DC" href="http://purl.org/dc/elements/1.1/" />
+<link rel="schema.DCTERMS" href="http://purl.org/dc/terms/" />
+<link rel="schema.iptc" href="urn:newsml:iptc.org:20031010:topicset.iptc-genre:8" />
+<link rel="canonical" data-abc-platform="standard" href="https://www.abc.net.au/radionational/programs/theminefield/" />
+<meta name="title" content="The Minefield"/>
+            <meta name="description" content="The Minefield with Waleed Aly and Scott Stephens helps you negotiate the ethical dilemmas, contradictory claims and unacknowledged complicities of modern life."/>
+            <meta name="ContentId" content="6344842"/>
+            <meta name="ABC.site" content="ABC Radio National"/>
+            <meta name="ABC_WCMS_sitesearch_include" content="false"/>
+            <meta name="twitter:card" content="summary"/>
+            <meta name="ABC.ContentType" content="CMChannel"/>
+            <meta name="DC.Publisher.CorporateName" content="Australian Broadcasting Corporation"/>
+            <meta name="DC.rights" scheme="DCTERMS.URI" content="https://www.abc.net.au/rn/copyright.htm"/>
+        <meta name="DC.type" content="Collection"/>
+            <meta name="DC.creator.CorporateName" content="Australian Broadcasting Corporation"/>
+            <meta name="DC.format" scheme="DCTERMS.IMT" content="text/html"/>
+        <meta name="DC.identifier" scheme="DCTERMS.URI" content="https://www.abc.net.au/radionational/programs/theminefield/"/>
+          <meta property="og:site_name" content="Radio National"/>
+            <meta name="twitter:site" content="@RadioNational"/>
+            <!--[if lte IE 7]><style type="text/css">@import url(https://www.abc.net.au/res/sites/rn/css/yaml-iehacks.css);</style><![endif]-->
+        <link media="all" rel="stylesheet" type="text/css"
+                                                                              href="https://res.abc.net.au/bundles/2.5.0/styles/abc.bundle.2.5.0.min.css"/>
+    <link rel="stylesheet" type="text/css"
+                                                                              href="/cm/code/4046972/gateway-homepage.css.css"/>
+    <link rel="stylesheet" type="text/css"
+                                                                              href="https://www.abc.net.au/res/sites/rn/css/schedule-at-a-glance.css"/>
+    <link rel="stylesheet" type="text/css"
+                                                                              href="https://www.abc.net.au/res/sites/rn/css/abc-rn-compiled-programs.css?v=1"/>
+    <script type="text/javascript" src="https://www.abc.net.au/res/libraries/abcjs/abc-min.js"></script>
+        <script type="text/javascript" src="https://www.abc.net.au/res/libraries/jquery/jquery-1.7.min.js"></script>
+        <script type="text/javascript" src="https://www.abc.net.au/res/libraries/cinerama2/scripts/cinerama2.js"></script>
+        <script type="text/javascript" src="https://www.abc.net.au/res/libraries/swfobject/swfobject-2.2.js"></script>
+        <script type="text/javascript" src="https://www.abc.net.au/res/sites/rn/js/jquery-ui-1.8.6.custom.min.js"></script>
+        <script type="text/javascript" src="https://www.abc.net.au/res/sites/rn/js/rn.programs.js"></script>
+        <script type="text/javascript" src="https://www.abc.net.au/res/sites/rn/js/jquery.cookie.js"></script>
+        <script type="text/javascript" src="https://www.abc.net.au/res/sites/rn/js/abc.media.js?2018-11-16"></script>
+        <script type="text/javascript" src="https://www.abc.net.au/res/sites/rn/js/jquery.rn.js?v=6"></script>
+        <script type="text/javascript" src="https://www.abc.net.au/res/sites/rn/js/rn.gateway.js"></script>
+        <script type="text/javascript" src="/cm/code/4452816/InFocus+Resize.js"></script>
+        <script type="text/javascript" src="https://www.abc.net.au/res/sites/rn/js/rn.socialbookmarks.js?v=2"></script>
+        <script type="text/javascript" src="https://www.abc.net.au/res/sites/rn/js/feature_navigation.js?v=2"></script>
+        <script type="text/javascript" src="https://www.abc.net.au/res/sites/rn/js/rn-wcms-workarounds.js?v=3"></script>
+        <script type="text/javascript" src="https://www.abc.net.au/res/sites/rn/js/schedule-at-a-glance.js?v=1"></script>
+        <script type="text/javascript" src="https://www.abc.net.au/res/bundles/2.0.5/scripts/html5shiv.js"></script>
+        <script type="text/javascript" src="https://www.abc.net.au/res/sites/rn/js/jquery.hoverIntent.js"></script>
+        <script type="text/javascript" src="https://www.abc.net.au/res/sites/rn/js/superfish.js"></script>
+        <script type="text/javascript" src="https://www.abc.net.au/res/sites/rn/js/media_on_demand_redirect.js?v=3"></script>
+        <script type="text/javascript" src="https://res.abc.net.au/libraries/sfmc/sfmc-client-latest.min.js"></script>
+        <script>
+    window.dataLayer = window.dataLayer || [];
+  </script>
+
+  <script>
+    window.dataLayer.push({
+      'debug': {
+         'schemaVersion': '20180315',
+      },
+
+       'document': {
+        'language': '',
+         'canonicalUrl':'https://www.abc.net.au/radionational/programs/theminefield/',
+         'contentType': 'channel',
+         'uri':'coremedia://channel/6344842',
+         'contentSource':'coremedia',
+         'id':'6344842',
+         
+         'pageTitle':'The Minefield',
+         
+         'title':{
+           
+           'title':'The Minefield',
+           
+         },
+         
+         'program':{
+           
+           'id':'6344844',
+           
+           'name':'The Minefield',
+           
+         },
+         
+         'siteRoot':{
+           
+              'segment':'radionational',
+           
+              'title':'ABC Radio National',
+           
+         },
+         
+       },
+    })
+  </script>
+
+  <script>
+    window.dataLayer.push({
+        'application': {
+          'generatorName': 'WCMS JSP',
+          'generatorVersion': '18.10.8.8.0',
+          
+          'environment':'production',
+          
+          'wcmsTheme':'phase1-radio',
+        }
+    })
+  </script>
+
+</head>
+  <body id=""
+        class="platform-standard theme-religionandethics minefield">
+    <!--noindex-->
+<p class="skiplinks">
+  Welcome to ABC Radio National. Skip to:
+  <a href="#rn-navigation">RN Navigation</a>
+  <a href="#search-simple-input-query">RN Search</a>
+  <a href="#content">RN Content</a>
+</p>
+
+<!-- Start ABC Bundle Header 2.5.0 -->
+<!--noindex-->
+<nav id="abcHeader" class="global" aria-label="ABC Network Navigation" data-resourcebase="https://res.abc.net.au/bundles/2.5.0/" data-scriptsbase="https://res.abc.net.au/bundles/2.5.0/scripts/" data-version="2.5.0">
+ <a class="home" href="https://www.abc.net.au/" data-mobile="https://mobile.abc.net.au/"><img src="https://res.abc.net.au/bundles/2.5.0/images/logo-abc@2x.png" width="65" height="16" alt="" />ABC Home</a>
+ <div class="sites">
+  <a class="controller" href="javascript:;" aria-controls="abcNavSites"><img src="https://res.abc.net.au/bundles/2.5.0/images/icon-menu-grey@1x.gif" data-src="images/icon-menu-grey@1x.gif" data-hover="images/icon-menu-blue@1x.gif" class="icon" alt="" /><span class='text'><span>Open</span> Sites <span>menu</span></span></a>
+  <div id="abcNavSites" class="menu" role="menu" aria-expanded="false">
+   <ul>
+    <li><a role="menuitem" href="https://www.abc.net.au/" data-mobile="https://mobile.abc.net.au/">ABC Home</a></li>
+    <li><a role="menuitem" href="https://www.abc.net.au/news/" data-mobile="https://mobile.abc.net.au/news/">News</a></li>
+    <li><a role="menuitem" href="https://iview.abc.net.au" data-mobile="https://iview.abc.net.au">iview</a></li>
+    <li><a role="menuitem" href="https://www.abc.net.au/tv/" data-mobile="https://www.abc.net.au/tv/">TV</a></li>
+    <li><a role="menuitem" href="https://radio.abc.net.au/" data-mobile="https://radio.abc.net.au/">Radio</a></li>
+    <li><a role="menuitem" href="https://www.abc.net.au/children/" data-mobile="https://mobile.abc.net.au/children/">Kids</a></li>
+    <li><a role="menuitem" href="https://shop.abc.net.au/" data-mobile="https://shop.abc.net.au/">Shop</a></li>
+    <li><a role="menuitem" class="more" href="https://www.abc.net.au/more/" data-mobile="https://www.abc.net.au/more/">More</a></li>
+   </ul>
+  </div>
+ </div>
+ <div class="accounts">
+  <!-- Accounts is currently injected due to different URLs --><span data-src="images/icon-user-grey@1x.png" data-hover="images/icon-user-blue@1x.png"></span>
+ </div>
+ <a class="search" href="https://search.abc.net.au/" data-mobile="https://search.abc.net.au/"><span>Search</span>
+  <img src="https://res.abc.net.au/bundles/2.5.0/images/icon-search-grey@1x.png" data-hover="images/icon-search-blue@1x.png" class="icon" alt="" /></a>
+</nav>
+<!--endnoindex-->
+<!-- End ABC Bundle Header 2.5.0 -->
+
+<div id="backgroundwrapper">
+<div class="page_margins noprint">
+<div class="page">
+<div id="preheader">
+<div class="rn-nav" id="rn-navigation">
+ <ul class="rn-nav-linkgroup sf-menu">
+  <li class="rn-nav-link first rn-nav-1"><a href="/radionational/">Home</a></li>
+  <li class="rn-nav-link rn-nav-drop">
+   <a href="#">Programs</a>
+   <ul class="rn-nav-index" id="rn-alphaindex">
+    <li>
+     <a href="#"><span class="accessible">Programs beginning with </span>0</a>
+     <a href="#"><span class="accessible">Programs beginning with </span>A</a>
+     <a href="#"><span class="accessible">Programs beginning with </span>B</a>
+     <a href="#"><span class="accessible">Programs beginning with </span>C</a>
+     <a href="#"><span class="accessible">Programs beginning with </span>D</a>
+     <a href="#"><span class="accessible">Programs beginning with </span>E</a>
+     <a href="#"><span class="accessible">Programs beginning with </span>F</a>
+     <a href="#"><span class="accessible">Programs beginning with </span>G</a>
+     <a href="#"><span class="accessible">Programs beginning with </span>H</a>
+     <a href="#"><span class="accessible">Programs beginning with </span>I</a>
+     <a href="#"><span class="accessible">Programs beginning with </span>J</a>
+     <a href="#"><span class="accessible">Programs beginning with </span>K</a>
+     <a href="#"><span class="accessible">Programs beginning with </span>L</a>
+     <a href="#"><span class="accessible">Programs beginning with </span>M</a>
+     <a href="#"><span class="accessible">Programs beginning with </span>N</a>
+     <a href="#"><span class="accessible">Programs beginning with </span>O</a>
+     <a href="#"><span class="accessible">Programs beginning with </span>P</a>
+     <a href="#"><span class="accessible">Programs beginning with </span>Q</a>
+     <a href="#"><span class="accessible">Programs beginning with </span>R</a>
+     <a href="#"><span class="accessible">Programs beginning with </span>S</a>
+     <a href="#"><span class="accessible">Programs beginning with </span>T</a>
+     <a href="#"><span class="accessible">Programs beginning with </span>U</a>
+     <a href="#"><span class="accessible">Programs beginning with </span>V</a>
+     <a href="#"><span class="accessible">Programs beginning with </span>W</a>
+     <a href="#"><span class="accessible">Programs beginning with </span>X</a>
+     <a href="#"><span class="accessible">Programs beginning with </span>Y</a>
+     <a href="#"><span class="accessible">Programs beginning with </span>Z</a>
+    </li>
+   </ul>
+   <ul id="rn-programindex">
+    <li><a href="/radionational/programs/">All Programs</a></li>
+    <li><a href="/radionational/programs/archived/">Archived Programs</a></li>
+    <li><a href="/radionational/programs/abigcountry/" class="alpha_0 alpha_a">A Big Country</a></li>
+    <li><a href="/radionational/programs/allinthemind/">All In The Mind</a></li>
+    <li><a href="/am/">AM</a></li>
+    <li><a href="/radionational/programs/the-art-show/">The Art Show</a></li>
+    <li><a href="https://www.abc.net.au/radio/programs/australia-wide/">Australia Wide</a></li>
+    <li><a href="/radionational/programs/awaye/">AWAYE!</a></li>
+    <li><a href="/radionational/programs/backgroundbriefing/" class="alpha_b">Background Briefing</a></li>
+    <li><a href="/radionational/programs/bestoffestivals/">Best Of The Festivals</a></li>
+    <li><a href="/radionational/programs/betweenthelines/">Between The Lines</a></li>
+    <li><a href="/radionational/programs/bigideas/">Big Ideas</a></li>
+    <li><a href="/radionational/programs/blueprintforliving/">Blueprint for Living</a></li>
+    <li><a href="/radionational/programs/the-book-show/">The Book Show</a></li>
+    <li><a href="/radionational/programs/the-bookshelf/">The Bookshelf</a></li>
+    <li><a href="/radionational/programs/boyerlectures/">Boyer Lectures</a></li>
+    <li><a href="/radionational/programs/breakfast/">RN Breakfast</a></li>
+    <li><a href="https://www.abc.net.au/radio/programs/conversations/" class="alpha_c">Conversations</a></li>
+    <li><a href="/radionational/programs/counterpoint/">Counterpoint</a></li>
+    <li><a href="/radionational/programs/countrybreakfast/">Country Breakfast</a></li>
+    <li><a href="/radionational/programs/currentaffairsspecials/">Current Affairs Specials</a></li>
+    <li><a href="/radionational/programs/downloadthisshow/" class="alpha_d">Download This Show</a></li>
+    <li><a href="/radionational/programs/drawingroom/">The Drawing Room</a></li>
+    <li><a href="/radionational/programs/drive/">RN Drive</a></li>
+    <li><a href="/classic/duet/">Duet</a></li>
+    <li><a href="/radionational/programs/earshot/"class="alpha_e">Earshot</a>
+    <li><a href="/radionational/programs/the-economists/">The Economists</a></li>
+    <li><a href="/radionational/programs/extra/">Extra</a></li>
+    <li><a href="/radionational/programs/futuretense/"  class="alpha_f">Future Tense</a></li>
+    <li><a href="/radionational/programs/godforbid/" class="alpha_g">God Forbid</a></li>
+    <li><a href="/radionational/programs/greatmomentsinscience/">Great Moments In Science</a></li>
+    <li><a href="/radionational/programs/healthreport/" class="alpha_h">Health Report</a></li>
+    <li><a href="http://www.bbc.co.uk/programmes/p002vsn4">Heart and Soul</a></li>
+    <li><a href="/radionational/programs/the-history-listen/">The History Listen</a></li>
+    <li><a href="https://www.cbc.ca/radio/ideas" class="alpha_i">Ideas (CBC)</a></li>
+    <li><a href="/radionational/programs/itsnotarace/">It's Not A Race</a></li>
+    <li><a href="/radionational/programs/latenightlive/" class="alpha_j alpha_k alpha_l">Late Night Live</a></li>
+    <li><a href="/radionational/programs/lawreport/">Law Report</a></li>
+    <li><a href="/radionational/programs/lifematters/">Life Matters</a></li>
+    <li><a href="/radionational/programs/lost-and-found/">Lost and Found</a></li>
+    <li><a href="/radionational/programs/theminefield/" class="alpha_m">The Minefield</a></li>
+    <li><a href="/radionational/programs/themoney/">The Money</a></li>
+    <li><a href="/radionational/programs/musicshow/">The Music Show</a></li>
+    <li><a href="http://www.thenakedscientists.com/" class="alpha_n">The Naked Scientists</a></li>
+    <li><a href="/radionational/programs/ockhamsrazor/" class="alpha_o">Ockham's Razor</a></li>
+    <li><a href="/radionational/programs/offtrack/">Off Track</a></li>
+    <li><a href="/radionational/programs/partyroom/" class="alpha_p alpha_q">The Party Room</a></li>
+    <li><a href="/radionational/programs/the-people-vs/">The People Vs</a></li>
+    <li><a href="/radionational/programs/philosopherszone/">The Philosopher's Zone</a></li>
+    <li><a href="/pm/">PM</a></li>
+    <li><a href="/radionational/programs/rearvision/"  class="alpha_r">Rear Vision</a></li>
+    <li><a href="/radionational/programs/religionandethicsreport/">Religion and Ethics Report</a></li>
+    <li><a href="/radionational/programs/breakfast/">RN Breakfast</a></li>
+    <li><a href="/radionational/programs/drive/">RN Drive</a></li>
+    <li><a href="/radionational/programs/the-roundtable/">The Roundtable</a></li>
+    <li><a href="/am/" class="alpha_s">Saturday AM</a></li>
+    <li><a href="/radionational/programs/saturdayextra/">Saturday Extra</a></li>
+    <li><a href="/radionational/programs/sciencefriction/">Science Friction</a></li> 
+    <li><a href="/radionational/programs/scienceshow/">The Science Show</a></li>
+    <li><a href="/radionational/programs/the-screen-show/">The Screen Show</a></li>
+    <li><a href="/radionational/programs/shootingthepast/">Shooting The Past</a></li>
+    <li><a href="/radionational/programs/soul-search/">Soul Search</a></li>
+    <li><a href="http://www.cbc.ca/radio/spark">Spark</a></li>
+    <li><a href="https://www.abc.net.au/radio/programs/speakingout/">Speaking Out</a></li>
+    <li><a href="/radionational/programs/specialbroadcasts/">Specials</a></li>
+    <li><a href="/radionational/programs/sporty/">Sporty</a></li>
+
+    <li><a href="/radionational/programs/the-stage-show/">The Stage Show</a></li>
+    <li><a href="/radionational/programs/stop-everything/">Stop Everything</a></li>
+    <li><a href="/radionational/programs/sum-of-all-parts/">Sum Of All Parts</a></li>
+    <li><a href="/radionational/programs/sundayextra/">Sunday Extra</a></li>
+    <li><a href="https://www.thisamericanlife.org/australia" class="alpha_t alpha_u alpha_v">This American Life</a></li>
+    <li><a href="/radionational/programs/this-working-life/">This Working Life</a></li>
+    <li><a href="https://www.abc.net.au/trace">Trace</a></li>
+    <li><a href="/radionational/programs/the-people-vs/">The People Vs</a></li>
+    <li><a href="/radionational/programs/wordup/" class="alpha_w alpha_x alpha_y alpha_z">Word Up</a></li>
+    <li><a href="/radionational/programs/world-docos/">World Docos</a></li>
+    <li><a href="http://www.bbc.co.uk/programmes/p00fvhj7">World Business Report</a></li>
+    <li><a href="/worldtoday/">The World Today</a></li>
+   </ul>
+  </li>
+  <li class="rn-nav-link rn-nav-3" id="rn-navigation-after-programs"><a href="/radionational/guide/">Guide</a></li>
+  <li class="rn-nav-link rn-nav-4"><a href="/radionational/subjects/">Subjects</a></li>
+  <li class="rn-nav-link rn-nav-5"><a href="/radionational/features/">Features</a></li>
+  <li class="rn-nav-link rn-nav-6"><a href="/radionational/social-media/">Social Media</a></li>
+  <li class="rn-nav-link rn-nav-7"><a href="/radionational/rn-podcasting/">Podcasts</a></li>
+  <li class="rn-nav-link rn-nav-9"><a href="/radionational/about/">About</a></li>
+ </ul>
+</div>
+</div>
+</div>
+</div>
+<!--endnoindex-->
+<div class="page_margins">
+    <div class="page">
+        <div id="header">
+    <div class="inner">
+      <div class="subcolumns hgroup">
+        <h1 class="hs-abc-logo">
+          <a href="/radionational/">ABC Radio National</a></h1>
+        <h2 class="rn-program-banner"><a href="/radionational/programs/theminefield/">The Minefield</a></h2>
+      </div>
+      <div class="navbar">
+        <div id="search-simple" class="section search-box">
+ <form id="search-simple-form" method="get" action="/radionational/programs/theminefield/search/">
+  <p id="search-simple-group-query">
+   <input id="search-simple-input-query" class="text" type="text" name="query" value="" size="50" />
+   <input id="search-simple-input-submit" class="submit" type="submit" value="Search" />
+  </p>
+ </form> 
+</div>
+<div id="nav">
+      <ul>
+        <li class=""><a href="/radionational/programs/theminefield/">Program Home</a></li>
+            <li class=""><a href="/radionational/programs/theminefield/past-programs/">Past Programs</a></li>
+            <li class=""><a href="/radionational/programs/theminefield/podcasts/">Subscribe</a></li>
+            <li class=""><a href="/radionational/programs/theminefield/features/">Features</a></li>
+            <li class=""><a href="/radionational/programs/theminefield/about/">About Us</a></li>
+            </ul>
+    </div>
+  </div>
+    </div>
+  </div>
+<div id="content" class="subcolumns">
+  <div class="main c75l">
+    <div class="program-intro" >
+<p><img src="https://www.abc.net.au/radionational/image/7537276-3x2-700x467.jpg" width=670px />
+<p>In a world marked by wicked social problems, <em><strong>The Minefield</em></strong> helps you negotiate the ethical dilemmas, contradictory claims and unacknowledged complicities of modern life.
+</p>
+</div>
+<h1>Latest Programs</h1>
+<div class="cs-teaser article-index">
+  <div class="article-index section ct-teaser-view cs-tabbed">
+    <h3>Wednesday 15 May 2019</h3>
+    <ul class="cs-audio-links">
+      <script>
+    window.dataLayer.push({
+      'document':{
+        'embedded':{
+          'coremedia://audioepisode/11114860':{
+            'contentSource':'coremedia',
+            'contentType':'audioepisode',
+            'id':'11114860',
+            'uri':'coremedia://audioepisode/11114860',
+            'title':{
+              
+              'title':'Needs of the Soul: Conversation',
+              
+            },
+            'mediaDuration':'2642',
+            
+            'transcriptAvailable':'false',
+            
+            'streamType':'ondemand',
+            
+          },
+        },
+      },
+    })
+  </script>
+
+<li><a href="https://www.abc.net.au/radio/player/rnmodplayer.html?pgm=The%20Minefield&amp;pgmurl=https%3A%2F%2Fwww.abc.net.au%2Fradionational%2Fprograms%2Ftheminefield%2F&amp;w=https%3A%2F%2Fwww.abc.net.au%2Fradionational%2Fmedia%2F11114860.asx&amp;r=https%3A%2F%2Fwww.abc.net.au%2Fradionational%2Fmedia%2F11114860.ram&amp;t=Needs%20of%20the%20Soul%3A%20Conversation%20-%2015%20May%202019&amp;url=https%3A%2F%2Fwww.abc.net.au%2Fradionational%2Fprograms%2Ftheminefield%2Fneeds-of-the-soul%3A-conversation%2F11114860&amp;p=1" class="ico ico-audio">Listen</a></li>
+      <li><a href="https://abcmedia.akamaized.net/rn/podcast/2019/05/mld_20190515.mp3" class="ico ico-download" title="Download this item as MP3&nbsp;(60.47MB)">Download</a></li>
+        </ul>
+  <ul class="article-index">
+          <div class="cs-teaser ct-teaser-detailed ct-teaser-detailed-hasimg">
+             <div class="figure"><a href="https://www.abc.net.au/radionational/programs/theminefield/needs-of-the-soul:-conversation/11114860">
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+    
+    
+    
+    
+    
+    
+    
+    
+    
+  <img src="https://www.abc.net.au/radionational/image/11115050-4x3-140x105.jpg" alt="A close up image of two women in conversation (circa 1950s)" title="(Getty Images/George Marks)" />
+</a></div>
+             <div class="header">
+              <h3 class="title"><a href="https://www.abc.net.au/radionational/programs/theminefield/needs-of-the-soul:-conversation/11114860">Needs of the Soul: Conversation</a></h3>
+              </div>
+             <div class="summary">
+              <p>What is 'good' conversation? What are its preconditions? What is its goal? And why is it so important to the moral life?</p>
+
+
+
+
+
+  
+
+
+
+
+<p class="goto">
+  
+  <a href="https://www.abc.net.au/radionational/programs/theminefield/needs-of-the-soul:-conversation/11114860" class="goto-more">More</a>
+</p>
+<p class="cs-has-media cs-has-media-icons">
+    <span class="hide">This [series episode segment] has </span>
+      <span class="ico ico-image" title="This Episode has an image" href="#">image,</span></p>
+</div>
+          </div>
+        </ul>
+      </div>
+<div class="article-index section ct-teaser-view cs-tabbed">
+    <h3>Wednesday 8 May 2019</h3>
+    <ul class="cs-audio-links">
+      <script>
+    window.dataLayer.push({
+      'document':{
+        'embedded':{
+          'coremedia://audioepisode/11091090':{
+            'contentSource':'coremedia',
+            'contentType':'audioepisode',
+            'id':'11091090',
+            'uri':'coremedia://audioepisode/11091090',
+            'title':{
+              
+              'title':'Needs of the Soul: Silence',
+              
+            },
+            'mediaDuration':'2755',
+            
+            'transcriptAvailable':'false',
+            
+            'streamType':'ondemand',
+            
+          },
+        },
+      },
+    })
+  </script>
+
+<li><a href="https://www.abc.net.au/radio/player/rnmodplayer.html?pgm=The%20Minefield&amp;pgmurl=https%3A%2F%2Fwww.abc.net.au%2Fradionational%2Fprograms%2Ftheminefield%2F&amp;w=https%3A%2F%2Fwww.abc.net.au%2Fradionational%2Fmedia%2F11091090.asx&amp;r=https%3A%2F%2Fwww.abc.net.au%2Fradionational%2Fmedia%2F11091090.ram&amp;t=Needs%20of%20the%20Soul%3A%20Silence%20-%2008%20May%202019&amp;url=https%3A%2F%2Fwww.abc.net.au%2Fradionational%2Fprograms%2Ftheminefield%2Fneeds-of-the-soul%3A-silence%2F11091090&amp;p=1" class="ico ico-audio">Listen</a></li>
+      <li><a href="https://abcmedia.akamaized.net/rn/podcast/2019/05/mld_20190508.mp3" class="ico ico-download" title="Download this item as MP3&nbsp;(63.08MB)">Download</a></li>
+        </ul>
+  <ul class="article-index">
+          <div class="cs-teaser ct-teaser-detailed ct-teaser-detailed-hasimg">
+             <div class="figure"><a href="https://www.abc.net.au/radionational/programs/theminefield/needs-of-the-soul:-silence/11091090">
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+    
+    
+    
+    
+    
+    
+    
+    
+    
+  <img src="https://www.abc.net.au/radionational/image/11092206-4x3-140x105.jpg" alt="Ripples on the surface of a lake, with sun reflecting on the water." title="(Getty Images/Kieran Stone)" />
+</a></div>
+             <div class="header">
+              <h3 class="title"><a href="https://www.abc.net.au/radionational/programs/theminefield/needs-of-the-soul:-silence/11091090">Needs of the Soul: Silence</a></h3>
+              </div>
+             <div class="summary">
+              <p>During Ramadan, we’re giving concerted attention to what makes for a healthy moral life. In a time characterised by clamour and empty chatter, it’s never been more important — or more difficult — to reclaim the importance of silence.</p>
+
+
+
+
+
+  
+
+
+
+
+<p class="goto">
+  
+  <a href="https://www.abc.net.au/radionational/programs/theminefield/needs-of-the-soul:-silence/11091090" class="goto-more">More</a>
+</p>
+<p class="cs-has-media cs-has-media-icons">
+    <span class="hide">This [series episode segment] has </span>
+      <span class="ico ico-image" title="This Episode has an image" href="#">image,</span></p>
+</div>
+          </div>
+        </ul>
+      </div>
+<div class="article-index section ct-teaser-view cs-tabbed">
+    <h3>Wednesday 1 May 2019</h3>
+    <ul class="cs-audio-links">
+      <script>
+    window.dataLayer.push({
+      'document':{
+        'embedded':{
+          'coremedia://audioepisode/11043784':{
+            'contentSource':'coremedia',
+            'contentType':'audioepisode',
+            'id':'11043784',
+            'uri':'coremedia://audioepisode/11043784',
+            'title':{
+              
+              'title':'Would Donald Trumpu2019s impeachment be devastating to Americau2019s democratic culture?',
+              
+            },
+            'mediaDuration':'2688',
+            
+            'transcriptAvailable':'false',
+            
+            'streamType':'ondemand',
+            
+          },
+        },
+      },
+    })
+  </script>
+
+<li><a href="https://www.abc.net.au/radio/player/rnmodplayer.html?pgm=The%20Minefield&amp;pgmurl=https%3A%2F%2Fwww.abc.net.au%2Fradionational%2Fprograms%2Ftheminefield%2F&amp;w=https%3A%2F%2Fwww.abc.net.au%2Fradionational%2Fmedia%2F11043784.asx&amp;r=https%3A%2F%2Fwww.abc.net.au%2Fradionational%2Fmedia%2F11043784.ram&amp;t=Would%20Donald%20Trump%E2%80%99s%20impeachment%20be%20devastating%20to%20America%E2%80%99s%20democratic%20culture%3F%20-%2001%20May%202019&amp;url=https%3A%2F%2Fwww.abc.net.au%2Fradionational%2Fprograms%2Ftheminefield%2F2019-05-01%2F11043784&amp;p=1" class="ico ico-audio">Listen</a></li>
+      <li><a href="https://abcmedia.akamaized.net/rn/podcast/2019/05/mld_20190501.mp3" class="ico ico-download" title="Download this item as MP3&nbsp;(61.52MB)">Download</a></li>
+        </ul>
+  <ul class="article-index">
+          <div class="cs-teaser ct-teaser-detailed ct-teaser-detailed-hasimg">
+             <div class="figure"><a href="https://www.abc.net.au/radionational/programs/theminefield/2019-05-01/11043784">
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+    
+    
+    
+    
+    
+    
+    
+    
+    
+  <img src="https://www.abc.net.au/radionational/image/11062220-4x3-140x105.jpg" alt="" title="(Getty Images/Narvikk)" />
+</a></div>
+             <div class="header">
+              <h3 class="title"><a href="https://www.abc.net.au/radionational/programs/theminefield/2019-05-01/11043784">Would Donald Trump’s impeachment be devastating to America’s democratic culture?</a></h3>
+              </div>
+             <div class="summary">
+              <p>Has the weight of expectation on the findings of the Mueller Report foreclosed serious reflection on whether Trump should be impeached?</p>
+
+
+
+
+
+  
+
+
+
+
+<p class="goto">
+  
+  <a href="https://www.abc.net.au/radionational/programs/theminefield/2019-05-01/11043784" class="goto-more">More</a>
+</p>
+<p class="cs-has-media cs-has-media-icons">
+    <span class="hide">This [series episode segment] has </span>
+      <span class="ico ico-image" title="This Episode has an image" href="#">image,</span></p>
+</div>
+          </div>
+        </ul>
+      </div>
+<div class="article-index section ct-teaser-view cs-tabbed">
+    <h3>Wednesday 24 Apr 2019</h3>
+    <ul class="cs-audio-links">
+      <script>
+    window.dataLayer.push({
+      'document':{
+        'embedded':{
+          'coremedia://audioepisode/11042176':{
+            'contentSource':'coremedia',
+            'contentType':'audioepisode',
+            'id':'11042176',
+            'uri':'coremedia://audioepisode/11042176',
+            'title':{
+              
+              'title':'Social media: promoter of democratic participation or purveyor of violence?',
+              
+            },
+            'mediaDuration':'2688',
+            
+            'transcriptAvailable':'false',
+            
+            'streamType':'ondemand',
+            
+          },
+        },
+      },
+    })
+  </script>
+
+<li><a href="https://www.abc.net.au/radio/player/rnmodplayer.html?pgm=The%20Minefield&amp;pgmurl=https%3A%2F%2Fwww.abc.net.au%2Fradionational%2Fprograms%2Ftheminefield%2F&amp;w=https%3A%2F%2Fwww.abc.net.au%2Fradionational%2Fmedia%2F11042176.asx&amp;r=https%3A%2F%2Fwww.abc.net.au%2Fradionational%2Fmedia%2F11042176.ram&amp;t=Social%20media%3A%20promoter%20of%20democratic%20participation%20or%20purveyor%20of%20violence%3F%20-%2024%20Apr%202019&amp;url=https%3A%2F%2Fwww.abc.net.au%2Fradionational%2Fprograms%2Ftheminefield%2Fsocial-media%3A-promoter-of-democratic-participation-or-purveyor%2F11042176&amp;p=1" class="ico ico-audio">Listen</a></li>
+      <li><a href="https://abcmedia.akamaized.net/rn/podcast/2019/04/mld_20190424.mp3" class="ico ico-download" title="Download this item as MP3&nbsp;(61.53MB)">Download</a></li>
+        </ul>
+  <ul class="article-index">
+          <div class="cs-teaser ct-teaser-detailed ct-teaser-detailed-hasimg">
+             <div class="figure"><a href="https://www.abc.net.au/radionational/programs/theminefield/social-media:-promoter-of-democratic-participation-or-purveyor/11042176">
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+    
+    
+    
+    
+    
+    
+    
+    
+    
+  <img src="https://www.abc.net.au/radionational/image/11042400-4x3-140x105.jpg" alt="" title="(Getty Images/Jewel Samad)" />
+</a></div>
+             <div class="header">
+              <h3 class="title"><a href="https://www.abc.net.au/radionational/programs/theminefield/social-media:-promoter-of-democratic-participation-or-purveyor/11042176">Social media: promoter of democratic participation or purveyor of violence?</a></h3>
+              </div>
+             <div class="summary">
+              <p>Can social media platforms be anything other than purveyors of violence in countries with deep and long-standing histories of ethnic-religious tensions?</p>
+
+
+
+
+
+  
+
+
+
+
+<p class="goto">
+  
+  <a href="https://www.abc.net.au/radionational/programs/theminefield/social-media:-promoter-of-democratic-participation-or-purveyor/11042176" class="goto-more">More</a>
+</p>
+<p class="cs-has-media cs-has-media-icons">
+    <span class="hide">This [series episode segment] has </span>
+      <span class="ico ico-image" title="This Episode has an image" href="#">image,</span></p>
+</div>
+          </div>
+        </ul>
+      </div>
+<div class="article-index section ct-teaser-view cs-tabbed">
+    <h3>Wednesday 17 Apr 2019</h3>
+    <ul class="cs-audio-links">
+      <script>
+    window.dataLayer.push({
+      'document':{
+        'embedded':{
+          'coremedia://audioepisode/11017518':{
+            'contentSource':'coremedia',
+            'contentType':'audioepisode',
+            'id':'11017518',
+            'uri':'coremedia://audioepisode/11017518',
+            'title':{
+              
+              'title':'False necessities: Is 'taste' enough to morally justify the mass slaughter of animals?',
+              
+            },
+            'mediaDuration':'2867',
+            
+            'transcriptAvailable':'false',
+            
+            'streamType':'ondemand',
+            
+          },
+        },
+      },
+    })
+  </script>
+
+<li><a href="https://abcmedia.akamaized.net/rn/podcast/2019/04/mld_20190417.mp3" class="ico ico-download" title="Download this item as MP3&nbsp;(65.63MB)">Download</a></li>
+        </ul>
+  <ul class="article-index">
+          <div class="cs-teaser ct-teaser-detailed ct-teaser-detailed-hasimg">
+             <div class="figure"><a href="https://www.abc.net.au/radionational/programs/theminefield/2019-04-17/11017518">
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+    
+    
+    
+    
+    
+    
+    
+    
+    
+  <img src="https://www.abc.net.au/radionational/image/11025098-4x3-140x105.jpg" alt="A close up of a cow's face as it stands in a herd of cattle." title="(Getty Images/ChrisJongkind)" />
+</a></div>
+             <div class="header">
+              <h3 class="title"><a href="https://www.abc.net.au/radionational/programs/theminefield/2019-04-17/11017518">False necessities: Is 'taste' enough to morally justify the mass slaughter of animals?</a></h3>
+              </div>
+             <div class="summary">
+              <p>Is our culinary enjoyment enough to justify a complicity in cruelty which our fellow citizens find reprehensible?</p>
+
+
+
+
+
+  
+
+
+
+
+<p class="goto">
+  
+  <a href="https://www.abc.net.au/radionational/programs/theminefield/2019-04-17/11017518" class="goto-more">More</a>
+</p>
+<p class="cs-has-media cs-has-media-icons">
+    <span class="hide">This [series episode segment] has </span>
+      <span class="ico ico-image" title="This Episode has an image" href="#">image,</span></p>
+</div>
+          </div>
+        </ul>
+      </div>
+<div class="article-index section ct-teaser-view cs-tabbed">
+    <h3>Wednesday 10 Apr 2019</h3>
+    <ul class="cs-audio-links">
+      <script>
+    window.dataLayer.push({
+      'document':{
+        'embedded':{
+          'coremedia://audioepisode/10986574':{
+            'contentSource':'coremedia',
+            'contentType':'audioepisode',
+            'id':'10986574',
+            'uri':'coremedia://audioepisode/10986574',
+            'title':{
+              
+              'title':'What are the limits of Australiau2019s obligations to its citizens?',
+              
+            },
+            'mediaDuration':'2456',
+            
+            'transcriptAvailable':'false',
+            
+            'streamType':'ondemand',
+            
+          },
+        },
+      },
+    })
+  </script>
+
+<li><a href="https://abcmedia.akamaized.net/rn/podcast/2019/04/mld_20190410.mp3" class="ico ico-download" title="Download this item as MP3&nbsp;(56.23MB)">Download</a></li>
+        </ul>
+  <ul class="article-index">
+          <div class="cs-teaser ct-teaser-detailed ct-teaser-detailed-hasimg">
+             <div class="figure"><a href="https://www.abc.net.au/radionational/programs/theminefield/what-are-the-limits-of-australia%E2%80%99s-obligations-to-its-citizens/10986574">
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+    
+    
+    
+    
+    
+    
+    
+    
+    
+  <img src="https://www.abc.net.au/radionational/image/10986580-4x3-140x105.jpg" alt="" title="(Getty Images/Giuseppe Cacace)" />
+</a></div>
+             <div class="header">
+              <h3 class="title"><a href="https://www.abc.net.au/radionational/programs/theminefield/what-are-the-limits-of-australia%E2%80%99s-obligations-to-its-citizens/10986574">What are the limits of Australia’s obligations to its citizens?</a></h3>
+              </div>
+             <div class="summary">
+              <p>Do modern nation-states have persistent obligations to their citizens, even when those citizens engage in behaviour that seems to deny their membership to that political community?</p>
+
+
+
+
+
+  
+
+
+
+
+<p class="goto">
+  
+  <a href="https://www.abc.net.au/radionational/programs/theminefield/what-are-the-limits-of-australia%E2%80%99s-obligations-to-its-citizens/10986574" class="goto-more">More</a>
+</p>
+<p class="cs-has-media cs-has-media-icons">
+    <span class="hide">This [series episode segment] has </span>
+      <span class="ico ico-image" title="This Episode has an image" href="#">image,</span></p>
+</div>
+          </div>
+        </ul>
+      </div>
+<div class="article-index section ct-teaser-view cs-tabbed">
+    <h3>Wednesday 3 Apr 2019</h3>
+    <ul class="cs-audio-links">
+      <script>
+    window.dataLayer.push({
+      'document':{
+        'embedded':{
+          'coremedia://audioepisode/10960904':{
+            'contentSource':'coremedia',
+            'contentType':'audioepisode',
+            'id':'10960904',
+            'uri':'coremedia://audioepisode/10960904',
+            'title':{
+              
+              'title':'Is literary fiction necessary for the moral life?',
+              
+            },
+            'mediaDuration':'2718',
+            
+            'transcriptAvailable':'false',
+            
+            'streamType':'ondemand',
+            
+          },
+        },
+      },
+    })
+  </script>
+
+<li><a href="https://abcmedia.akamaized.net/rn/podcast/2019/04/mld_20190403.mp3" class="ico ico-download" title="Download this item as MP3&nbsp;(62.22MB)">Download</a></li>
+        </ul>
+  <ul class="article-index">
+          <div class="cs-teaser ct-teaser-detailed ct-teaser-detailed-hasimg">
+             <div class="figure"><a href="https://www.abc.net.au/radionational/programs/theminefield/is-literary-fiction-necessary-for-the-moral-life/10960904">
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+    
+    
+    
+    
+    
+    
+    
+    
+    
+  <img src="https://www.abc.net.au/radionational/image/10961008-4x3-140x105.jpg" alt="Books stacked in a pile in the foreground. Books on shelves in background." title="(Getty Images/Sarah Kriner)" />
+</a></div>
+             <div class="header">
+              <h3 class="title"><a href="https://www.abc.net.au/radionational/programs/theminefield/is-literary-fiction-necessary-for-the-moral-life/10960904">Is literary fiction necessary for the moral life?</a></h3>
+              </div>
+             <div class="summary">
+              <p>What does a society lose when it neglects the moral discipline of reading literary fiction?</p>
+
+
+
+
+
+  
+
+
+
+
+<p class="goto">
+  
+  <a href="https://www.abc.net.au/radionational/programs/theminefield/is-literary-fiction-necessary-for-the-moral-life/10960904" class="goto-more">More</a>
+</p>
+<p class="cs-has-media cs-has-media-icons">
+    <span class="hide">This [series episode segment] has </span>
+      <span class="ico ico-image" title="This Episode has an image" href="#">image,</span></p>
+</div>
+          </div>
+        </ul>
+      </div>
+<div class="article-index section ct-teaser-view cs-tabbed">
+    <h3>Wednesday 27 Mar 2019</h3>
+    <ul class="cs-audio-links">
+      <script>
+    window.dataLayer.push({
+      'document':{
+        'embedded':{
+          'coremedia://audioepisode/10944112':{
+            'contentSource':'coremedia',
+            'contentType':'audioepisode',
+            'id':'10944112',
+            'uri':'coremedia://audioepisode/10944112',
+            'title':{
+              
+              'title':'Why does antisemitism cut across the political spectrum?',
+              
+            },
+            'mediaDuration':'2707',
+            
+            'transcriptAvailable':'false',
+            
+            'streamType':'ondemand',
+            
+          },
+        },
+      },
+    })
+  </script>
+
+<li><a href="https://abcmedia.akamaized.net/rn/podcast/2019/03/mld_20190327.mp3" class="ico ico-download" title="Download this item as MP3&nbsp;(41.31MB)">Download</a></li>
+        </ul>
+  <ul class="article-index">
+          <div class="cs-teaser ct-teaser-detailed ct-teaser-detailed-hasimg">
+             <div class="figure"><a href="https://www.abc.net.au/radionational/programs/theminefield/why-does-antisemitism-cut-across-the-political-spectrum/10944112">
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+    
+    
+    
+    
+    
+    
+    
+    
+    
+  <img src="https://www.abc.net.au/radionational/image/10944224-4x3-140x105.jpg" alt="" title="(Getty Images/Walter Bibikow)" />
+</a></div>
+             <div class="header">
+              <h3 class="title"><a href="https://www.abc.net.au/radionational/programs/theminefield/why-does-antisemitism-cut-across-the-political-spectrum/10944112">Why does antisemitism cut across the political spectrum?</a></h3>
+              </div>
+             <div class="summary">
+              <p>Why is it that most other forms of racist contempt can find a place in the diseased branches of antisemitism? </p>
+
+
+
+
+
+  
+
+
+
+
+<p class="goto">
+  
+  <a href="https://www.abc.net.au/radionational/programs/theminefield/why-does-antisemitism-cut-across-the-political-spectrum/10944112" class="goto-more">More</a>
+</p>
+<p class="cs-has-media cs-has-media-icons">
+    <span class="hide">This [series episode segment] has </span>
+      <span class="ico ico-image" title="This Episode has an image" href="#">image,</span></p>
+</div>
+          </div>
+        </ul>
+      </div>
+<div class="article-index section ct-teaser-view cs-tabbed">
+    <h3>Wednesday 20 Mar 2019</h3>
+    <ul class="cs-audio-links">
+      <script>
+    window.dataLayer.push({
+      'document':{
+        'embedded':{
+          'coremedia://audioepisode/10919696':{
+            'contentSource':'coremedia',
+            'contentType':'audioepisode',
+            'id':'10919696',
+            'uri':'coremedia://audioepisode/10919696',
+            'title':{
+              
+              'title':'What does the Christchurch shooting demand of us?',
+              
+            },
+            'mediaDuration':'2749',
+            
+            'transcriptAvailable':'false',
+            
+            'streamType':'ondemand',
+            
+          },
+        },
+      },
+    })
+  </script>
+
+<li><a href="https://abcmedia.akamaized.net/rn/podcast/2019/03/mld_20190320.mp3" class="ico ico-download" title="Download this item as MP3&nbsp;(62.94MB)">Download</a></li>
+        </ul>
+  <ul class="article-index">
+          <div class="cs-teaser ct-teaser-detailed ct-teaser-detailed-hasimg">
+             <div class="figure"><a href="https://www.abc.net.au/radionational/programs/theminefield/what-does-the-christchurch-shooting-demand-of-us/10919696">
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+    
+    
+    
+    
+    
+    
+    
+    
+    
+  <img src="https://www.abc.net.au/radionational/image/10919832-4x3-140x105.jpg" alt="" title="(Getty Images/Anadolu Agency)" />
+</a></div>
+             <div class="header">
+              <h3 class="title"><a href="https://www.abc.net.au/radionational/programs/theminefield/what-does-the-christchurch-shooting-demand-of-us/10919696">What does the Christchurch shooting demand of us?</a></h3>
+              </div>
+             <div class="summary">
+              <p>Why has it taken the sound of bullets fired and the sight of blood spilled to get some to see Muslims as fully <em>human</em>, as capable of placing demands on our attention or claims for our respect?</p>
+
+
+
+
+
+  
+
+
+
+
+<p class="goto">
+  
+  <a href="https://www.abc.net.au/radionational/programs/theminefield/what-does-the-christchurch-shooting-demand-of-us/10919696" class="goto-more">More</a>
+</p>
+<p class="cs-has-media cs-has-media-icons">
+    <span class="hide">This [series episode segment] has </span>
+      <span class="ico ico-image" title="This Episode has an image" href="#">image,</span></p>
+</div>
+          </div>
+        </ul>
+      </div>
+<div class="article-index section ct-teaser-view cs-tabbed">
+    <h3>Wednesday 13 Mar 2019</h3>
+    <ul class="cs-audio-links">
+      <script>
+    window.dataLayer.push({
+      'document':{
+        'embedded':{
+          'coremedia://audioepisode/10896258':{
+            'contentSource':'coremedia',
+            'contentType':'audioepisode',
+            'id':'10896258',
+            'uri':'coremedia://audioepisode/10896258',
+            'title':{
+              
+              'title':'Would it be wrong to 'rape' a sex robot?',
+              
+            },
+            'mediaDuration':'2390',
+            
+            'transcriptAvailable':'false',
+            
+            'streamType':'ondemand',
+            
+          },
+        },
+      },
+    })
+  </script>
+
+<li><a href="https://abcmedia.akamaized.net/rn/podcast/2019/03/mld_20190313.mp3" class="ico ico-download" title="Download this item as MP3&nbsp;(54.72MB)">Download</a></li>
+        </ul>
+  <ul class="article-index">
+          <div class="cs-teaser ct-teaser-detailed ct-teaser-detailed-hasimg">
+             <div class="figure"><a href="https://www.abc.net.au/radionational/programs/theminefield/would-it-be-wrong-to-%E2%80%98rape%E2%80%99-a-sex-robot/10896258">
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+    
+    
+    
+    
+    
+    
+    
+    
+    
+  <img src="https://www.abc.net.au/radionational/image/10896302-4x3-140x105.jpg" alt="" title="(Getty Images/Fred Dufour)" />
+</a></div>
+             <div class="header">
+              <h3 class="title"><a href="https://www.abc.net.au/radionational/programs/theminefield/would-it-be-wrong-to-%E2%80%98rape%E2%80%99-a-sex-robot/10896258">Would it be wrong to 'rape' a sex robot?</a></h3>
+              </div>
+             <div class="summary">
+              <p>Does ethics have anything to say to the prospect that some of the sexual fantasies enacted on sex robots will, undoubtedly, include 'rape'?</p>
+
+
+
+
+
+  
+
+
+
+
+<p class="goto">
+  
+  <a href="https://www.abc.net.au/radionational/programs/theminefield/would-it-be-wrong-to-%E2%80%98rape%E2%80%99-a-sex-robot/10896258" class="goto-more">More</a>
+</p>
+<p class="cs-has-media cs-has-media-icons">
+    <span class="hide">This [series episode segment] has </span>
+      <span class="ico ico-image" title="This Episode has an image" href="#">image,</span></p>
+</div>
+          </div>
+        </ul>
+      </div>
+<div class="article-index section ct-teaser-view cs-tabbed">
+    <h3>Wednesday 6 Mar 2019</h3>
+    <ul class="cs-audio-links">
+      <script>
+    window.dataLayer.push({
+      'document':{
+        'embedded':{
+          'coremedia://audioepisode/10875032':{
+            'contentSource':'coremedia',
+            'contentType':'audioepisode',
+            'id':'10875032',
+            'uri':'coremedia://audioepisode/10875032',
+            'title':{
+              
+              'title':'Do we have an obligation to pity the guilty?',
+              
+            },
+            'mediaDuration':'3080',
+            
+            'transcriptAvailable':'false',
+            
+            'streamType':'ondemand',
+            
+          },
+        },
+      },
+    })
+  </script>
+
+<li><a href="https://abcmedia.akamaized.net/rn/podcast/2019/03/mld_20190306.mp3" class="ico ico-download" title="Download this item as MP3&nbsp;(70.51MB)">Download</a></li>
+        </ul>
+  <ul class="article-index">
+          <div class="cs-teaser ct-teaser-detailed ct-teaser-detailed-hasimg">
+             <div class="figure"><a href="https://www.abc.net.au/radionational/programs/theminefield/do-we-have-an-obligation-to-pity-the-guilty/10875032">
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+    
+    
+    
+    
+    
+    
+    
+    
+    
+  <img src="https://www.abc.net.au/radionational/image/10875128-4x3-140x105.jpg" alt="" title="(Getty Image/Michael Dodge)" />
+</a></div>
+             <div class="header">
+              <h3 class="title"><a href="https://www.abc.net.au/radionational/programs/theminefield/do-we-have-an-obligation-to-pity-the-guilty/10875032">Do we have an obligation to pity the guilty?</a></h3>
+              </div>
+             <div class="summary">
+              <p>Does the moral life demand of us a fuller range of emotions beyond anger and contempt? </p>
+
+
+
+
+
+  
+
+
+
+
+<p class="goto">
+  
+  <a href="https://www.abc.net.au/radionational/programs/theminefield/do-we-have-an-obligation-to-pity-the-guilty/10875032" class="goto-more">More</a>
+</p>
+<p class="cs-has-media cs-has-media-icons">
+    <span class="hide">This [series episode segment] has </span>
+      <span class="ico ico-image" title="This Episode has an image" href="#">image,</span></p>
+</div>
+          </div>
+        </ul>
+      </div>
+<div class="article-index section ct-teaser-view cs-tabbed">
+    <h3>Wednesday 27 Feb 2019</h3>
+    <ul class="cs-audio-links">
+      <script>
+    window.dataLayer.push({
+      'document':{
+        'embedded':{
+          'coremedia://audioepisode/10808078':{
+            'contentSource':'coremedia',
+            'contentType':'audioepisode',
+            'id':'10808078',
+            'uri':'coremedia://audioepisode/10808078',
+            'title':{
+              
+              'title':'False necessities: Is it time to leave two-party politics behind?',
+              
+            },
+            'mediaDuration':'2272',
+            
+            'transcriptAvailable':'false',
+            
+            'streamType':'ondemand',
+            
+          },
+        },
+      },
+    })
+  </script>
+
+<li><a href="https://abcmedia.akamaized.net/rn/podcast/2019/02/mld_20190227.mp3" class="ico ico-download" title="Download this item as MP3&nbsp;(52MB)">Download</a></li>
+        </ul>
+  <ul class="article-index">
+          <div class="cs-teaser ct-teaser-detailed ct-teaser-detailed-hasimg">
+             <div class="figure"><a href="https://www.abc.net.au/radionational/programs/theminefield/false-necessities:-is-it-time-to-leave-two-party-politics-behind/10808078">
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+    
+    
+    
+    
+    
+    
+    
+    
+    
+  <img src="https://www.abc.net.au/radionational/image/10848390-4x3-140x105.jpg" alt="MPs in the chamber of the UK House of Commons." title="(Getty Images/PA Images)" />
+</a></div>
+             <div class="header">
+              <h3 class="title"><a href="https://www.abc.net.au/radionational/programs/theminefield/false-necessities:-is-it-time-to-leave-two-party-politics-behind/10808078">False necessities: Is it time to leave two-party politics behind?</a></h3>
+              </div>
+             <div class="summary">
+              <p>Should we place a premium on the political virtue of compromise instead of the zero-sum game of the two-party contest?</p>
+
+
+
+
+
+  
+
+
+
+
+<p class="goto">
+  
+  <a href="https://www.abc.net.au/radionational/programs/theminefield/false-necessities:-is-it-time-to-leave-two-party-politics-behind/10808078" class="goto-more">More</a>
+</p>
+<p class="cs-has-media cs-has-media-icons">
+    <span class="hide">This [series episode segment] has </span>
+      <span class="ico ico-image" title="This Episode has an image" href="#">image,</span></p>
+</div>
+          </div>
+        </ul>
+      </div>
+<div class="article-index section ct-teaser-view cs-tabbed">
+    <h3>Wednesday 20 Feb 2019</h3>
+    <ul class="cs-audio-links">
+      <script>
+    window.dataLayer.push({
+      'document':{
+        'embedded':{
+          'coremedia://audioepisode/10827356':{
+            'contentSource':'coremedia',
+            'contentType':'audioepisode',
+            'id':'10827356',
+            'uri':'coremedia://audioepisode/10827356',
+            'title':{
+              
+              'title':'What are the dangers of declaring political 'emergencies'?',
+              
+            },
+            'mediaDuration':'2610',
+            
+            'transcriptAvailable':'false',
+            
+            'streamType':'ondemand',
+            
+          },
+        },
+      },
+    })
+  </script>
+
+<li><a href="https://abcmedia.akamaized.net/rn/podcast/2019/02/mld_20190220.mp3" class="ico ico-download" title="Download this item as MP3&nbsp;(59.75MB)">Download</a></li>
+        </ul>
+  <ul class="article-index">
+          <div class="cs-teaser ct-teaser-detailed ct-teaser-detailed-hasimg">
+             <div class="figure"><a href="https://www.abc.net.au/radionational/programs/theminefield/what-are-the-dangers-of-declaring-political-emergencies/10827356">
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+    
+    
+    
+    
+    
+    
+    
+    
+    
+  <img src="https://www.abc.net.au/radionational/image/10827378-4x3-140x105.jpg" alt="Barbed wire border fence." title="(Getty Images/Japatino)" />
+</a></div>
+             <div class="header">
+              <h3 class="title"><a href="https://www.abc.net.au/radionational/programs/theminefield/what-are-the-dangers-of-declaring-political-emergencies/10827356">What are the dangers of declaring political 'emergencies'?</a></h3>
+              </div>
+             <div class="summary">
+              <p>Does the invocation of a political 'emergency' have corrosive effects on the moral health of a political community?</p>
+
+
+
+
+
+  
+
+
+
+
+<p class="goto">
+  
+  <a href="https://www.abc.net.au/radionational/programs/theminefield/what-are-the-dangers-of-declaring-political-emergencies/10827356" class="goto-more">More</a>
+</p>
+<p class="cs-has-media cs-has-media-icons">
+    <span class="hide">This [series episode segment] has </span>
+      <span class="ico ico-image" title="This Episode has an image" href="#">image,</span></p>
+</div>
+          </div>
+        </ul>
+      </div>
+<div class="article-index section ct-teaser-view cs-tabbed">
+    <h3>Wednesday 13 Feb 2019</h3>
+    <ul class="cs-audio-links">
+      <script>
+    window.dataLayer.push({
+      'document':{
+        'embedded':{
+          'coremedia://audioepisode/10805362':{
+            'contentSource':'coremedia',
+            'contentType':'audioepisode',
+            'id':'10805362',
+            'uri':'coremedia://audioepisode/10805362',
+            'title':{
+              
+              'title':'What should politicians do with 'expert advice'?',
+              
+            },
+            'mediaDuration':'2372',
+            
+            'transcriptAvailable':'false',
+            
+            'streamType':'ondemand',
+            
+          },
+        },
+      },
+    })
+  </script>
+
+<li><a href="https://abcmedia.akamaized.net/rn/podcast/2019/02/mld_20190213.mp3" class="ico ico-download" title="Download this item as MP3&nbsp;(36.2MB)">Download</a></li>
+        </ul>
+  <ul class="article-index">
+          <div class="cs-teaser ct-teaser-detailed ct-teaser-detailed-hasimg">
+             <div class="figure"><a href="https://www.abc.net.au/radionational/programs/theminefield/what-should-politicians-do-with-expert-advice/10805362">
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+    
+    
+    
+    
+    
+    
+    
+    
+    
+  <img src="https://www.abc.net.au/radionational/image/10805380-4x3-140x105.jpg" alt="The facade of Parliament House in Canberra during 'blue hour'." title="(Getty Images/Luis Henrique Boucault)" />
+</a></div>
+             <div class="header">
+              <h3 class="title"><a href="https://www.abc.net.au/radionational/programs/theminefield/what-should-politicians-do-with-expert-advice/10805362">What should politicians do with 'expert advice'?</a></h3>
+              </div>
+             <div class="summary">
+              <p>What is the nature and what are the limits of political decision-making? Just how important — how <em>final</em> — is ministerial responsibility?</p>
+
+
+
+
+
+  
+
+
+
+
+<p class="goto">
+  
+  <a href="https://www.abc.net.au/radionational/programs/theminefield/what-should-politicians-do-with-expert-advice/10805362" class="goto-more">More</a>
+</p>
+<p class="cs-has-media cs-has-media-icons">
+    <span class="hide">This [series episode segment] has </span>
+      <span class="ico ico-image" title="This Episode has an image" href="#">image,</span></p>
+</div>
+          </div>
+        </ul>
+      </div>
+
+
+
+
+
+
+  
+
+
+
+
+<p class="goto">
+  
+  <a href="https://www.abc.net.au/radionational/programs/theminefield/past-programs/" class="goto-more">More</a>
+</p>
+</div>
+</div>
+  <div class="c25r aside sidebar">
+    <!--noindex-->
+  <div class="section cs-presenter ct-presenter-current">
+      <div class="inner cfix">
+        <div class="figure">
+           <a href="https://www.abc.net.au/radionational/programs/theminefield/about/">
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+    
+    
+    
+    
+    
+    
+    
+    
+    
+  <img src="https://www.abc.net.au/radionational/image/6344852-1x1-80x80.jpg" alt="" title="The Minefield" />
+</a></div>
+        <p class="time">
+          <strong>Wednesday 11.30am</strong>
+          <em>Repeated: <br/>Saturday 12.30am, Sunday 10am</em></p>
+        <p class="summary">Presented by <a href="https://www.abc.net.au/radionational/waleed-aly/3725696">Waleed Aly</a> and <a href="https://www.abc.net.au/radionational/scott-stephens/3958454">Scott Stephens</a></p>
+</div>
+  </div>
+<div class="section ct-teaser-series-small">
+  <div class="inner">
+    <ol class="item-list">
+      <li>
+          <!-- pass width and height to teaser.small template to override its default value, which is also 80x80 -->
+              <div class="cs-teaser ">
+    <div class="figure">
+      <a href="https://itunes.apple.com/au/podcast/minefield-separate-stories/id985462397?mt=2">
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+    
+    
+    
+    
+    
+    
+    
+    
+    
+  <img src="https://www.abc.net.au/radionational/image/7537276-1x1-80x80.jpg" alt="The Minefield" title="Never miss an episode" />
+</a></div>
+    <div class="header">
+      <h4 class="title">
+        <a href="https://itunes.apple.com/au/podcast/minefield-separate-stories/id985462397?mt=2">Never miss an episode</a></h4>
+    </div>
+    <div class="summary clearfix">
+      <p>
+        Subscribe to the podcast on the <a class="external" href="https://www.abc.net.au/radio/listen/"><strong>ABC listen</strong></a> app or <a class="external" href="https://itunes.apple.com/au/podcast/minefield-separate-stories/id985462397?mt=2" target="_blank" title=""><strong>Apple Podcasts.</strong></a></p>
+      <p class="goto-more">
+        <a href="https://itunes.apple.com/au/podcast/minefield-separate-stories/id985462397?mt=2">Find out more</a></p></div>
+  </div>
+</li>
+      </ol>
+    
+
+
+
+
+</div>
+</div><div class="section cs-social-network">
+      <div class="inner">
+        <ul>
+          <li>
+    
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+    
+    
+    
+    
+    
+    
+    
+    
+    
+  <img src="https://www.abc.net.au/radionational/image/2883280-1x1-16x16.png" alt="Facebook Icon" title="Facebook Icon" />
+<a href="http://www.facebook.com/radionational">Join RN on Facebook</a></li>
+<li>
+    
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+    
+    
+    
+    
+    
+    
+    
+    
+    
+  <img src="https://www.abc.net.au/radionational/image/2883288-1x1-16x16.png" alt="Twitter Icon" title="Twitter Icon" />
+<a href="https://twitter.com/rntheminefield">Follow The Minefield on Twitter</a></li>
+<li>
+    
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+    
+    
+    
+    
+    
+    
+    
+    
+    
+  <img src="https://www.abc.net.au/radionational/image/8638316-1x1-16x16.png" alt="iTunes logo" title="iTunes logo" />
+<a href="https://itunes.apple.com/au/podcast/minefield-separate-stories/id985462397?mt=2">Subscribe on Apple Podcasts</a></li>
+<li>
+    
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+    
+    
+    
+    
+    
+    
+    
+    
+    
+  <img src="https://www.abc.net.au/radionational/image/9143940-1x1-16x16.jpg" alt="Listen logo" title="Listen logo" />
+<a href="https://www.abc.net.au/radio/listen/">Download the ABC listen app</a></li>
+<li>
+    
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+    
+    
+    
+    
+    
+    
+    
+    
+    
+  <img src="https://www.abc.net.au/radionational/image/10194988-1x1-16x16.png" alt="Listen logo" title="Listen logo" />
+<a href="https://www.abc.net.au/corp/email_newsletter/multi-subscribe.htm">Subscribe to the ABC listen newsletter</a></li>
+</ul>
+        </div>
+    </div>
+  <div class="section ct-teaser-series-small">
+  <div class="inner">
+    <h2>Feature articles</h2>
+    <ol class="item-list">
+      <li>
+          <!-- pass width and height to teaser.small template to override its default value, which is also 80x80 -->
+              <div class="cs-teaser ">
+    <div class="figure">
+      <a href="https://www.abc.net.au/religion/why-national-identity-matters/10559382">
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+    
+    
+    
+    
+    
+    
+    
+    
+    
+  <img src="https://www.abc.net.au/religion/image/10559348-1x1-80x80.jpg" alt="Silhouette of soccer fans holding American flags" title="In an age of identity politics, inclusive national identity matters more than ever" />
+</a></div>
+    <div class="header">
+      <h4 class="title">
+        <a href="https://www.abc.net.au/religion/why-national-identity-matters/10559382">In an age of identity politics, inclusive national identity matters more than ever</a></h4>
+    </div>
+    <div class="summary clearfix">
+      <p>
+        Contrary to arguments that the concepts of national identity and state sovereignty have become outmoded, an inclusive sense of national identity remains critical to maintaining a successful modern political order.</p>
+      <p class="goto-more">
+        <a href="https://www.abc.net.au/religion/why-national-identity-matters/10559382">Find out more</a></p></div>
+  </div>
+</li>
+      <li>
+          <!-- pass width and height to teaser.small template to override its default value, which is also 80x80 -->
+              <div class="cs-teaser ">
+    <div class="figure">
+      <a href="https://www.abc.net.au/religion/power-of-saudi-clerics/10451284">
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+    
+    
+    
+    
+    
+    
+    
+    
+    
+  <img src="https://www.abc.net.au/religion/image/10451232-1x1-80x80.jpg" alt="Saudi clerics" title="Saudi clerics and the struggle for religious authority" />
+</a></div>
+    <div class="header">
+      <h4 class="title">
+        <a href="https://www.abc.net.au/religion/power-of-saudi-clerics/10451284">Saudi clerics and the struggle for religious authority</a></h4>
+    </div>
+    <div class="summary clearfix">
+      <p>
+        Saudi clerics are not a monolithic entity. The fragmentation of religious authority has significantly increased the volume and frequency of conflict among the clerics themselves and with the Saudi regime.</p>
+      <p class="goto-more">
+        <a href="https://www.abc.net.au/religion/power-of-saudi-clerics/10451284">Find out more</a></p></div>
+  </div>
+</li>
+      <li>
+          <!-- pass width and height to teaser.small template to override its default value, which is also 80x80 -->
+              <div class="cs-teaser ">
+    <div class="figure">
+      <a href="https://www.abc.net.au/news/2017-05-18/milestones-how-birthdays-and-anniversaries-shape-our-lives/8533906">
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+    
+    
+    
+    
+    
+    
+    
+    
+    
+  <img src="https://www.abc.net.au/news/image/8534540-1x1-80x80.jpg" alt="Happy friends partying on the rooftop with drinks and sparklers." title="Why milestones matter" />
+</a></div>
+    <div class="header">
+      <h4 class="title">
+        <a href="https://www.abc.net.au/news/2017-05-18/milestones-how-birthdays-and-anniversaries-shape-our-lives/8533906">Why milestones matter</a></h4>
+    </div>
+    <div class="summary clearfix">
+      <p>
+        Everywhere you look these days, we're measuring our lives, and imposing a kind of order on the passage of time. To mark The Minefield's 100th episode, <strong>Scott Stephens</strong> and <strong>Lisa A Williams </strong>look at the moral meaning of milestones.</p>
+      <p class="goto-more">
+        <a href="https://www.abc.net.au/news/2017-05-18/milestones-how-birthdays-and-anniversaries-shape-our-lives/8533906">Find out more</a></p></div>
+  </div>
+</li>
+      </ol>
+    
+
+
+
+
+</div>
+</div><div class="section ct-teaser-podcastfeed">
+  <div class="inner">
+    <h2>Podcasts and Feeds</h2>
+    <ol class="item-list">
+      <li>
+          <div class="cs-teaser ct-teaser-podcastfeed">
+  <h4 class="title">
+     <a href="https://www.abc.net.au/radionational/feed/6344904/podcast.xml" class="podcast ico ico-podcast" title="_podcast">Podcast</a></h4>
+</div>
+</li>
+      <li>
+          <div class="cs-teaser ct-teaser-podcastfeed">
+  <h4 class="title">
+     <a href="https://www.abc.net.au/radionational/feed/6344898/rss.xml" class="rss ico ico-rss" title="_rss">RSS text feed</a></h4>
+</div>
+</li>
+      </ol>
+    
+
+
+
+
+
+  
+
+
+
+
+<p class="goto">
+  
+  <a href="https://www.abc.net.au/radionational/programs/theminefield/podcasts/" class="goto-more">Find out more</a>
+</p>
+</div>
+</div><!--endnoindex-->
+</div>
+</div>
+<!--noindex-->
+  <div id="footer" class="cfix">
+    <h2><span>Explore Radio National</span></h2>
+    <div class="fs-footer-links">
+      <div class="subcolumns">
+      <div class="c25l"><div class="section">
+            <h3>General Information</h3>
+            <ul>
+              <li><a href="https://www.abc.net.au/radionational/about/" >
+    About RN</a></li>
+                <li><a href="https://www.abc.net.au/radionational/presenters/" >
+    Presenters</a></li>
+                <li><a href="https://www.abc.net.au/radionational/social-media/" >
+    Social Media</a></li>
+                <li><a href="https://www.abc.net.au/radionational/guide/" >
+    Program guide</a></li>
+                </ul>
+          </div>
+        </div>
+      <div class="c25l"><div class="section">
+            <h3>Editorial</h3>
+            <ul>
+              <li><a href="https://www.abc.net.au/radionational/features/" >
+    Feature articles</a></li>
+                <li><a href="https://www.abc.net.au/radionational/subjects/" >
+    Subjects</a></li>
+                <li><a href="https://www.abc.net.au/radionational/transcripts/" >
+    Transcripts</a></li>
+                </ul>
+          </div>
+        </div>
+      <div class="c25r"><div class="section">
+            <h3>Help</h3>
+            <ul>
+              <li><a href="https://www.abc.net.au/radionational/contact/" >
+    Contact us</a></li>
+                <li><a href="https://www.abc.net.au/radionational/help/podcasting/" >
+    How to listen</a></li>
+                <li><a href="https://www.abc.net.au/radio/listen/">ABC Listen</a></li>
+                <li><a href="https://radio.abc.net.au/help/offline" >
+    Frequency finder</a></li>
+                </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div><!--endnoindex-->
+</div>
+  </div>
+    </div><!--End Backgroundwrapper -->
+<!-- Start ABC Bundle Footer 2.5.0 -->
+<!--noindex-->
+<nav id="abcFooter" class="global" aria-label="ABC Footer Navigation" data-version="2.5.0">
+ <ul>
+  <li><a href="https://about.abc.net.au/terms-of-use/">Terms of Use</a></li>
+  <li><a href="https://about.abc.net.au/abc-privacy-policy/">Privacy Policy</a></li>
+  <li><a href="https://about.abc.net.au/accessibility-statement/">Accessibility</a></li>
+  <li><a href="https://about.abc.net.au/talk-to-the-abc/">Contact the ABC</a></li>
+  <li><a href="https://about.abc.net.au/terms-of-use/#UseOfContent">&copy; <time>2019</time> ABC</a></li>
+ </ul>
+</nav>
+
+<!-- ABC.Bundle Scripts -->
+<script type="text/javascript" src="https://res.abc.net.au/bundles/common/jquery-1.11.1.min.js"></script>
+<script type="text/javascript">var ABCAllowMultipleJQuery = true;</script>
+<script type="text/javascript" src="https://res.abc.net.au/bundles/2.5.0/scripts/abc.bundle.2.5.0.min.js"></script>
+<!-- End ABC.Bundle Scripts -->
+
+<!-- Nielsen Online SiteCensus V6.0 -->
+<!-- COPYRIGHT 2010 Nielsen Online -->
+<noscript><div><img src="//secure-au.imrworldwide.com/cgi-bin/m?ci=abc-aust&cg=0&cc=1&ts=noscript" width="1" height="1" alt=""></div></noscript>
+<!-- End Nielsen Online SiteCensus V6.0 -->
+
+<!-- Google Tag Manager -->
+<script type="text/javascript">
+ // <![CDATA[
+ (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+ new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+ '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+ })(window,document,'script','dataLayer','GTM-PB2GX');
+ // ]]>
+</script>
+<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-PB2GX" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager -->
+
+<!-- ABC MyLogin -->
+<script type="text/javascript" src="https://mylogin.abc.net.au/js/abc.mylogin.embedded.js"></script>
+<script type="text/javascript">ABC.MyLoginEmbedded.init();</script>
+<!-- End ABC MyLogin -->
+
+<!--endnoindex-->
+<!-- End ABC Bundle Footer 2.5.0 -->
+</body>
+  </html>

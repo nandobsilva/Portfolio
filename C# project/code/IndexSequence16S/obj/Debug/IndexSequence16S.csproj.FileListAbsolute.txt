@@ -1,0 +1,7 @@
+D:\CAB201_1\Assignment_2\program\IndexSequence16S\IndexSequence16S\bin\Debug\IndexSequence16S.exe.config
+D:\CAB201_1\Assignment_2\program\IndexSequence16S\IndexSequence16S\bin\Debug\IndexSequence16S.exe
+D:\CAB201_1\Assignment_2\program\IndexSequence16S\IndexSequence16S\bin\Debug\IndexSequence16S.pdb
+D:\CAB201_1\Assignment_2\program\IndexSequence16S\IndexSequence16S\obj\Debug\IndexSequence16S.csprojAssemblyReference.cache
+D:\CAB201_1\Assignment_2\program\IndexSequence16S\IndexSequence16S\obj\Debug\IndexSequence16S.csproj.CoreCompileInputs.cache
+D:\CAB201_1\Assignment_2\program\IndexSequence16S\IndexSequence16S\obj\Debug\IndexSequence16S.exe
+D:\CAB201_1\Assignment_2\program\IndexSequence16S\IndexSequence16S\obj\Debug\IndexSequence16S.pdb
